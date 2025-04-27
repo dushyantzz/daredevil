@@ -2,7 +2,7 @@ import DeployButton from "@/components/deploy-button";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
-import { Geist } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import HomeLink from "@/components/home-link";
@@ -28,11 +28,12 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
 	metadataBase: new URL(defaultUrl),
-	title: "Hawkwatch",
-	description: "Real-time workplace safety monitoring and analysis",
+	title: "Daredevil",
+	description: "AI-Powered Security Surveillance System",
 };
 
-const geistSans = Geist({
+const poppins = Poppins({
+	weight: ['400', '500', '600', '700'],
 	display: "swap",
 	subsets: ["latin"],
 });
@@ -43,7 +44,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={geistSans.className} suppressHydrationWarning>
+		<html lang="en" className={poppins.className} suppressHydrationWarning>
 			<body className="bg-background text-foreground" suppressHydrationWarning>
 				<NavigationEvents />
 				<ThemeProvider
@@ -54,8 +55,8 @@ export default function RootLayout({
 				>
 					<main className="min-h-screen flex flex-col items-center">
 						<div className="flex-1 w-full flex flex-col items-center">
-							<nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
-								<div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
+							<nav className="w-full flex justify-center border-b border-b-foreground/10 h-16 bg-black">
+								<div className="w-full max-w-6xl flex justify-between items-center p-3 px-5">
 									<div className="flex items-center gap-8">
 										<HomeLink />
 										<HeaderNav />
@@ -66,8 +67,11 @@ export default function RootLayout({
 							<div className="w-full">
 								{children}
 							</div>
-							<footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center">
-								<GeminiFooter />
+							<footer className="w-full border-t border-t-foreground/10 p-6 flex justify-center bg-black text-white">
+								<div className="w-full max-w-6xl flex justify-between items-center px-5">
+									<div className="text-sm">© 2025 Daredevil. All rights reserved.</div>
+									<div className="text-sm text-gray-400">AI-Powered Security Surveillance System</div>
+								</div>
 							</footer>
 						</div>
 					</main>

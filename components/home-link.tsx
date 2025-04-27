@@ -16,16 +16,16 @@ export default function HomeLink() {
   }
 
   return (
-    <Link 
-      href="/" 
+    <Link
+      href="/"
       onClick={handleClick}
       className="flex items-center"
     >
       <Image
-        src="/HawkWatchLogo.png"
-        alt="HawkWatch Logo"
-        width={120}
-        height={40}
+        src="/DaredevilLogoRed.svg"
+        alt="Daredevil Logo"
+        width={180}
+        height={50}
         className="object-contain"
         priority
       />

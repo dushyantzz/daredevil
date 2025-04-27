@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Red gradient background -->
+  <defs>
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff1a1a"/>
+      <stop offset="100%" stop-color="#990000"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main text -->
+  <g>
+    <text x="10" y="50" font-family="Impact, sans-serif" font-size="45" font-weight="bold" fill="url(#redGradient)" letter-spacing="1">
+      DAREDEVIL
+    </text>
+    
+    <!-- City skyline silhouette -->
+    <path d="M5,65 L5,60 L10,60 L10,55 L15,55 L15,58 L20,58 L20,53 L25,53 L25,57 L30,57 L30,52 L35,52 L35,59 
+             L40,59 L40,54 L45,54 L45,56 L50,56 L50,51 L55,51 L55,57 L60,57 L60,53 L65,53 L65,58 L70,58 L70,52 
+             L75,52 L75,55 L80,55 L80,50 L85,50 L85,56 L90,56 L90,53 L95,53 L95,57 L100,57 L100,52 L105,52 
+             L105,55 L110,55 L110,50 L115,50 L115,54 L120,54 L120,57 L125,57 L125,53 L130,53 L130,56 L135,56 
+             L135,51 L140,51 L140,55 L145,55 L145,52 L150,52 L150,57 L155,57 L155,53 L160,53 L160,58 L165,58 
+             L165,54 L170,54 L170,56 L175,56 L175,51 L180,51 L180,55 L185,55 L185,50 L190,50 L190,54 L195,54 
+             L195,57 L200,57 L200,52 L205,52 L205,55 L210,55 L210,50 L215,50 L215,56 L220,56 L220,53 L225,53 
+             L225,58 L230,58 L230,54 L235,54 L235,57 L240,57 L240,52 L245,52 L245,56 L250,56 L250,51 L255,51 
+             L255,55 L260,55 L260,53 L265,53 L265,58 L270,58 L270,54 L275,54 L275,57 L280,57 L280,52 L285,52 
+             L285,55 L290,55 L290,60 L295,60 L295,65 L5,65 Z" 
+          fill="#000000"/>
+  </g>
+</svg>

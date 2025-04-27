@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 
-const phrases = ["Prevent dangerous activity", "Real-time analytics", "Receive instant alerts"]
+const phrases = ["Prevent security threats", "Real-time monitoring", "Receive instant alerts", "AI-powered analysis"]
 
 export default function AnimatedText() {
   const [text, setText] = useState("")
@@ -33,9 +33,9 @@ export default function AnimatedText() {
 
   return (
     <div className="h-16 flex items-center justify-center">
-      <p className="text-2xl font-light tracking-wide bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+      <p className="text-2xl font-light tracking-wide text-white">
         {text}
-        <span className="animate-blink text-blue-400">|</span>
+        <span className="animate-blink text-white">|</span>
       </p>
     </div>
   )
