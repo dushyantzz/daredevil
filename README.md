@@ -10,7 +10,7 @@ Daredevil is an intelligent video surveillance platform that detects crime, susp
 3. A library of saved livestream footage and mp4 uploads, with detailed security analysis complete with timeline and information which is saved with each entry
 
 ### Additional features
-* Sends instant alerts to security through email/phone notifications
+* Sends instant alerts to security through Whatsapp message, email/phone notifications.
 * Provides an intuitive dashboard for monitoring multiple cameras
 * Offers an OpenAI powered assistant that provides contextual support. The bot is fed real-time information about the ongoing event and can respond to user queries, such as "What should I do in this situation" if someone has passed out, helping with quick context-aware advice
 * Offers both real-time streaming and uploaded video analysis
