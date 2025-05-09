@@ -1,11 +1,11 @@
 import type { Event } from "@/types"
 import { useEffect, useState, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { 
-  AlertTriangle, 
-  Clock, 
-  MapPin, 
-  Siren, 
+import {
+  AlertTriangle,
+  Clock,
+  MapPin,
+  Siren,
   Bomb,
   ShieldAlert,
   Sword,
@@ -63,6 +63,7 @@ export function EventFeed({ events, videoTimes, onEventHover, onEventClick }: Ev
   const [lastEventTime, setLastEventTime] = useState(0)
   const [currentTime, setCurrentTime] = useState(Date.now())
   const [selectedEventForAlert, setSelectedEventForAlert] = useState<string | null>(null)
+  const [selectedEventDescription, setSelectedEventDescription] = useState<string>("")
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -79,7 +80,7 @@ export function EventFeed({ events, videoTimes, onEventHover, onEventClick }: Ev
 
     const randomEvent = newEvents[Math.floor(Math.random() * newEvents.length)]
     const eventWithTimestamp = { ...randomEvent, addedAt: now }
-    
+
     setVisibleEvents(prev => {
       const combined = [eventWithTimestamp, ...prev]
       const unique = Array.from(new Map(combined.map(e => [e.id, e])).values())
@@ -156,6 +157,7 @@ export function EventFeed({ events, videoTimes, onEventHover, onEventClick }: Ev
                     onClick={(e) => {
                       e.stopPropagation();
                       setSelectedEventForAlert(event.id);
+                      setSelectedEventDescription(`${event.type} at ${event.camera.name}: ${event.description}`);
                     }}
                     className={cn(
                       "relative z-20 flex flex-1 items-center justify-center gap-2 rounded-md px-3 py-2 text-sm font-medium",
@@ -191,6 +193,7 @@ export function EventFeed({ events, videoTimes, onEventHover, onEventClick }: Ev
             handleDismiss(selectedEventForAlert)
           }
         }}
+        eventDescription={selectedEventDescription}
       />
     </div>
   )

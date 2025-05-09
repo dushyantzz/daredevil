@@ -42,15 +42,17 @@ ${contextMessage}`;
     // Initialize the Gemini model
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
-    // Generate content with Gemini
+    // Generate content with Gemini with optimized settings
     const result = await model.generateContent({
       contents: [{
         role: "user",
         parts: [{ text: `${systemPrompt}\n\nUser query: ${userQuery}` }]
       }],
       generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 150,
+        temperature: 0.5, // Reduced from 0.7 for faster responses
+        maxOutputTokens: 100, // Reduced from 150 for faster responses
+        topK: 20, // Added for better performance
+        topP: 0.8, // Added for better performance
       },
     });
 

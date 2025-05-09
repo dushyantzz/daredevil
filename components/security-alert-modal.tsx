@@ -12,14 +12,84 @@ interface SecurityAlertModalProps {
   open: boolean
   onOpenChange: (open: boolean) => void
   onAlertComplete: () => void
+  eventDescription?: string
 }
 
 export function SecurityAlertModal({
   open,
   onOpenChange,
   onAlertComplete,
+  eventDescription = "Suspicious activity",
 }: SecurityAlertModalProps) {
   const [status, setStatus] = useState<"calling" | "alerted">("calling")
+  const [emailSent, setEmailSent] = useState(false)
+  const [whatsappSent, setWhatsappSent] = useState(false)
+
+  // Send WhatsApp alerts when modal is opened
+  useEffect(() => {
+    const sendAlerts = async () => {
+      if (open && status === "calling") {
+        const alertPayload = {
+          title: "Security Alert: Immediate Attention Required",
+          description: `Security personnel have been alerted about: ${eventDescription}`
+        }
+
+        // Send WhatsApp alert if not already sent (primary notification method)
+        if (!whatsappSent) {
+          try {
+            console.log('Sending security alert WhatsApp message...')
+
+            const whatsappResponse = await fetch("/api/send-whatsapp", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+              },
+              body: JSON.stringify(alertPayload)
+            })
+
+            const whatsappResult = await whatsappResponse.json()
+            if (whatsappResult.error) {
+              console.error('Failed to send WhatsApp alert:', whatsappResult.error)
+
+              // Only try email as fallback if WhatsApp fails
+              if (!emailSent) {
+                try {
+                  console.log('WhatsApp failed, trying email as fallback...')
+
+                  const emailResponse = await fetch("/api/send-email", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                      "Accept": "application/json"
+                    },
+                    body: JSON.stringify(alertPayload)
+                  })
+
+                  const emailResult = await emailResponse.json()
+                  if (emailResult.error) {
+                    console.error('Failed to send email alert:', emailResult.error)
+                  } else {
+                    console.log('Email alert sent successfully as fallback')
+                    setEmailSent(true)
+                  }
+                } catch (error) {
+                  console.error('Error sending email alert:', error)
+                }
+              }
+            } else {
+              console.log('WhatsApp alert sent successfully')
+              setWhatsappSent(true)
+            }
+          } catch (error) {
+            console.error('Error sending WhatsApp alert:', error)
+          }
+        }
+      }
+    }
+
+    sendAlerts()
+  }, [open, status, emailSent, whatsappSent, eventDescription])
 
   useEffect(() => {
     if (open && status === "calling") {

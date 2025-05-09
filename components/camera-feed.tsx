@@ -48,10 +48,10 @@ export function CameraFeed({ camera, date = new Date(), onTimeUpdate }: CameraFe
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
-        style={{ 
+        style={{
           transform: `scale(${
-            ['Shoplifting2', 'Shoplifting3', 'Fighting0', 'Fighting3', 'Stealing0', 'Stealing3', 'Vandalism0', 'Vandalism1'].includes(camera.name) 
-            ? '1.25' 
+            ['Shoplifting2', 'Shoplifting3', 'Fighting0', 'Fighting3', 'Stealing0', 'Stealing3', 'Vandalism0', 'Vandalism1'].includes(camera.name)
+            ? '1.25'
             : '1.1'
           })`
         }}
@@ -59,7 +59,9 @@ export function CameraFeed({ camera, date = new Date(), onTimeUpdate }: CameraFe
         muted
         loop
         playsInline
+        preload="metadata"
         onTimeUpdate={handleTimeUpdate}
+        loading="lazy"
       >
         <source src={camera.videoUrl || camera.thumbnail} type="video/mp4" />
       </video>

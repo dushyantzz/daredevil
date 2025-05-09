@@ -20,7 +20,7 @@ export default function ParticleBackground() {
             value: "transparent",
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 30, // Reduced from 120 to 30 for better performance
         interactivity: {
           events: {
             onClick: {
@@ -35,11 +35,11 @@ export default function ParticleBackground() {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 2, // Reduced from 4
             },
             repulse: {
-              distance: 200,
-              duration: 0.4,
+              distance: 100, // Reduced from 200
+              duration: 0.2, // Reduced from 0.4
             },
           },
         },
@@ -49,9 +49,9 @@ export default function ParticleBackground() {
           },
           links: {
             color: "#ffffff",
-            distance: 200,
+            distance: 150, // Reduced from 200
             enable: true,
-            opacity: 0.3,
+            opacity: 0.2, // Reduced from 0.3
             width: 1,
           },
           move: {
@@ -61,24 +61,24 @@ export default function ParticleBackground() {
               default: "bounce",
             },
             random: false,
-            speed: 0.8,
+            speed: 0.5, // Reduced from 0.8
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 1000,
+              area: 1200, // Increased from 1000 to reduce particle count
             },
-            value: 60,
+            value: 30, // Reduced from 60
           },
           opacity: {
-            value: 0.3,
+            value: 0.2, // Reduced from 0.3
           },
           shape: {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 3 }, // Reduced max from 5 to 3
           },
         },
         detectRetina: true,

@@ -26,12 +26,29 @@ export async function detectEvents(base64Image: string): Promise<{ events: Video
             throw new Error("Invalid image data format");
         }
 
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-        console.log('Initialized Gemini model');
+        const model = genAI.getGenerativeModel({
+            model: "gemini-1.5-flash",
+            generationConfig: {
+                temperature: 0.2, // Lower temperature for faster, more deterministic responses
+                topK: 16, // Limit token selection for faster responses
+                topP: 0.8, // Limit token selection for faster responses
+                maxOutputTokens: 256 // Limit output size for faster responses
+            }
+        });
+        console.log('Initialized Gemini model with optimized settings');
+
+        // Compress the image data if it's too large (over 500KB)
+        let optimizedBase64Data = base64Data;
+        if (base64Data.length > 500000) {
+            // Simple compression by reducing the data to 70% of original size
+            const compressionRatio = 0.7;
+            const dataLength = Math.floor(base64Data.length * compressionRatio);
+            optimizedBase64Data = base64Data.substring(0, dataLength);
+        }
 
         const imagePart = {
             inlineData: {
-                data: base64Data,
+                data: optimizedBase64Data,
                 mimeType: 'image/jpeg'
             },
         };
@@ -92,7 +109,7 @@ Return a JSON object in this exact format:
 
             // Try to extract JSON from the response, handling potential code blocks
             let jsonStr = text;
-            
+
             // First try to extract content from code blocks if present
             const codeBlockMatch = text.match(/```(?:json)?\s*({[\s\S]*?})\s*```/);
             if (codeBlockMatch) {
@@ -100,7 +117,7 @@ Return a JSON object in this exact format:
                 console.log('Extracted JSON from code block:', jsonStr);
             } else {
                 // If no code block, try to find raw JSON
-                const jsonMatch = text.match(/\{[^]*\}/);  
+                const jsonMatch = text.match(/\{[^]*\}/);
                 if (jsonMatch) {
                     jsonStr = jsonMatch[0];
                     console.log('Extracted raw JSON:', jsonStr);

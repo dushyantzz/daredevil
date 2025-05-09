@@ -9,14 +9,14 @@ export const locations: Location[] = [
 				id: "mall-cam-1",
 				name: "Shoplifting0",
 				location: "Shopping Mall",
-				address: "Rajesh Jewellers, 45 MG Road, Mumbai, India",
+				address: "Rajesh Jewellers, 45 MG Road, Mumbai, Maharashtra, India",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Shoplifting0.mp4",
 			},
 			{
 				id: "mall-cam-2",
 				name: "Shoplifting1",
-				address: "Speed Zone Motorsports, 2234 Race Ave, Charlotte, NC, USA",
+				address: "Ambience Mall, 2 Nelson Mandela Marg, Vasant Kunj, New Delhi, India",
 				location: "Shopping Mall",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Shoplifting1.mp4",
@@ -24,7 +24,7 @@ export const locations: Location[] = [
 			{
 				id: "mall-cam-3",
 				name: "Shoplifting2",
-				address: "Golden Dreams Jewellery, 78 Linking Road, Delhi, India",
+				address: "Golden Dreams Jewellery, 78 Linking Road, Bandra, Mumbai, India",
 				location: "Shopping Mall",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Shoplifting2.mp4",
@@ -39,7 +39,7 @@ export const locations: Location[] = [
 				id: "club-cam-1",
 				name: "Fighting0",
 				address:
-					"The Red Bull Lounge, 567 Bourbon Street, New Orleans, LA, USA",
+					"Toit Brewpub, 298 100 Feet Road, Indiranagar, Bangalore, India",
 				location: "Nightclub District",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Fighting0.mp4",
@@ -47,7 +47,7 @@ export const locations: Location[] = [
 			{
 				id: "club-cam-2",
 				name: "Fighting1",
-				address: "Union Square Station Platform 4, New York, NY, USA",
+				address: "Connaught Place Metro Station, Gate 6, New Delhi, India",
 				location: "Nightclub District",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Fighting1.mp4",
@@ -55,7 +55,7 @@ export const locations: Location[] = [
 			{
 				id: "club-cam-3",
 				name: "Fighting2",
-				address: "Crystal Hall, 45 Tverskaya Street, Moscow, Russia",
+				address: "Kitty Su, The Lalit Hotel, Barakhamba Road, New Delhi, India",
 				location: "Nightclub District",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Fighting2.mp4",
@@ -63,7 +63,7 @@ export const locations: Location[] = [
 			{
 				id: "club-cam-4",
 				name: "Fighting3",
-				address: "Grand Plaza Hotel, 789 Convention Dr, Las Vegas, NV, USA",
+				address: "Taj Palace Hotel, 2 Sardar Patel Marg, Diplomatic Enclave, New Delhi, India",
 				location: "Nightclub District",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Fighting3.mp4",
@@ -77,7 +77,7 @@ export const locations: Location[] = [
 			{
 				id: "store-cam-2",
 				name: "Robbery1",
-				address: "QuickStop Market, 1234 Main Street, Phoenix, AZ, USA",
+				address: "24Seven Store, DLF Cyber City, Gurugram, Haryana, India",
 				location: "Convenience Store",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Robbery1.mp4",
@@ -85,7 +85,7 @@ export const locations: Location[] = [
 			{
 				id: "store-cam-3",
 				name: "Robbery2",
-				address: "Smoke & Go, 567 Oak Avenue, Houston, TX, USA",
+				address: "Reliance Fresh, Sector 14, Gurgaon, Haryana, India",
 				location: "Convenience Store",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Robbery2.mp4",
@@ -93,7 +93,7 @@ export const locations: Location[] = [
 			{
 				id: "store-cam-4",
 				name: "Robbery3",
-				address: "Corner Express, 890 Pine Street, Rapid City, SD, USA",
+				address: "More Supermarket, HSR Layout, Bangalore, Karnataka, India",
 				location: "Convenience Store",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Robbery3.mp4",
@@ -107,7 +107,7 @@ export const locations: Location[] = [
 			{
 				id: "parking-cam-2",
 				name: "Stealing1",
-				address: "Evergreen Apartments, 123 Patel Road, Bangalore, India",
+				address: "Evergreen Apartments, 123 Patel Road, Bangalore, Karnataka, India",
 				location: "Parking Garage",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Stealing1.mp4",
@@ -121,7 +121,7 @@ export const locations: Location[] = [
 			{
 				id: "subway-cam-4",
 				name: "Vandalism3",
-				address: "St. James Park, 45 Victoria Road, Dublin, Ireland",
+				address: "Cubbon Park, MG Road, Bangalore, Karnataka, India",
 				location: "Subway Station",
 				thumbnail: "/placeholder.svg?height=480&width=640",
 				videoUrl: "/videos/Vandalism3.mp4",
@@ -138,47 +138,47 @@ export const analyzedEvents = [
         time: "00:02",
         event: "Individual becomes aggressive and throws items behind bar",
       },
-      { 
-        time: "00:25", 
-        event: "Individual escalates destructive behavior" 
+      {
+        time: "00:25",
+        event: "Individual escalates destructive behavior"
       },
-      { 
-        time: "00:46", 
-        event: "Continued vandalism of property" 
+      {
+        time: "00:46",
+        event: "Continued vandalism of property"
       },
     ],
     crimeType: ["Vandalism", "Disorderly Conduct"],
-    location: "United States, Bar/Restaurant",
+    location: "Bangalore, India",
   },
   {
     videoId: "Fighting1",
     timeline: [
-      { 
-        time: "00:39", 
-        event: "Physical altercation breaks out between multiple individuals" 
+      {
+        time: "00:39",
+        event: "Physical altercation breaks out between multiple individuals"
       },
-      { 
-        time: "00:57", 
-        event: "Fight escalates with multiple participants involved" 
+      {
+        time: "00:57",
+        event: "Fight escalates with multiple participants involved"
       },
     ],
     crimeType: ["Assault", "Battery", "Disorderly Conduct"],
-    location: "United States, Subway Station",
+    location: "New Delhi, India",
   },
   {
     videoId: "Fighting2",
     timeline: [
-      { 
-        time: "00:33", 
-        event: "Sudden assault causes victim to fall" 
+      {
+        time: "00:33",
+        event: "Sudden assault causes victim to fall"
       },
-      { 
-        time: "00:34", 
-        event: "Bystanders respond to assist victim" 
+      {
+        time: "00:34",
+        event: "Bystanders respond to assist victim"
       },
     ],
     crimeType: ["Assault", "Battery"],
-    location: "Eastern Europe (Russia/Ukraine)",
+    location: "New Delhi, India",
   },
   {
     videoId: "Shoplifting0",
@@ -193,7 +193,7 @@ export const analyzedEvents = [
       },
     ],
     crimeType: ["Theft", "Shoplifting"],
-    location: "United States, Retail Store",
+    location: "Mumbai, India",
   },
   {
     videoId: "Shoplifting1",
@@ -212,7 +212,7 @@ export const analyzedEvents = [
       },
     ],
     crimeType: ["Theft", "Grand Larceny"],
-    location: "United States, Motorsports Store",
+    location: "New Delhi, India",
   },
   {
     videoId: "Shoplifting2",
@@ -297,7 +297,7 @@ export const initialEvents: Event[] = Array.from({ length: 15 }, (_, i) => ({
 		id: "front-2",
 		name: "Front Entrance 2",
 		location: "Main Building",
-		address: "123 Main St",
+		address: "123 MG Road, Bangalore, Karnataka, India",
 		thumbnail: "/placeholder.svg",
 	},
 	type: ["Theft", "Robbery", "Shoplifting", "Assault", "Battery", "Vandalism", "Disorderly"][

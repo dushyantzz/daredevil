@@ -52,7 +52,7 @@ export default function ChatInterface({ timestamps, className = '' }: ChatInterf
         const errorData = await response.json()
         throw new Error(errorData.error || 'Failed to get response')
       }
-      
+
       const data = await response.json()
       setMessages(prev => [...prev, data])
     } catch (error: any) {
@@ -80,7 +80,7 @@ export default function ChatInterface({ timestamps, className = '' }: ChatInterf
   return (
     <div className={`fixed bottom-4 right-4 w-96 h-[500px] bg-zinc-900/95 backdrop-blur-sm rounded-lg shadow-xl border border-zinc-800 flex flex-col z-50 ${className}`}>
       <div className="flex items-center justify-between p-4 border-b border-zinc-800 bg-zinc-900">
-        <h3 className="font-semibold text-white">Hawk Assistance</h3>
+        <h3 className="font-semibold text-white">Devil Assistance</h3>
         <Button
           variant="ghost"
           size="icon"
@@ -127,7 +127,7 @@ export default function ChatInterface({ timestamps, className = '' }: ChatInterf
             className="flex-1 bg-zinc-800 border-zinc-700 text-white"
             disabled={isLoading}
           />
-          <Button 
+          <Button
             type="submit"
             disabled={isLoading}
             className="bg-purple-600 hover:bg-purple-700"

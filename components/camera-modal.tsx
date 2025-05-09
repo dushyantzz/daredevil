@@ -14,18 +14,18 @@ interface CameraModalProps {
   currentTime?: number
 }
 
-export function CameraModal({ 
-  open, 
-  onOpenChange, 
-  cameraId, 
-  incident, 
+export function CameraModal({
+  open,
+  onOpenChange,
+  cameraId,
+  incident,
   date,
-  currentTime = 0 
+  currentTime = 0
 }: CameraModalProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [videoDimensions, setVideoDimensions] = useState({ width: 0, height: 0 })
   const [videoTime, setVideoTime] = useState(currentTime)
-  
+
   // Find the camera data
   const camera = locations
     .flatMap((location) => location.cameras)
@@ -76,10 +76,10 @@ export function CameraModal({
           <video
             ref={videoRef}
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ 
+            style={{
               transform: `scale(${
-                ['Shoplifting2', 'Shoplifting3', 'Fighting0', 'Fighting3', 'Stealing0', 'Stealing3', 'Vandalism0', 'Vandalism1'].includes(camera.name) 
-                ? '1.25' 
+                ['Shoplifting2', 'Shoplifting3', 'Fighting0', 'Fighting3', 'Stealing0', 'Stealing3', 'Vandalism0', 'Vandalism1'].includes(camera.name)
+                ? '1.25'
                 : '1.1'
               })`
             }}
@@ -87,7 +87,9 @@ export function CameraModal({
             muted
             loop
             playsInline
+            preload="metadata"
             onTimeUpdate={handleTimeUpdate}
+            loading="lazy"
           >
             <source src={camera.videoUrl || camera.thumbnail} type="video/mp4" />
           </video>

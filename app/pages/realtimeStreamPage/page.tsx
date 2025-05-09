@@ -94,9 +94,14 @@ export default function Page() {
         // Configure TF.js for better performance
         await tf.ready()
         await tf.setBackend('webgl')
+        // Enhanced performance settings
         await tf.env().set('WEBGL_FORCE_F16_TEXTURES', true) // Use F16 textures for better performance
         await tf.env().set('WEBGL_PACK', true) // Enable texture packing
         await tf.env().set('WEBGL_CHECK_NUMERICAL_PROBLEMS', false) // Disable numerical checks in production
+        await tf.env().set('WEBGL_DISJOINT_QUERY_TIMER_EXTENSION_RELIABLE', false) // Disable timer queries
+        await tf.env().set('WEBGL_CPU_FORWARD', false) // Prevent CPU forwarding
+        await tf.env().set('WEBGL_RENDER_FLOAT32_ENABLED', false) // Use lower precision
+        await tf.env().set('WEBGL_SIZE_UPLOAD_UNIFORM', 4) // Optimize uniform uploads
       })
 
       // Load models in parallel
@@ -117,14 +122,15 @@ export default function Page() {
       const [faceModel, poseModel] = await Promise.all([
         blazefaceModel.load({
           maxFaces: 1, // Limit to 1 face for better performance
-          scoreThreshold: 0.5 // Increase threshold for better performance
+          scoreThreshold: 0.75 // Increased threshold for better performance (from 0.5)
         }),
         poseDetection.createDetector(
           poseDetection.SupportedModels.MoveNet,
           {
-            modelType: poseDetection.movenet.modelType.SINGLEPOSE_LIGHTNING,
-            enableSmoothing: true,
-            minPoseScore: 0.3
+            modelType: poseDetection.movenet.modelType.SINGLEPOSE_LIGHTNING, // Using lightning model for speed
+            enableSmoothing: false, // Disabled smoothing for better performance
+            minPoseScore: 0.5, // Increased threshold (from 0.3)
+            multiPoseMaxDimension: 256 // Reduced from default for better performance
           }
         )
       ])
@@ -234,9 +240,9 @@ export default function Page() {
   const runDetection = async () => {
     if (!isRecordingRef.current) return
 
-    // Throttle detection to ~10 FPS (every 100ms)
+    // Throttle detection to ~5 FPS (every 200ms) for better performance
     const now = performance.now()
-    if (now - lastDetectionTime.current < 100) {
+    if (now - lastDetectionTime.current < 200) {
       detectionFrameRef.current = requestAnimationFrame(runDetection)
       return
     }
@@ -406,47 +412,75 @@ export default function Page() {
           }
           setTimestamps((prev) => [...prev, newTimestamp])
 
-          // For dangerous events, send an email notification
+          // For dangerous events, send WhatsApp notifications (primary) and email as fallback
           if (event.isDangerous) {
+            const alertPayload = {
+              title: "Dangerous Activity Detected",
+              description: `At ${newTimestamp.timestamp}, the following dangerous activity was detected: ${event.description}`
+            }
+
+            // Send WhatsApp notification (primary method)
             try {
-              const emailPayload = {
-                title: "Dangerous Activity Detected",
-                description: `At ${newTimestamp.timestamp}, the following dangerous activity was detected: ${event.description}`
-              }
-              const response = await fetch("/api/send-email", {
+              console.log("Sending WhatsApp notification...")
+              const whatsappResponse = await fetch("/api/send-whatsapp", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
                   Accept: "application/json"
                 },
-                body: JSON.stringify(emailPayload)
+                body: JSON.stringify(alertPayload)
               })
-              
+
               // Check if response is ok before trying to parse JSON
-              if (!response.ok) {
-                if (response.status === 401) {
-                  setError(
-                    "Please sign in to receive email notifications for dangerous events."
-                  )
-                } else if (response.status === 500) {
-                  setError(
-                    "Email service not properly configured. Please contact support."
-                  )
+              if (!whatsappResponse.ok) {
+                if (whatsappResponse.status === 500) {
+                  console.error("WhatsApp service not properly configured.")
+
+                  // Try email as fallback only if WhatsApp fails
+                  try {
+                    console.log("WhatsApp failed, trying email as fallback...")
+                    const emailResponse = await fetch("/api/send-email", {
+                      method: "POST",
+                      headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json"
+                      },
+                      body: JSON.stringify(alertPayload)
+                    })
+
+                    // Check if response is ok before trying to parse JSON
+                    if (!emailResponse.ok) {
+                      if (emailResponse.status === 401) {
+                        setError(
+                          "Please sign in to receive notifications for dangerous events."
+                        )
+                      } else if (emailResponse.status === 500) {
+                        setError(
+                          "Notification services not properly configured. Please contact support."
+                        )
+                      } else {
+                        const errorText = await emailResponse.text()
+                        console.error("Failed to send email notification:", errorText)
+                      }
+                    } else {
+                      // Only try to parse JSON for successful responses
+                      const emailData = await emailResponse.json()
+                      console.log("Email notification sent successfully as fallback:", emailData)
+                    }
+                  } catch (error) {
+                    console.error("Error sending email notification:", error)
+                  }
                 } else {
-                  const errorText = await response.text()
-                  console.error("Failed to send email notification:", errorText)
-                  setError(
-                    `Failed to send email notification. Please try again later.`
-                  )
+                  const errorText = await whatsappResponse.text()
+                  console.error("Failed to send WhatsApp notification:", errorText)
                 }
-                return
+              } else {
+                // Only try to parse JSON for successful responses
+                const whatsappData = await whatsappResponse.json()
+                console.log("WhatsApp notification sent successfully:", whatsappData)
               }
-              
-              // Only try to parse JSON for successful responses
-              const resData = await response.json()
-              console.log("Email notification sent successfully:", resData)
             } catch (error) {
-              console.error("Error sending email notification:", error)
+              console.error("Error sending WhatsApp notification:", error)
             }
           }
         })
