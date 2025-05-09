@@ -31,7 +31,7 @@ Our tech stack combines modern tools for a robust, scalable solution:
 3. **Video Stream Handling**: Managing multiple video streams without overwhelming the system
 
 ## Accomplishments that we're proud of
-* Created a fully functional AI surveillance system in 36 hours
+* Created a fully functional AI surveillance system.
 * Achieved real-time processing with minimal latency
 * Implemented a beautiful, intuitive user interface
 * Built a scalable architecture that can handle multiple cameras
