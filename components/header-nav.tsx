@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Video, PlaySquare, FolderOpen, BarChart2 } from "lucide-react"
+import { Video, PlaySquare, FolderOpen, BarChart2, Database } from "lucide-react"
 import { Button } from "./ui/button"
 
 export function HeaderNav() {
@@ -27,6 +27,12 @@ export function HeaderNav() {
         <Link href="/pages/statistics" className="flex items-center gap-2">
           <BarChart2 className="h-4 w-4" />
           <span>Statistics</span>
+        </Link>
+      </Button>
+      <Button asChild variant="ghost" size="sm" className="font-medium">
+        <Link href="/pages/ufdr-analysis" className="flex items-center gap-2">
+          <Database className="h-4 w-4" />
+          <span>UFDR Analysis</span>
         </Link>
       </Button>
     </div>
