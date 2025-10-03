@@ -1,12 +1,16 @@
 import { NextResponse } from 'next/server'
 import { GoogleGenerativeAI } from "@google/generative-ai"
+import apiKeyManager from '@/utils/api-keys'
 
 const getGeminiClient = () => {
-  const apiKey = process.env.GEMINI_API_KEY
-  if (!apiKey) {
-    throw new Error('Gemini API key not found in environment variables')
+  try {
+    // Get an API key from the manager (which handles rotation)
+    const apiKey = apiKeyManager.getGeminiApiKey()
+    return new GoogleGenerativeAI(apiKey)
+  } catch (error) {
+    console.error('Failed to get Gemini API key:', error)
+    throw new Error('No Gemini API keys available')
   }
-  return new GoogleGenerativeAI(apiKey)
 }
 
 export async function POST(request: Request) {
@@ -70,6 +74,21 @@ ${contextMessage}`;
     })
   } catch (error: any) {
     console.error('Chat API error:', error)
+
+    // If there's an API key error, mark the key as inactive
+    if (error.message && error.message.includes('API key')) {
+      try {
+        // Try to extract the API key from the error message if possible
+        const keyMatch = error.message.match(/key: ([A-Za-z0-9_-]+)/);
+        if (keyMatch && keyMatch[1]) {
+          apiKeyManager.markKeyInactive(keyMatch[1]);
+        }
+      } catch (e) {
+        // Ignore errors in error handling
+        console.warn('Failed to mark API key as inactive:', e);
+      }
+    }
+
     const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred'
     return NextResponse.json(
       { error: `Failed to get chat response: ${errorMessage}` },

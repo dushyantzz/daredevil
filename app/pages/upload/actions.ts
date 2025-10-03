@@ -1,12 +1,17 @@
 "use server";
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import apiKeyManager from '@/utils/api-keys';
 
-const API_KEY = process.env.GOOGLE_API_KEY;
-if (!API_KEY) {
-    throw new Error('GOOGLE_API_KEY environment variable is not set');
+// Get a Google API key from the manager
+let genAI: GoogleGenerativeAI;
+try {
+    const API_KEY = apiKeyManager.getGoogleApiKey();
+    genAI = new GoogleGenerativeAI(API_KEY);
+} catch (error) {
+    console.error('Failed to initialize Google API client:', error);
+    throw new Error('Google API key not available');
 }
-const genAI = new GoogleGenerativeAI(API_KEY);
 
 export interface VideoEvent {
     isDangerous: boolean;
@@ -135,8 +140,59 @@ Return a JSON object in this exact format:
                 throw new Error('Failed to parse API response');
             }
 
-        } catch (error) {
+        } catch (error: any) {
             console.error('Error calling API:', error);
+
+            // If there's an API key error, mark the key as inactive and try with a different key
+            if (error.message && error.message.includes('API key')) {
+                try {
+                    // Try to extract the API key from the error message if possible
+                    const keyMatch = error.message.match(/key: ([A-Za-z0-9_-]+)/);
+                    if (keyMatch && keyMatch[1]) {
+                        apiKeyManager.markKeyInactive(keyMatch[1]);
+                    }
+
+                    // Try with a different API key
+                    const newApiKey = apiKeyManager.getGoogleApiKey();
+                    genAI = new GoogleGenerativeAI(newApiKey);
+                    console.log('Retrying with a different API key');
+
+                    // Retry the request (simplified for brevity)
+                    const retryResult = await genAI.getGenerativeModel({
+                        model: "gemini-1.5-flash",
+                        generationConfig: {
+                            temperature: 0.2,
+                            topK: 16,
+                            topP: 0.8,
+                            maxOutputTokens: 256
+                        }
+                    }).generateContent([prompt, imagePart]);
+
+                    const retryResponse = await retryResult.response;
+                    const retryText = retryResponse.text();
+
+                    // Process the retry response the same way
+                    let retryJsonStr = retryText;
+                    const retryCodeBlockMatch = retryText.match(/```(?:json)?\s*({[\s\S]*?})\s*```/);
+                    if (retryCodeBlockMatch) {
+                        retryJsonStr = retryCodeBlockMatch[1];
+                    } else {
+                        const retryJsonMatch = retryText.match(/\{[^]*\}/);
+                        if (retryJsonMatch) {
+                            retryJsonStr = retryJsonMatch[0];
+                        }
+                    }
+
+                    const retryParsed = JSON.parse(retryJsonStr);
+                    return {
+                        events: retryParsed.events || [],
+                        rawResponse: retryText
+                    };
+                } catch (retryError) {
+                    console.error('Error during retry with new API key:', retryError);
+                }
+            }
+
             throw error;
         }
     } catch (error) {

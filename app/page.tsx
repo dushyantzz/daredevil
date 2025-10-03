@@ -1,13 +1,25 @@
+"use client"
+
 import Link from "next/link"
-import ParticleBackground from "@/components/particle-background"
+import Beams from "@/components/Beams"
 import AnimatedText from "@/components/animated-text"
 import { Shield, Eye, Bell } from "lucide-react"
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-radial-gradient"></div>
-      <ParticleBackground />
+      <div className="absolute inset-0" style={{ width: '100%', height: '100%' }}>
+        <Beams
+          beamWidth={2}
+          beamHeight={15}
+          beamNumber={12}
+          lightColor="#ffffff"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={-35}
+        />
+      </div>
 
       <div className="z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-6 gap-8">
         {/* Left side with logo and name */}
