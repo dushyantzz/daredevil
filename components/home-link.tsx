@@ -19,13 +19,13 @@ export default function HomeLink() {
     <Link
       href="/"
       onClick={handleClick}
-      className="flex items-center"
+      className="flex items-center hover:scale-105 transition-transform duration-300"
     >
       <Image
         src="/DaredevilLogoRed.svg"
         alt="Daredevil Logo"
-        width={180}
-        height={50}
+        width={120}
+        height={40}
         className="object-contain"
         priority
       />

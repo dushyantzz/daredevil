@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { createClient } from "@/utils/supabase/server";
+import { AuthButtons } from "./auth-buttons";
 
 export default async function AuthButton() {
   const supabase = await createClient();
@@ -48,23 +49,5 @@ export default async function AuthButton() {
       </>
     );
   }
-  return user ? (
-    <div className="flex items-center gap-4">
-      <span className="text-sm font-medium">Hey, {user.email}!</span>
-      <form action={signOutAction}>
-        <Button type="submit" variant={"outline"} className="font-medium">
-          Sign out
-        </Button>
-      </form>
-    </div>
-  ) : (
-    <div className="flex gap-2">
-      <Button asChild size="sm" variant={"outline"} className="font-medium">
-        <Link href="/sign-in">Sign in</Link>
-      </Button>
-      <Button asChild size="sm" className="font-medium bg-white text-black hover:bg-gray-100 rounded-md">
-        <Link href="/sign-up">Sign up</Link>
-      </Button>
-    </div>
-  );
+  return <AuthButtons user={user} signOutAction={signOutAction} />;
 }

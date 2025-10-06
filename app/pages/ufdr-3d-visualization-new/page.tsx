@@ -27,7 +27,7 @@ interface UFDRData {
   metadata?: any
 }
 
-export default function UFDR3DVisualizationPage() {
+export default function UFDR3DVisualizationNew() {
   const [ufdrData, setUfdrData] = useState<UFDRData | null>(null)
   const [dataPoints, setDataPoints] = useState<DataPoint[]>([])
   const [isAnimating, setIsAnimating] = useState(true)
@@ -36,21 +36,20 @@ export default function UFDR3DVisualizationPage() {
   const [focusPoint, setFocusPoint] = useState<[number, number, number] | null>(null)
   const [isUploading, setIsUploading] = useState(false)
 
-  // Parse UFDR data into 3D data points with organized clustering
+  // Parse UFDR data into 3D data points
   const parseUFDRData = useCallback((data: UFDRData) => {
     const points: DataPoint[] = []
+    let index = 0
 
-    // Parse chats - positioned in a cluster on the left
+    // Parse chats
     if (data.chats) {
       data.chats.forEach((chat, i) => {
-        const angle = (i / data.chats.length) * Math.PI * 2
-        const radius = 2
         points.push({
           id: `chat-${i}`,
           position: [
-            -4 + Math.cos(angle) * radius,
-            1 + i * 0.5,
-            Math.sin(angle) * radius
+            (Math.random() - 0.5) * 10,
+            Math.random() * 5,
+            (Math.random() - 0.5) * 10
           ],
           category: 'chat',
           value: 1,
@@ -60,40 +59,33 @@ export default function UFDR3DVisualizationPage() {
       })
     }
 
-    // Parse calls - positioned near related chats
+    // Parse calls
     if (data.calls) {
       data.calls.forEach((call, i) => {
-        // Try to position calls near their related chat contacts
-        const relatedChatIndex = data.chats?.findIndex(c => c.contact === call.contact) ?? -1
-        const angle = (i / data.calls.length) * Math.PI * 2
-        const radius = 1.5
-
         points.push({
           id: `call-${i}`,
           position: [
-            -4 + Math.cos(angle) * radius,
-            3 + i * 0.5,
-            Math.sin(angle) * radius
+            (Math.random() - 0.5) * 10,
+            Math.random() * 5 + 5,
+            (Math.random() - 0.5) * 10
           ],
           category: 'call',
-          value: 1,
+          value: call.duration || 1,
           label: call.contact || `Call ${i + 1}`,
           metadata: call
         })
       })
     }
 
-    // Parse images - positioned on the right
+    // Parse images
     if (data.images) {
       data.images.forEach((image, i) => {
-        const angle = (i / data.images.length) * Math.PI * 2
-        const radius = 1.5
         points.push({
           id: `image-${i}`,
           position: [
-            4 + Math.cos(angle) * radius,
-            1 + i * 0.5,
-            Math.sin(angle) * radius
+            (Math.random() - 0.5) * 10 + 5,
+            Math.random() * 5,
+            (Math.random() - 0.5) * 10
           ],
           category: 'image',
           value: 0.8,
@@ -103,17 +95,15 @@ export default function UFDR3DVisualizationPage() {
       })
     }
 
-    // Parse videos - positioned near images
+    // Parse videos
     if (data.videos) {
       data.videos.forEach((video, i) => {
-        const angle = (i / data.videos.length) * Math.PI * 2
-        const radius = 1.5
         points.push({
           id: `video-${i}`,
           position: [
-            4 + Math.cos(angle) * radius,
-            3 + i * 0.5,
-            Math.sin(angle) * radius
+            (Math.random() - 0.5) * 10 - 5,
+            Math.random() * 5,
+            (Math.random() - 0.5) * 10
           ],
           category: 'video',
           value: 1.2,
@@ -123,17 +113,15 @@ export default function UFDR3DVisualizationPage() {
       })
     }
 
-    // Parse app data - positioned in the center/back
+    // Parse app data
     if (data.appData) {
       data.appData.forEach((app, i) => {
-        const angle = (i / data.appData.length) * Math.PI * 2
-        const radius = 2
         points.push({
           id: `app-${i}`,
           position: [
-            Math.cos(angle) * radius,
-            2,
-            -3 + Math.sin(angle) * radius
+            (Math.random() - 0.5) * 10,
+            Math.random() * 5,
+            (Math.random() - 0.5) * 10 + 5
           ],
           category: 'app',
           value: 0.9,
@@ -167,23 +155,6 @@ export default function UFDR3DVisualizationPage() {
     }
   }, [parseUFDRData])
 
-  // Load sample data
-  const handleLoadSampleData = useCallback(async () => {
-    setIsUploading(true)
-    try {
-      const response = await fetch('/sample-ufdr-data.json')
-      const data = await response.json()
-      setUfdrData(data)
-      const points = parseUFDRData(data)
-      setDataPoints(points)
-    } catch (error) {
-      console.error('Error loading sample data:', error)
-      alert('Error loading sample data.')
-    } finally {
-      setIsUploading(false)
-    }
-  }, [parseUFDRData])
-
   // Handle point click
   const handlePointClick = useCallback((point: DataPoint) => {
     setSelectedPoint(point)
@@ -192,6 +163,7 @@ export default function UFDR3DVisualizationPage() {
 
   // Handle export
   const handleExport = useCallback(() => {
+    // Capture screenshot logic would go here
     console.log('Export functionality')
   }, [])
 
@@ -256,40 +228,22 @@ export default function UFDR3DVisualizationPage() {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-3">
-                <label className="block">
-                  <input
-                    type="file"
-                    accept=".json"
-                    onChange={handleFileUpload}
-                    className="hidden"
-                    disabled={isUploading}
-                  />
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg cursor-pointer transition-colors inline-block"
-                  >
-                    {isUploading ? 'Processing...' : 'Choose File'}
-                  </motion.div>
-                </label>
-
-                <div className="flex items-center gap-3">
-                  <div className="flex-1 h-px bg-white/20"></div>
-                  <span className="text-gray-400 text-sm">or</span>
-                  <div className="flex-1 h-px bg-white/20"></div>
-                </div>
-
-                <motion.button
+              <label className="block">
+                <input
+                  type="file"
+                  accept=".json"
+                  onChange={handleFileUpload}
+                  className="hidden"
+                  disabled={isUploading}
+                />
+                <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  onClick={handleLoadSampleData}
-                  disabled={isUploading}
-                  className="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg cursor-pointer transition-colors inline-block"
                 >
-                  Load Sample Data
-                </motion.button>
-              </div>
+                  {isUploading ? 'Processing...' : 'Choose File'}
+                </motion.div>
+              </label>
             </motion.div>
           </motion.div>
         )}
@@ -362,3 +316,4 @@ export default function UFDR3DVisualizationPage() {
     </div>
   )
 }
+

@@ -1,0 +1,93 @@
+{
+  "chats": [
+    {
+      "contact": "Alice",
+      "platform": "WhatsApp",
+      "messageCount": 45,
+      "lastMessage": "2024-01-15T10:30:00Z",
+      "sentiment": "positive"
+    },
+    {
+      "contact": "Bob",
+      "platform": "Telegram",
+      "messageCount": 28,
+      "lastMessage": "2024-01-14T15:45:00Z",
+      "sentiment": "neutral"
+    },
+    {
+      "contact": "Charlie",
+      "platform": "WhatsApp",
+      "messageCount": 67,
+      "lastMessage": "2024-01-13T09:20:00Z",
+      "sentiment": "positive"
+    }
+  ],
+  "calls": [
+    {
+      "contact": "Alice",
+      "type": "outgoing",
+      "duration": 320,
+      "timestamp": "2024-01-15T09:00:00Z",
+      "status": "completed"
+    },
+    {
+      "contact": "Bob",
+      "type": "incoming",
+      "duration": 180,
+      "timestamp": "2024-01-14T14:30:00Z",
+      "status": "completed"
+    }
+  ],
+  "images": [
+    {
+      "name": "Photo_Alice.jpg",
+      "size": 2048576,
+      "timestamp": "2024-01-15T12:00:00Z",
+      "location": "New York",
+      "tags": ["outdoor", "city"]
+    },
+    {
+      "name": "Photo_Bob.jpg",
+      "size": 1536000,
+      "timestamp": "2024-01-14T10:30:00Z",
+      "location": "Boston",
+      "tags": ["beach", "sunset"]
+    }
+  ],
+  "videos": [
+    {
+      "name": "Video_Meeting.mp4",
+      "size": 52428800,
+      "duration": 120,
+      "timestamp": "2024-01-15T11:00:00Z",
+      "resolution": "1920x1080",
+      "fps": 30
+    }
+  ],
+  "appData": [
+    {
+      "name": "WhatsApp",
+      "category": "Social Media",
+      "dataSize": 157286400,
+      "lastUsed": "2024-01-15T19:00:00Z",
+      "activityCount": 342
+    },
+    {
+      "name": "Gmail",
+      "category": "Email",
+      "dataSize": 524288000,
+      "lastUsed": "2024-01-15T18:45:00Z",
+      "activityCount": 567
+    }
+  ],
+  "metadata": {
+    "totalSize": "850 MB",
+    "deviceInfo": "iPhone 14 - iOS 17.2",
+    "extractionDate": "2024-01-15T20:00:00Z",
+    "dataTypes": ["chats", "calls", "images", "videos", "apps"],
+    "forensicTool": "UFDR Parser v2.0",
+    "caseNumber": "CASE-2024-001",
+    "investigator": "Agent Smith"
+  }
+}
+
