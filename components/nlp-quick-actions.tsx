@@ -234,92 +234,101 @@ export function NLPQuickActions({ onQuerySelect, recentQueries = [], favoriteQue
   }
 
   return (
-    <div className="bg-zinc-900 rounded-lg border border-zinc-800 p-6">
-      <div className="flex items-center justify-between mb-6">
-        <h3 className="text-lg font-semibold flex items-center">
-          <Zap className="h-5 w-5 mr-2 text-yellow-500" />
-          Quick Actions
-        </h3>
-        <div className="flex items-center gap-2">
-          <input
-            type="text"
-            placeholder="Search actions..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="bg-zinc-800 border border-zinc-700 text-white px-3 py-1 rounded text-sm focus:ring-2 focus:ring-white focus:border-transparent"
-          />
+    <div className="bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden">
+      {/* Header */}
+      <div className="p-4 border-b border-zinc-800 bg-gradient-to-r from-zinc-900 to-zinc-800">
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-lg font-semibold flex items-center text-white">
+            <Zap className="h-5 w-5 mr-2 text-yellow-500" />
+            Quick Actions
+          </h3>
         </div>
+        <input
+          type="text"
+          placeholder="Search actions..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full bg-zinc-800 border border-zinc-700 text-white px-3 py-2 rounded-lg text-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+        />
       </div>
 
       {/* Category Filter */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {categories.map((category) => (
-          <Button
-            key={category.id}
-            variant={selectedCategory === category.id ? "default" : "outline"}
-            size="sm"
-            onClick={() => setSelectedCategory(category.id)}
-            className="flex items-center gap-2"
-          >
-            {category.icon}
-            {category.label}
-          </Button>
-        ))}
+      <div className="p-4 border-b border-zinc-800 bg-zinc-900/50">
+        <div className="flex flex-wrap gap-2">
+          {categories.map((category) => (
+            <Button
+              key={category.id}
+              variant={selectedCategory === category.id ? "default" : "outline"}
+              size="sm"
+              onClick={() => setSelectedCategory(category.id)}
+              className={`flex items-center gap-2 transition-all ${
+                selectedCategory === category.id
+                  ? 'bg-yellow-500 text-black hover:bg-yellow-600'
+                  : 'hover:bg-zinc-800'
+              }`}
+            >
+              {category.icon}
+              <span className="text-xs font-medium">{category.label}</span>
+            </Button>
+          ))}
+        </div>
       </div>
 
       {/* Quick Actions Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-96 overflow-y-auto">
-        {filteredActions.map((action) => (
-          <div
-            key={action.id}
-            className="bg-zinc-800 rounded-lg p-4 border border-zinc-700 hover:bg-zinc-750 transition-colors cursor-pointer group"
-            onClick={() => onQuerySelect(action.query)}
-          >
-            <div className="flex items-start justify-between mb-2">
-              <div className="flex items-center gap-2">
-                <div className={getCategoryColor(action.category)}>
+      <div className="p-4">
+        <div className="grid grid-cols-1 gap-3 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
+          {filteredActions.map((action) => (
+            <div
+              key={action.id}
+              className="bg-zinc-800/50 rounded-lg p-3 border border-zinc-700 hover:border-yellow-500/50 hover:bg-zinc-800 transition-all cursor-pointer group"
+              onClick={() => onQuerySelect(action.query)}
+            >
+              <div className="flex items-start gap-3">
+                <div className={`${getCategoryColor(action.category)} mt-0.5 flex-shrink-0`}>
                   {action.icon}
                 </div>
-                <h4 className="font-medium text-sm group-hover:text-white transition-colors">
-                  {action.title}
-                </h4>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start justify-between gap-2 mb-1">
+                    <h4 className="font-medium text-sm text-white group-hover:text-yellow-400 transition-colors line-clamp-1">
+                      {action.title}
+                    </h4>
+                    <Badge variant="outline" className="text-xs flex-shrink-0">
+                      {action.category}
+                    </Badge>
+                  </div>
+                  <p className="text-xs text-gray-400 mb-2 line-clamp-2">
+                    {action.description}
+                  </p>
+                  <div className="flex flex-wrap gap-1">
+                    {action.tags.slice(0, 3).map((tag, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs px-2 py-0">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <Badge variant="outline" className="text-xs">
-                {action.category}
-              </Badge>
             </div>
-            <p className="text-xs text-gray-400 mb-3 line-clamp-2">
-              {action.description}
-            </p>
-            <div className="flex flex-wrap gap-1">
-              {action.tags.slice(0, 3).map((tag, index) => (
-                <Badge key={index} variant="secondary" className="text-xs">
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {/* Recent Queries */}
       {recentQueries.length > 0 && (
-        <div className="mt-6 pt-6 border-t border-zinc-800">
-          <h4 className="text-sm font-medium mb-3 flex items-center">
+        <div className="p-4 border-t border-zinc-800 bg-zinc-900/30">
+          <h4 className="text-sm font-medium mb-3 flex items-center text-white">
             <History className="h-4 w-4 mr-2 text-gray-400" />
             Recent Queries
           </h4>
           <div className="space-y-2">
             {recentQueries.slice(-5).reverse().map((query, index) => (
-              <Button
+              <button
                 key={index}
-                variant="ghost"
-                size="sm"
                 onClick={() => onQuerySelect(query)}
-                className="w-full text-left justify-start text-xs h-auto p-2 hover:bg-zinc-800"
+                className="w-full text-left text-xs p-2 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-700 hover:border-yellow-500/50 text-gray-300 hover:text-white transition-all line-clamp-2"
               >
                 {query}
-              </Button>
+              </button>
             ))}
           </div>
         </div>
@@ -327,22 +336,21 @@ export function NLPQuickActions({ onQuerySelect, recentQueries = [], favoriteQue
 
       {/* Favorite Queries */}
       {favoriteQueries.length > 0 && (
-        <div className="mt-4">
-          <h4 className="text-sm font-medium mb-3 flex items-center">
+        <div className="p-4 border-t border-zinc-800 bg-zinc-900/30">
+          <h4 className="text-sm font-medium mb-3 flex items-center text-white">
             <Star className="h-4 w-4 mr-2 text-yellow-400" />
             Favorite Queries
           </h4>
           <div className="space-y-2">
             {favoriteQueries.map((query, index) => (
-              <Button
+              <button
                 key={index}
-                variant="ghost"
-                size="sm"
                 onClick={() => onQuerySelect(query)}
-                className="w-full text-left justify-start text-xs h-auto p-2 hover:bg-zinc-800"
+                className="w-full text-left text-xs p-2 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-700 hover:border-yellow-500/50 text-gray-300 hover:text-white transition-all line-clamp-2"
               >
+                <Star className="h-3 w-3 inline mr-1 text-yellow-400" />
                 {query}
-              </Button>
+              </button>
             ))}
           </div>
         </div>
@@ -350,3 +358,4 @@ export function NLPQuickActions({ onQuerySelect, recentQueries = [], favoriteQue
     </div>
   )
 }
+

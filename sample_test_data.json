@@ -1,0 +1,324 @@
+{
+  "chats": [
+    {
+      "contact": "John Doe",
+      "message": "Hey, let's meet at the coffee shop tomorrow at 3 PM. I have something important to discuss about the project.",
+      "platform": "WhatsApp",
+      "timestamp": "2024-01-15T10:30:00Z",
+      "location": "New York",
+      "type": "received"
+    },
+    {
+      "contact": "John Doe",
+      "message": "Sure, sounds good! Which coffee shop are you thinking? The one near Central Park?",
+      "platform": "WhatsApp",
+      "timestamp": "2024-01-15T10:35:00Z",
+      "location": "New York",
+      "type": "sent"
+    },
+    {
+      "contact": "John Doe",
+      "message": "Yes, exactly! See you there at 3.",
+      "platform": "WhatsApp",
+      "timestamp": "2024-01-15T10:37:00Z",
+      "location": "New York",
+      "type": "received"
+    },
+    {
+      "contact": "John Doe",
+      "message": "Perfect! Looking forward to it.",
+      "platform": "WhatsApp",
+      "timestamp": "2024-01-15T10:38:00Z",
+      "location": "New York",
+      "type": "sent"
+    },
+    {
+      "contact": "Jane Smith",
+      "message": "Can you send me the report we discussed yesterday? I need it for the presentation.",
+      "platform": "Telegram",
+      "timestamp": "2024-01-15T11:00:00Z",
+      "location": "Los Angeles",
+      "type": "received"
+    },
+    {
+      "contact": "Jane Smith",
+      "message": "Of course! I'll email it to you within the hour. The financial analysis is complete.",
+      "platform": "Telegram",
+      "timestamp": "2024-01-15T11:05:00Z",
+      "location": "Los Angeles",
+      "type": "sent"
+    },
+    {
+      "contact": "Alice Johnson",
+      "message": "The meeting has been moved to 4 PM today. Conference Room B.",
+      "platform": "Signal",
+      "timestamp": "2024-01-15T12:00:00Z",
+      "location": "Chicago",
+      "type": "received"
+    },
+    {
+      "contact": "Alice Johnson",
+      "message": "Thanks for letting me know. I'll update my calendar.",
+      "platform": "Signal",
+      "timestamp": "2024-01-15T12:02:00Z",
+      "location": "Chicago",
+      "type": "sent"
+    },
+    {
+      "contact": "Bob Wilson",
+      "message": "Emergency meeting called for 2 PM. All hands on deck!",
+      "platform": "Slack",
+      "timestamp": "2024-01-15T13:30:00Z",
+      "location": "San Francisco",
+      "type": "received"
+    },
+    {
+      "contact": "Sarah Davis",
+      "message": "Don't forget about dinner tonight. 7 PM at the Italian place we talked about.",
+      "platform": "iMessage",
+      "timestamp": "2024-01-15T14:00:00Z",
+      "location": "Miami",
+      "type": "received"
+    }
+  ],
+  "calls": [
+    {
+      "contact": "John Doe",
+      "type": "incoming",
+      "duration": 180,
+      "timestamp": "2024-01-15T09:00:00Z",
+      "location": "New York",
+      "status": "answered"
+    },
+    {
+      "contact": "John Doe",
+      "type": "outgoing",
+      "duration": 45,
+      "timestamp": "2024-01-15T09:30:00Z",
+      "location": "New York",
+      "status": "answered"
+    },
+    {
+      "contact": "Jane Smith",
+      "type": "outgoing",
+      "duration": 360,
+      "timestamp": "2024-01-15T13:00:00Z",
+      "location": "Los Angeles",
+      "status": "answered"
+    },
+    {
+      "contact": "Alice Johnson",
+      "type": "incoming",
+      "duration": 120,
+      "timestamp": "2024-01-15T14:30:00Z",
+      "location": "Chicago",
+      "status": "answered"
+    },
+    {
+      "contact": "Bob Wilson",
+      "type": "missed",
+      "duration": 0,
+      "timestamp": "2024-01-15T15:00:00Z",
+      "location": "San Francisco",
+      "status": "missed"
+    },
+    {
+      "contact": "Sarah Davis",
+      "type": "incoming",
+      "duration": 600,
+      "timestamp": "2024-01-15T16:00:00Z",
+      "location": "Miami",
+      "status": "answered"
+    },
+    {
+      "contact": "Michael Brown",
+      "type": "outgoing",
+      "duration": 90,
+      "timestamp": "2024-01-15T17:00:00Z",
+      "location": "Dallas",
+      "status": "answered"
+    },
+    {
+      "contact": "Emily White",
+      "type": "incoming",
+      "duration": 240,
+      "timestamp": "2024-01-15T18:00:00Z",
+      "location": "Seattle",
+      "status": "answered"
+    }
+  ],
+  "images": [
+    {
+      "filename": "central_park_meeting.jpg",
+      "size": 2048576,
+      "timestamp": "2024-01-15T12:00:00Z",
+      "location": "Central Park, New York",
+      "width": 1920,
+      "height": 1080,
+      "type": "JPEG"
+    },
+    {
+      "filename": "coffee_shop_receipt.jpg",
+      "size": 512000,
+      "timestamp": "2024-01-15T15:30:00Z",
+      "location": "Starbucks, New York",
+      "width": 1080,
+      "height": 1920,
+      "type": "JPEG"
+    },
+    {
+      "filename": "project_whiteboard.png",
+      "size": 1536000,
+      "timestamp": "2024-01-15T16:00:00Z",
+      "location": "Office, Los Angeles",
+      "width": 1600,
+      "height": 1200,
+      "type": "PNG"
+    },
+    {
+      "filename": "team_lunch.jpg",
+      "size": 3072000,
+      "timestamp": "2024-01-15T13:00:00Z",
+      "location": "Restaurant, Chicago",
+      "width": 2048,
+      "height": 1536,
+      "type": "JPEG"
+    },
+    {
+      "filename": "document_scan.pdf.jpg",
+      "size": 1024000,
+      "timestamp": "2024-01-15T11:30:00Z",
+      "location": "Office, San Francisco",
+      "width": 1200,
+      "height": 1600,
+      "type": "JPEG"
+    }
+  ],
+  "videos": [
+    {
+      "filename": "presentation_recording.mp4",
+      "duration": 1800,
+      "timestamp": "2024-01-15T13:00:00Z",
+      "location": "Conference Room A, New York",
+      "size": 52428800,
+      "width": 1920,
+      "height": 1080,
+      "format": "MP4"
+    },
+    {
+      "filename": "team_meeting_jan15.mov",
+      "duration": 3600,
+      "timestamp": "2024-01-15T14:00:00Z",
+      "location": "Zoom Call, Remote",
+      "size": 104857600,
+      "width": 1280,
+      "height": 720,
+      "format": "MOV"
+    },
+    {
+      "filename": "project_demo.webm",
+      "duration": 900,
+      "timestamp": "2024-01-15T16:30:00Z",
+      "location": "Lab, Los Angeles",
+      "size": 26214400,
+      "width": 1920,
+      "height": 1080,
+      "format": "WEBM"
+    },
+    {
+      "filename": "security_footage.avi",
+      "duration": 7200,
+      "timestamp": "2024-01-15T08:00:00Z",
+      "location": "Building Entrance, Chicago",
+      "size": 209715200,
+      "width": 1024,
+      "height": 768,
+      "format": "AVI"
+    }
+  ],
+  "appData": [
+    {
+      "appName": "Instagram",
+      "category": "Social Media",
+      "lastUsed": "2024-01-15T14:00:00Z",
+      "dataSize": 1024000,
+      "location": "New York",
+      "usageTime": 45,
+      "version": "2.4.1"
+    },
+    {
+      "appName": "WhatsApp",
+      "category": "Communication",
+      "lastUsed": "2024-01-15T10:38:00Z",
+      "dataSize": 2048000,
+      "location": "New York",
+      "usageTime": 120,
+      "version": "2.23.1"
+    },
+    {
+      "appName": "Telegram",
+      "category": "Communication",
+      "lastUsed": "2024-01-15T11:05:00Z",
+      "dataSize": 512000,
+      "location": "Los Angeles",
+      "usageTime": 30,
+      "version": "9.4.2"
+    },
+    {
+      "appName": "Gmail",
+      "category": "Email",
+      "lastUsed": "2024-01-15T15:00:00Z",
+      "dataSize": 4096000,
+      "location": "San Francisco",
+      "usageTime": 90,
+      "version": "2023.12.31"
+    },
+    {
+      "appName": "Chrome",
+      "category": "Browser",
+      "lastUsed": "2024-01-15T16:00:00Z",
+      "dataSize": 8192000,
+      "location": "Chicago",
+      "usageTime": 180,
+      "version": "120.0.6099"
+    },
+    {
+      "appName": "Slack",
+      "category": "Business",
+      "lastUsed": "2024-01-15T13:30:00Z",
+      "dataSize": 1536000,
+      "location": "San Francisco",
+      "usageTime": 60,
+      "version": "4.35.126"
+    },
+    {
+      "appName": "Spotify",
+      "category": "Music",
+      "lastUsed": "2024-01-15T17:00:00Z",
+      "dataSize": 3072000,
+      "location": "Miami",
+      "usageTime": 240,
+      "version": "8.7.96"
+    },
+    {
+      "appName": "Maps",
+      "category": "Navigation",
+      "lastUsed": "2024-01-15T12:30:00Z",
+      "dataSize": 256000,
+      "location": "New York",
+      "usageTime": 15,
+      "version": "5.85"
+    }
+  ],
+  "metadata": {
+    "totalSize": "245.7 MB",
+    "deviceInfo": "iPhone 14 Pro (iOS 17.2.1)",
+    "extractionDate": "2024-01-16T08:00:00Z",
+    "dataTypes": ["Chats", "Calls", "Images", "Videos", "App Data"],
+    "sourceFiles": ["sample_test_data.json"],
+    "extractionTool": "UFDR Sample Generator v1.0",
+    "caseNumber": "CASE-2024-001",
+    "investigator": "Digital Forensics Team",
+    "notes": "Sample dataset for RAG system testing and demonstration purposes. Contains realistic but fictional data for various communication platforms, call logs, media files, and application usage patterns."
+  }
+}

@@ -13,6 +13,7 @@ import TimestampList from "@/components/timestamp-list"
 import type { Timestamp } from "@/app/types"
 import { detectEvents, type VideoEvent } from "./actions"
 import Link from "next/link"
+import Beams from "@/components/Beams"
 
 interface SavedVideo {
   id: string
@@ -192,7 +193,19 @@ export default function UploadPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center p-4">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center p-4 relative overflow-hidden">
+      <div className="absolute inset-0" style={{ width: '100%', height: '100%' }}>
+        <Beams
+          beamWidth={2}
+          beamHeight={15}
+          beamNumber={12}
+          lightColor="#ffffff"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={-35}
+        />
+      </div>
       <div className="w-full max-w-4xl relative">
         <div className="relative z-10 p-8">
           <div className="space-y-8">

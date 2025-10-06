@@ -73,6 +73,8 @@ export default function NLPQueryInterfacePage() {
   const [selectedDataType, setSelectedDataType] = useState<string>("all")
   const [showDataParser, setShowDataParser] = useState(false)
   const [queryHistory, setQueryHistory] = useState<string[]>([])
+  const [conversationId] = useState<string>(`conv_${Date.now()}`)
+  const [isDataIngested, setIsDataIngested] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
   const scrollToBottom = () => {
@@ -89,24 +91,98 @@ export default function NLPQueryInterfacePage() {
       setMessages([{
         id: '1',
         type: 'assistant',
-        content: "Hello! I'm your UFDR Analysis Assistant. I can help you query and analyze forensic data including chats, calls, images, videos, and app data. Upload your UFDR files or ask me questions about the data!",
+        content: "Hello! I'm your AI-powered UFDR Analysis Assistant with advanced RAG capabilities. I can help you query and analyze forensic data including chats, calls, images, videos, and app data. Upload your UFDR files to get started, and I'll use semantic search and context-aware processing to answer your questions!",
         timestamp: new Date()
       }])
     }
   }, [])
 
+  // Ingest UFDR data when it's loaded
+  useEffect(() => {
+    if (ufdrData && !isDataIngested) {
+      ingestUFDRData()
+    }
+  }, [ufdrData])
+
+  const ingestUFDRData = async () => {
+    try {
+      const response = await fetch('/api/ufdr-ingest', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ufdrData })
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setIsDataIngested(true)
+
+        // Add system message
+        const ragStatus = result.ragEnabled
+          ? '✓ RAG Enabled (Pinecone)'
+          : '⚡ AI-Powered Local Processing'
+
+        const systemMessage: ChatMessage = {
+          id: Date.now().toString(),
+          type: 'assistant',
+          content: `${ragStatus}\n\n✓ UFDR data successfully loaded! Processed ${result.documentsProcessed} documents:\n- ${result.breakdown.chats} chat messages\n- ${result.breakdown.calls} call records\n- ${result.breakdown.images} images\n- ${result.breakdown.videos} videos\n- ${result.breakdown.apps} apps\n\nYou can now ask questions using natural language! Try:\n• "Show me messages from John"\n• "What calls were made to John?" (follow-up)\n• "Analyze communication patterns"`,
+          timestamp: new Date()
+        }
+        setMessages(prev => [...prev, systemMessage])
+      }
+    } catch (error) {
+      console.error('Error ingesting UFDR data:', error)
+    }
+  }
+
   const processNLPQuery = async (query: string): Promise<QueryResult> => {
-    // Simulate NLP processing with mock responses
+    try {
+      // Use the new RAG-powered NLP API
+      const response = await fetch('/api/nlp-query', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          query,
+          conversationId,
+          conversationHistory: messages.map(msg => ({
+            role: msg.type === 'user' ? 'user' : 'assistant',
+            content: msg.content
+          })),
+          ufdrData
+        })
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        return {
+          answer: result.answer,
+          confidence: result.confidence,
+          sources: result.sources,
+          dataType: result.dataType,
+          relatedData: result.relatedData
+        }
+      } else {
+        throw new Error(result.error || 'Failed to process query')
+      }
+    } catch (error) {
+      console.error('Error processing NLP query:', error)
+      // Fallback to local processing
+      return fallbackQueryProcessing(query)
+    }
+  }
+
+  const fallbackQueryProcessing = (query: string): QueryResult => {
     const lowerQuery = query.toLowerCase()
-    
+
     // Chat-related queries
     if (lowerQuery.includes('chat') || lowerQuery.includes('message') || lowerQuery.includes('conversation')) {
-      const chatResults = ufdrData?.chats.filter(chat => 
+      const chatResults = ufdrData?.chats.filter(chat =>
         chat.message.toLowerCase().includes(query.toLowerCase()) ||
         chat.contact.toLowerCase().includes(query.toLowerCase()) ||
         chat.platform.toLowerCase().includes(query.toLowerCase())
       ) || []
-      
+
       return {
         answer: `Found ${chatResults.length} chat messages related to your query. ${chatResults.length > 0 ? `Most recent from ${chatResults[0]?.contact} on ${chatResults[0]?.platform}.` : 'No matching chat messages found.'}`,
         confidence: 0.85,
@@ -389,16 +465,26 @@ export default function NLPQueryInterfacePage() {
 
         {/* Data Status */}
         {ufdrData && (
-          <div className="mb-6 bg-zinc-900 rounded-lg p-4 border border-zinc-800">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
+          <div className="mb-6 bg-gradient-to-r from-zinc-900 to-zinc-800 rounded-lg p-4 border border-zinc-700">
+            <div className="flex items-center justify-between flex-wrap gap-3">
+              <div className="flex items-center gap-4 flex-wrap">
                 <CheckCircle className="h-5 w-5 text-green-500" />
-                <span className="text-sm font-medium">UFDR Data Loaded</span>
+                <span className="text-sm font-medium text-white">UFDR Data Loaded</span>
+                {isDataIngested && (
+                  <Badge className="bg-green-500/20 text-green-400 border-green-500/50">
+                    ✓ RAG Enabled
+                  </Badge>
+                )}
                 <Badge variant="secondary">{ufdrData.metadata.totalSize}</Badge>
                 <Badge variant="outline">{ufdrData.metadata.dataTypes.length} data types</Badge>
               </div>
-              <div className="text-sm text-gray-400">
-                {ufdrData.chats.length + ufdrData.calls.length + ufdrData.images.length + ufdrData.videos.length + ufdrData.appData.length} total records
+              <div className="flex items-center gap-3">
+                <div className="text-sm text-gray-400">
+                  {ufdrData.chats.length + ufdrData.calls.length + ufdrData.images.length + ufdrData.videos.length + ufdrData.appData.length} total records
+                </div>
+                <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/50">
+                  Conv ID: {conversationId.slice(-8)}
+                </Badge>
               </div>
             </div>
           </div>

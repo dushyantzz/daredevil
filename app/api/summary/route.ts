@@ -13,6 +13,43 @@ const getGeminiClient = () => {
   }
 }
 
+// Retry with exponential backoff
+async function retryWithBackoff<T>(
+  fn: () => Promise<T>,
+  maxRetries: number = 3,
+  initialDelay: number = 1000
+): Promise<T> {
+  let lastError: any
+
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      return await fn()
+    } catch (error: any) {
+      lastError = error
+
+      // If it's a rate limit error (429), retry with backoff
+      if (error?.status === 429 && i < maxRetries - 1) {
+        const delay = initialDelay * Math.pow(2, i)
+        console.log(`Rate limit hit, retrying in ${delay}ms... (attempt ${i + 1}/${maxRetries})`)
+        await new Promise(resolve => setTimeout(resolve, delay))
+
+        // Try to get a new API key for next attempt
+        try {
+          apiKeyManager.getGeminiApiKey()
+        } catch (e) {
+          // Continue with same key if rotation fails
+        }
+        continue
+      }
+
+      // If it's not a rate limit error, or we're out of retries, throw
+      throw error
+    }
+  }
+
+  throw lastError
+}
+
 export async function POST(request: Request) {
   let genAI
   try {
@@ -33,8 +70,8 @@ export async function POST(request: Request) {
       `Video: ${moment.videoName}\nTimestamp: ${moment.timestamp}\nDescription: ${moment.description}\nDangerous: ${moment.isDangerous ? 'Yes' : 'No'}\n`
     ).join('\n')
 
-    // Initialize the Gemini model
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+    // Initialize the Gemini model (use gemini-2.0-flash-exp for best performance)
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
 
     // Generate content with Gemini
     const prompt = `You are an expert at analyzing video safety data. Provide concise, insightful summaries of video analysis data, focusing on safety patterns and potential concerns.
@@ -48,12 +85,15 @@ Please format your response in this way:
 2. Key Safety Concerns (if any)
 3. Notable Patterns (if any)`;
 
-    const result = await model.generateContent({
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 500,
-      },
+    // Use retry logic with exponential backoff
+    const result = await retryWithBackoff(async () => {
+      return await model.generateContent({
+        contents: [{ role: "user", parts: [{ text: prompt }] }],
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 500,
+        },
+      })
     });
 
     const response = result.response;

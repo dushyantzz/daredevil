@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Trash2, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import Beams from "@/components/Beams"
 
 interface SavedVideo {
   id: string
@@ -41,8 +42,20 @@ export default function SavedVideosPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white p-4">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-black text-white p-4 relative overflow-hidden">
+      <div className="absolute inset-0" style={{ width: '100%', height: '100%' }}>
+        <Beams
+          beamWidth={2}
+          beamHeight={15}
+          beamNumber={12}
+          lightColor="#ffffff"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={-35}
+        />
+      </div>
+      <div className="max-w-4xl mx-auto relative z-10">
         <h1 className="text-4xl font-extrabold mb-8 text-center text-white tracking-tight drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]">
           Saved Videos
         </h1>
