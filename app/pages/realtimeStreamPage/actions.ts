@@ -32,7 +32,7 @@ export async function detectEvents(base64Image: string, transcript: string = '')
         }
 
         const model = genAI.getGenerativeModel({
-            model: "gemini-1.5-flash",
+            model: "gemini-2.0-flash-exp",
             generationConfig: {
                 temperature: 0.2, // Lower temperature for faster, more deterministic responses
                 topK: 16, // Limit token selection for faster responses
@@ -160,7 +160,7 @@ Return a JSON object in this exact format:
 
                     // Retry the request (simplified for brevity)
                     const retryResult = await genAI.getGenerativeModel({
-                        model: "gemini-1.5-flash",
+                        model: "gemini-2.0-flash-exp",
                         generationConfig: {
                             temperature: 0.2,
                             topK: 16,
