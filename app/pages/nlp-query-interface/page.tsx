@@ -250,7 +250,7 @@ export default function NLPQueryInterfacePage() {
       ) || []
       
       return {
-        answer: `Found ${appResults.length} app records. ${appResults.length > 0 ? `Most used apps: ${[...new Set(appResults.map(app => app.appName))].slice(0, 3).join(', ')}.` : 'No matching app data found.'}`,
+        answer: `Found ${appResults.length} app records. ${appResults.length > 0 ? `Most used apps: ${Array.from(new Set(appResults.map(app => app.appName))).slice(0, 3).join(', ')}.` : 'No matching app data found.'}`,
         confidence: 0.75,
         sources: appResults.slice(0, 3).map(app => `App - ${app.appName}`),
         dataType: 'appData',

@@ -43,7 +43,7 @@ export default function UFDR3DVisualizationPage() {
     // Parse chats - positioned in a cluster on the left
     if (data.chats) {
       data.chats.forEach((chat, i) => {
-        const angle = (i / data.chats.length) * Math.PI * 2
+        const angle = (i / (data.chats?.length || 1)) * Math.PI * 2
         const radius = 2
         points.push({
           id: `chat-${i}`,
@@ -65,7 +65,7 @@ export default function UFDR3DVisualizationPage() {
       data.calls.forEach((call, i) => {
         // Try to position calls near their related chat contacts
         const relatedChatIndex = data.chats?.findIndex(c => c.contact === call.contact) ?? -1
-        const angle = (i / data.calls.length) * Math.PI * 2
+        const angle = (i / (data.calls?.length || 1)) * Math.PI * 2
         const radius = 1.5
 
         points.push({
@@ -86,7 +86,7 @@ export default function UFDR3DVisualizationPage() {
     // Parse images - positioned on the right
     if (data.images) {
       data.images.forEach((image, i) => {
-        const angle = (i / data.images.length) * Math.PI * 2
+        const angle = (i / (data.images?.length || 1)) * Math.PI * 2
         const radius = 1.5
         points.push({
           id: `image-${i}`,
@@ -106,7 +106,7 @@ export default function UFDR3DVisualizationPage() {
     // Parse videos - positioned near images
     if (data.videos) {
       data.videos.forEach((video, i) => {
-        const angle = (i / data.videos.length) * Math.PI * 2
+        const angle = (i / (data.videos?.length || 1)) * Math.PI * 2
         const radius = 1.5
         points.push({
           id: `video-${i}`,
@@ -126,7 +126,7 @@ export default function UFDR3DVisualizationPage() {
     // Parse app data - positioned in the center/back
     if (data.appData) {
       data.appData.forEach((app, i) => {
-        const angle = (i / data.appData.length) * Math.PI * 2
+        const angle = (i / (data.appData?.length || 1)) * Math.PI * 2
         const radius = 2
         points.push({
           id: `app-${i}`,

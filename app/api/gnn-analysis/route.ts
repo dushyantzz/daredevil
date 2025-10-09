@@ -7,7 +7,7 @@ import { tmpdir } from 'os'
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { ufdrData, visualizationType = 'comprehensive' } = body
+    const { ufdrData, analysisType = 'full' } = body
 
     if (!ufdrData) {
       return NextResponse.json({ error: 'UFDR data is required' }, { status: 400 })
@@ -15,16 +15,16 @@ export async function POST(request: NextRequest) {
 
     // Create temporary file for UFDR data
     const tempDir = tmpdir()
-    const tempFilePath = join(tempDir, `ufdr_data_${Date.now()}.json`)
+    const tempFilePath = join(tempDir, `ufdr_gnn_data_${Date.now()}.json`)
     
     await writeFile(tempFilePath, JSON.stringify(ufdrData, null, 2))
 
     try {
-      // Call Python script for 3D visualization processing
-      const pythonScript = join(process.cwd(), 'scripts', 'ufdr_3d_visualizer.py')
+      // Call Python GNN script
+      const pythonScript = join(process.cwd(), 'scripts', 'gnn_alias_resolver.py')
       
       return new Promise<NextResponse>((resolve, reject) => {
-        const python = spawn('python', [pythonScript, tempFilePath, visualizationType])
+        const python = spawn('python', [pythonScript, tempFilePath])
         
         let output = ''
         let errorOutput = ''
@@ -43,9 +43,9 @@ export async function POST(request: NextRequest) {
             await unlink(tempFilePath)
             
             if (code !== 0) {
-              console.error('Python script error:', errorOutput)
+              console.error('GNN Python script error:', errorOutput)
               resolve(NextResponse.json(
-                { error: 'Visualization processing failed', details: errorOutput },
+                { error: 'GNN analysis failed', details: errorOutput },
                 { status: 500 }
               ))
               return
@@ -56,17 +56,20 @@ export async function POST(request: NextRequest) {
             
             resolve(NextResponse.json({
               success: true,
-              visualizationData: result,
+              gnnAnalysis: result,
               metadata: {
                 timestamp: new Date().toISOString(),
-                visualizationType,
-                dataPoints: result.dataPoints || 0
+                analysisType,
+                aliasGroups: result.alias_groups?.length || 0,
+                hiddenRelationships: result.hidden_relationships?.length || 0,
+                graphNodes: result.interaction_graph?.nodes?.length || 0,
+                graphEdges: result.interaction_graph?.edges?.length || 0
               }
             }))
           } catch (parseError) {
-            console.error('Error parsing Python output:', parseError)
+            console.error('Error parsing GNN output:', parseError)
             resolve(NextResponse.json(
-              { error: 'Failed to parse visualization results' },
+              { error: 'Failed to parse GNN analysis results' },
               { status: 500 }
             ))
           }
@@ -74,16 +77,16 @@ export async function POST(request: NextRequest) {
 
         python.on('error', async (error) => {
           await unlink(tempFilePath).catch(() => {})
-          console.error('Python process error:', error)
+          console.error('GNN Python process error:', error)
           resolve(NextResponse.json(
-            { error: 'Failed to start visualization process' },
+            { error: 'Failed to start GNN analysis process' },
             { status: 500 }
           ))
         })
       })
     } catch (error) {
       await unlink(tempFilePath).catch(() => {})
-      console.error('Visualization API error:', error)
+      console.error('GNN Analysis API error:', error)
       return NextResponse.json(
         { error: 'Internal server error' },
         { status: 500 }
@@ -100,19 +103,25 @@ export async function POST(request: NextRequest) {
 
 export async function GET() {
   return NextResponse.json({
-    message: 'UFDR 3D Visualization API',
+    message: 'GNN Alias Resolution and Relationship Detection API',
     endpoints: {
-      POST: '/api/ufdr-3d-visualization',
-      description: 'Process UFDR data for 3D visualization'
+      POST: '/api/gnn-analysis',
+      description: 'Analyze UFDR data with GNN for alias resolution and hidden relationship detection'
     },
-    supportedVisualizations: [
-      'comprehensive',
-      'temporal',
-      'spatial',
-      'communication_network',
-      'activity_heatmap',
-      'data_flow'
+    features: [
+      'Automatic alias resolution across multiple identifiers',
+      'Hidden relationship detection using graph analysis',
+      'Community detection and clustering',
+      '3D visualization data generation',
+      'Confidence scoring for relationships',
+      'Temporal proximity analysis',
+      'Multi-platform correlation'
+    ],
+    analysisTypes: [
+      'full',
+      'alias_resolution',
+      'relationship_detection',
+      'community_analysis'
     ]
   })
 }
-

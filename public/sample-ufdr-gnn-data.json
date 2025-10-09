@@ -1,0 +1,222 @@
+{
+  "chats": [
+    {
+      "contact": "John Smith",
+      "message": "Meeting tomorrow at 3pm in conference room A. Call me at +1-555-0123 if any issues.",
+      "platform": "WhatsApp",
+      "timestamp": "2024-01-15T10:30:00Z",
+      "location": "New York Office",
+      "messageId": "chat_001"
+    },
+    {
+      "contact": "J. Smith",
+      "message": "Thanks for the update. See you tomorrow.",
+      "platform": "Telegram",
+      "timestamp": "2024-01-15T10:32:00Z",
+      "location": "New York Office",
+      "messageId": "chat_002"
+    },
+    {
+      "contact": "john.smith@company.com",
+      "message": "Please review the attached documents before our meeting.",
+      "platform": "Email",
+      "timestamp": "2024-01-15T11:15:00Z",
+      "location": "Virtual",
+      "messageId": "chat_003"
+    },
+    {
+      "contact": "Mike Johnson",
+      "message": "Can you send me the contact details for John?",
+      "platform": "WhatsApp",
+      "timestamp": "2024-01-15T14:20:00Z",
+      "location": "Chicago Office",
+      "messageId": "chat_004"
+    },
+    {
+      "contact": "mike.j@company.com",
+      "message": "John's phone: +1-555-0123, email: john.smith@company.com",
+      "platform": "Email",
+      "timestamp": "2024-01-15T14:25:00Z",
+      "location": "Chicago Office",
+      "messageId": "chat_005"
+    },
+    {
+      "contact": "Sarah Wilson",
+      "message": "The project files are ready for review. John should have access.",
+      "platform": "Slack",
+      "timestamp": "2024-01-16T09:00:00Z",
+      "location": "Boston Office",
+      "messageId": "chat_006"
+    },
+    {
+      "contact": "swilson@company.com",
+      "message": "Please confirm receipt of the documents.",
+      "platform": "Email",
+      "timestamp": "2024-01-16T09:05:00Z",
+      "location": "Boston Office",
+      "messageId": "chat_007"
+    },
+    {
+      "contact": "Alex Brown",
+      "message": "John mentioned you in the meeting notes. Can you clarify?",
+      "platform": "Teams",
+      "timestamp": "2024-01-16T15:30:00Z",
+      "location": "Seattle Office",
+      "messageId": "chat_008"
+    },
+    {
+      "contact": "alex.brown@company.com",
+      "message": "Meeting notes attached. John Smith was the presenter.",
+      "platform": "Email",
+      "timestamp": "2024-01-16T15:35:00Z",
+      "location": "Seattle Office",
+      "messageId": "chat_009"
+    },
+    {
+      "contact": "johnsmith123",
+      "message": "Thanks everyone for the productive meeting today!",
+      "platform": "LinkedIn",
+      "timestamp": "2024-01-16T18:00:00Z",
+      "location": "Virtual",
+      "messageId": "chat_010"
+    }
+  ],
+  "calls": [
+    {
+      "contact": "John Smith",
+      "duration": 450,
+      "timestamp": "2024-01-15T15:00:00Z",
+      "location": "New York Office",
+      "callId": "call_001",
+      "type": "voice"
+    },
+    {
+      "contact": "+1-555-0123",
+      "duration": 320,
+      "timestamp": "2024-01-15T16:30:00Z",
+      "location": "New York Office",
+      "callId": "call_002",
+      "type": "voice"
+    },
+    {
+      "contact": "J. Smith",
+      "duration": 180,
+      "timestamp": "2024-01-16T10:00:00Z",
+      "location": "Conference Room A",
+      "callId": "call_003",
+      "type": "video"
+    },
+    {
+      "contact": "Mike Johnson",
+      "duration": 600,
+      "timestamp": "2024-01-16T11:00:00Z",
+      "location": "Chicago Office",
+      "callId": "call_004",
+      "type": "voice"
+    },
+    {
+      "contact": "Sarah Wilson",
+      "duration": 240,
+      "timestamp": "2024-01-16T14:00:00Z",
+      "location": "Boston Office",
+      "callId": "call_005",
+      "type": "voice"
+    },
+    {
+      "contact": "Alex Brown",
+      "duration": 180,
+      "timestamp": "2024-01-16T16:00:00Z",
+      "location": "Seattle Office",
+      "callId": "call_006",
+      "type": "voice"
+    }
+  ],
+  "images": [
+    {
+      "name": "meeting_notes_jan15.jpg",
+      "timestamp": "2024-01-15T15:30:00Z",
+      "location": "Conference Room A",
+      "size": 2048000,
+      "type": "document",
+      "imageId": "img_001"
+    },
+    {
+      "name": "project_diagram.png",
+      "timestamp": "2024-01-16T09:30:00Z",
+      "location": "Boston Office",
+      "size": 1536000,
+      "type": "diagram",
+      "imageId": "img_002"
+    },
+    {
+      "name": "team_photo.jpg",
+      "timestamp": "2024-01-16T18:15:00Z",
+      "location": "Virtual",
+      "size": 3072000,
+      "type": "photo",
+      "imageId": "img_003"
+    }
+  ],
+  "videos": [
+    {
+      "name": "meeting_recording_jan16.mp4",
+      "duration": 3600,
+      "timestamp": "2024-01-16T15:00:00Z",
+      "location": "Conference Room A",
+      "size": 52428800,
+      "videoId": "vid_001"
+    },
+    {
+      "name": "project_presentation.mp4",
+      "duration": 1800,
+      "timestamp": "2024-01-16T15:30:00Z",
+      "location": "Virtual",
+      "size": 26214400,
+      "videoId": "vid_002"
+    }
+  ],
+  "appData": [
+    {
+      "name": "WhatsApp",
+      "dataSize": 10485760,
+      "lastUsed": "2024-01-16T18:00:00Z",
+      "location": "Virtual",
+      "appId": "app_001"
+    },
+    {
+      "name": "Email Client",
+      "dataSize": 5242880,
+      "lastUsed": "2024-01-16T15:35:00Z",
+      "location": "Seattle Office",
+      "appId": "app_002"
+    },
+    {
+      "name": "Slack",
+      "dataSize": 3145728,
+      "lastUsed": "2024-01-16T09:05:00Z",
+      "location": "Boston Office",
+      "appId": "app_003"
+    },
+    {
+      "name": "Teams",
+      "dataSize": 2097152,
+      "lastUsed": "2024-01-16T15:30:00Z",
+      "location": "Seattle Office",
+      "appId": "app_004"
+    },
+    {
+      "name": "LinkedIn",
+      "dataSize": 1572864,
+      "lastUsed": "2024-01-16T18:00:00Z",
+      "location": "Virtual",
+      "appId": "app_005"
+    }
+  ],
+  "metadata": {
+    "totalSize": "65.5 MB",
+    "deviceId": "UFDR_DEVICE_001",
+    "extractionDate": "2024-01-17T00:00:00Z",
+    "dataSource": "Mobile Device",
+    "analysisVersion": "2.1.0"
+  }
+}

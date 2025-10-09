@@ -1,7 +1,7 @@
 "use client"
 import BoundingBoxDrawer from '@/components/boundingBoxDrawer';
 
-const boxes =[
+const rawBoxes = [
     {"box_2d": [21, 319, 233, 612], "label": "book"},
     {"box_2d": [187, 195, 387, 472], "label": "smartphone"},
     {"box_2d": [356, 306, 933, 715], "label": "spiral notebook"},
@@ -12,6 +12,14 @@ const boxes =[
     {"box_2d": [356, 696, 702, 1000], "label": "pen case"},
     {"box_2d": [0, 493, 262, 821], "label": "white headphones"}
   ]
+
+const boxes = rawBoxes.map(box => ({
+  x: box.box_2d[0],
+  y: box.box_2d[1], 
+  width: box.box_2d[2] - box.box_2d[0],
+  height: box.box_2d[3] - box.box_2d[1],
+  label: box.label
+}))
 
 export default function ImageWithBoundingBoxes() {
     const imageUrl = '/tableWithThings.jpg'; 
