@@ -1,4 +1,5 @@
 {
+  "name": "invesicore-ai",
   "private": true,
   "scripts": {
     "dev": "next dev",

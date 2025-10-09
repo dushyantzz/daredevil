@@ -4,7 +4,7 @@ export default function MainNavbar() {
   return (
     <nav className="w-full flex justify-between items-center mb-8">
       <Link href="/" className="text-2xl font-bold">
-        Daredevil
+        Invesicore AI
       </Link>
       <Link href="/" className="text-sm hover:underline">
         Back to Home
