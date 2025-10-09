@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Beams from "@/components/Beams"
 import AnimatedText from "@/components/animated-text"
-import { Shield, Eye, Bell } from "lucide-react"
+import { Brain, Network, Search } from "lucide-react"
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 md:w-1/2">
           <h1 className="text-6xl font-bold mb-2 text-white">Daredevil</h1>
           <p className="text-xl text-gray-300 max-w-lg">
-            Advanced AI-powered security surveillance system for real-time threat detection and monitoring
+            Advanced AI-powered security surveillance and forensic analysis platform with UFDR data processing capabilities
           </p>
           <AnimatedText />
           <Link
@@ -44,37 +44,37 @@ export default function Home() {
           <div className="space-y-4">
             <div className="flex items-start gap-3">
               <div className="p-2 bg-white/10 rounded-lg">
-                <Shield className="h-5 w-5 text-white" />
+                <Brain className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h3 className="font-medium text-white">Advanced Threat Detection</h3>
-                <p className="text-gray-400 text-sm">Our AI algorithms identify potential security threats in real-time with high accuracy.</p>
+                <h3 className="font-medium text-white">GNN-Powered Alias Resolution</h3>
+                <p className="text-gray-400 text-sm">Advanced Graph Neural Network algorithms automatically resolve aliases and detect hidden relationships across multiple devices with &gt;95% accuracy.</p>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
               <div className="p-2 bg-white/10 rounded-lg">
-                <Eye className="h-5 w-5 text-white" />
+                <Network className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h3 className="font-medium text-white">24/7 Monitoring</h3>
-                <p className="text-gray-400 text-sm">Continuous surveillance with instant alerts for suspicious activities, even when you're away.</p>
+                <h3 className="font-medium text-white">3D Network Visualization</h3>
+                <p className="text-gray-400 text-sm">Interactive 3D network graphs reveal complex relationships between entities, making forensic analysis intuitive and comprehensive.</p>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
               <div className="p-2 bg-white/10 rounded-lg">
-                <Bell className="h-5 w-5 text-white" />
+                <Search className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h3 className="font-medium text-white">Instant Notifications</h3>
-                <p className="text-gray-400 text-sm">Receive alerts on your devices the moment our system detects potential security concerns.</p>
+                <h3 className="font-medium text-white">Natural Language Queries</h3>
+                <p className="text-gray-400 text-sm">Ask questions about UFDR forensic data in plain English using our RAG-powered AI assistant for instant insights.</p>
               </div>
             </div>
           </div>
 
           <div className="mt-6 text-sm text-gray-400">
-            Trusted by security professionals and businesses worldwide for enhanced safety and peace of mind.
+            Trusted by law enforcement agencies, forensic analysts, and security professionals worldwide for advanced digital investigation capabilities.
           </div>
         </div>
       </div>

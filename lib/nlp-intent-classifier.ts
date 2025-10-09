@@ -131,8 +131,8 @@ const ruleBasedClassification = (
 
   // Check if it's a follow-up question
   const followUpIndicators = ['their', 'those', 'that', 'them', 'it', 'show me more', 'what about']
-  const isFollowUp = followUpIndicators.some(indicator => lowerQuery.includes(indicator)) &&
-                     conversationHistory && conversationHistory.length > 0
+  const isFollowUp = Boolean(followUpIndicators.some(indicator => lowerQuery.includes(indicator)) &&
+                     conversationHistory && conversationHistory.length > 0)
 
   // Extract data types
   const dataTypeKeywords = {

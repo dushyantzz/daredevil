@@ -320,6 +320,7 @@ function DirectEdge({ edge, isHighlighted }: { edge: GNNEdge; isHighlighted: boo
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
+          args={[new Float32Array(points.flatMap(p => [p.x, p.y, p.z])), 3]}
           count={points.length}
           array={new Float32Array(points.flatMap(p => [p.x, p.y, p.z]))}
           itemSize={3}
@@ -392,9 +393,6 @@ function HiddenRelationshipLine({
           transparent
           opacity={0.6}
           linewidth={isHighlighted ? 4 : 2}
-          dashed
-          dashSize={0.5}
-          gapSize={0.3}
         />
       </line>
 

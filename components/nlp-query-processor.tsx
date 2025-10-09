@@ -430,7 +430,7 @@ export function NLPQueryProcessor({ query, ufdrData, onResult, onError }: NLPQue
 
   const getMostActiveHour = (timeDistribution: any): string => {
     const hour = Object.entries(timeDistribution).reduce((max, [hour, count]) => 
-      count > max.count ? { hour, count } : max, { hour: '0', count: 0 }
+      (count as number) > max.count ? { hour, count: count as number } : max, { hour: '0', count: 0 }
     )
     return `${hour.hour}:00`
   }
@@ -443,7 +443,7 @@ export function NLPQueryProcessor({ query, ufdrData, onResult, onError }: NLPQue
     }, {})
 
     const peakHour = Object.entries(hourlyCounts).reduce((max, [hour, count]) => 
-      count > max.count ? { hour, count } : max, { hour: '0', count: 0 }
+      (count as number) > max.count ? { hour, count: count as number } : max, { hour: '0', count: 0 }
     )
 
     return `${peakHour.hour}:00-${parseInt(peakHour.hour) + 1}:00`

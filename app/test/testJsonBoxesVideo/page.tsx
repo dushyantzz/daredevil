@@ -2,15 +2,15 @@
 import BoundingBoxDrawer from '@/components/boundingBoxDrawer';
 
 const boxes =[
-    {"box_2d": [21, 319, 233, 612], "label": "book"},
-    {"box_2d": [187, 195, 387, 472], "label": "smartphone"},
-    {"box_2d": [356, 306, 933, 715], "label": "spiral notebook"},
-    {"box_2d": [416, 763, 625, 972], "label": "pen"},
-    {"box_2d": [25, 19, 402, 268], "label": "green plant"},
-    {"box_2d": [360, 0, 606, 187], "label": "wicker coaster"},
-    {"box_2d": [897, 406, 947, 756], "label": "orange pencil"},
-    {"box_2d": [356, 696, 702, 1000], "label": "pen case"},
-    {"box_2d": [0, 493, 262, 821], "label": "white headphones"}
+    {"x": 21, "y": 319, "width": 212, "height": 293, "label": "book"},
+    {"x": 187, "y": 195, "width": 200, "height": 277, "label": "smartphone"},
+    {"x": 356, "y": 306, "width": 577, "height": 409, "label": "spiral notebook"},
+    {"x": 416, "y": 763, "width": 209, "height": 209, "label": "pen"},
+    {"x": 25, "y": 19, "width": 377, "height": 249, "label": "green plant"},
+    {"x": 360, "y": 0, "width": 246, "height": 187, "label": "wicker coaster"},
+    {"x": 897, "y": 406, "width": 50, "height": 350, "label": "orange pencil"},
+    {"x": 356, "y": 696, "width": 346, "height": 304, "label": "pen case"},
+    {"x": 0, "y": 493, "width": 262, "height": 328, "label": "white headphones"}
   ]
 
 export default function ImageWithBoundingBoxes() {

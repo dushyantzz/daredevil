@@ -448,7 +448,6 @@ export function UFDR3DVisualizer({
       {/* Plotly Visualization */}
       <div className="w-full h-full">
         <Plot
-          ref={plotRef}
           data={plotData}
           layout={plotLayout}
           config={plotConfig}

@@ -61,7 +61,6 @@ export function CameraFeed({ camera, date = new Date(), onTimeUpdate }: CameraFe
         playsInline
         preload="metadata"
         onTimeUpdate={handleTimeUpdate}
-        loading="lazy"
       >
         <source src={camera.videoUrl || camera.thumbnail} type="video/mp4" />
       </video>

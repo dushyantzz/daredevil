@@ -214,7 +214,7 @@ class ConversationManager {
   clearOldConversations(hoursOld: number = 24) {
     const cutoffTime = Date.now() - (hoursOld * 60 * 60 * 1000)
     
-    for (const [id, state] of this.conversations.entries()) {
+    for (const [id, state] of Array.from(this.conversations.entries())) {
       const startTime = new Date(state.sessionStartTime).getTime()
       if (startTime < cutoffTime) {
         this.conversations.delete(id)
@@ -255,7 +255,7 @@ class ConversationManager {
     let activeCount = 0
     const oneHourAgo = Date.now() - (60 * 60 * 1000)
 
-    for (const state of this.conversations.values()) {
+    for (const state of Array.from(this.conversations.values())) {
       totalMessages += state.messages.length
       
       const lastMessage = state.messages[state.messages.length - 1]

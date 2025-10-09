@@ -55,27 +55,22 @@ const BoundingBoxDrawer = ({ imageUrl, boxes }: BoundingBoxDrawerProps) => {
         const yScale = height / image.height;
 
         boxes.forEach((box, i) => {
-          // Convert normalized coordinates to absolute coordinates
-          let [y1, x1, y2, x2] = box.box_2d;
-          y1 = (y1 / 1000) * height;
-          x1 = (x1 / 1000) * width;
-          y2 = (y2 / 1000) * height;
-          x2 = (x2 / 1000) * width;
-
-          // Ensure coordinates are in the correct order
-          if (x1 > x2) [x1, x2] = [x2, x1];
-          if (y1 > y2) [y1, y2] = [y2, y1];
+          // Use the x, y, width, height format
+          const x1 = box.x;
+          const y1 = box.y;
+          const width = box.width;
+          const height = box.height;
 
           const color = colors[i % colors.length];
 
           ctx.beginPath();
-          ctx.rect(x1, y1, x2 - x1, y2 - y1);
+          ctx.rect(x1, y1, width, height);
           ctx.lineWidth = 2;
           ctx.strokeStyle = color;
           ctx.stroke();
           ctx.font = '12px Arial';
           ctx.fillStyle = color;
-          ctx.fillText(box.label, x1 + 8, y1 + 6);
+          ctx.fillText(box.label || '', x1 + 8, y1 + 6);
         });
       }
     };

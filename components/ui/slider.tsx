@@ -3,7 +3,8 @@
 import * as React from "react"
 import { cn } from "@/lib/utils"
 
-interface SliderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
+interface SliderProps {
+  className?: string
   value?: number[]
   defaultValue?: number[]
   onValueChange?: (value: number[]) => void

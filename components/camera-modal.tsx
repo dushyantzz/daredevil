@@ -89,7 +89,6 @@ export function CameraModal({
             playsInline
             preload="metadata"
             onTimeUpdate={handleTimeUpdate}
-            loading="lazy"
           >
             <source src={camera.videoUrl || camera.thumbnail} type="video/mp4" />
           </video>
