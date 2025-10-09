@@ -1,10 +1,10 @@
-# Invesicore AI - AI-Powered Security Surveillance & Forensic Analysis Platform
+# Investicore AI - AI-Powered Security Surveillance & Forensic Analysis Platform
 
 ## Inspiration
 In an era where security cameras are everywhere but meaningful surveillance is scarce, we saw an opportunity to transform passive recording systems into intelligent security guardians. Our inspiration came from real-world incidents where crucial moments were missed despite having camera coverage, and the overwhelming challenge security personnel face in monitoring multiple video feeds simultaneously. We wanted to create a solution that doesn't just record but understands, analyzes, and acts, whether it's for local businesses like grocery markets to bigger organizations like hospitals and shopping malls.
 
 ## What it does
-Invesicore AI is an intelligent video surveillance and forensic analysis platform that combines real-time security monitoring with advanced forensic data analysis capabilities. Our platform provides comprehensive security solutions with cutting-edge AI-powered features.
+Investicore AI is an intelligent video surveillance and forensic analysis platform that combines real-time security monitoring with advanced forensic data analysis capabilities. Our platform provides comprehensive security solutions with cutting-edge AI-powered features.
 
 ### Core Security Features
 1. **Real-time Video Analysis**: Advanced video surveillance using Google's Gemini Visual Language Model for crime detection, suspicious activities, and life-threatening events
@@ -100,7 +100,7 @@ Our tech stack combines cutting-edge technologies for a comprehensive, scalable 
 * **📈 Vector Databases**: Semantic search, embeddings, and RAG system implementation
 * **🎨 3D Graphics Programming**: Three.js, WebGL optimization, and interactive 3D visualizations
 
-## What's next for Invesicore AI
+## What's next for Investicore AI
 Future enhancements we're planning:
 
 ### 🧠 Advanced AI & Machine Learning
@@ -183,4 +183,4 @@ Future enhancements we're planning:
 
 ---
 
-Our vision is to make Invesicore AI the leading platform for intelligent security surveillance and forensic analysis, combining cutting-edge AI technology with practical security solutions for businesses, organizations, and law enforcement agencies worldwide.
+Our vision is to make Investicore AI the leading platform for intelligent security surveillance and forensic analysis, combining cutting-edge AI technology with practical security solutions for businesses, organizations, and law enforcement agencies worldwide.

@@ -23,7 +23,7 @@ export default function HomeLink() {
     >
       <Image
         src="/DaredevilLogoRed.svg"
-        alt="Invesicore AI Logo"
+        alt="Investicore AI Logo"
         width={120}
         height={40}
         className="object-contain"

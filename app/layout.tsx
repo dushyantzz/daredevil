@@ -28,7 +28,7 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
 	metadataBase: new URL(defaultUrl),
-	title: "Invesicore AI",
+  title: "Investicore AI",
 	description: "AI-Powered Security Surveillance System",
 };
 
@@ -71,7 +71,7 @@ export default function RootLayout({
 							</div>
 							<footer className="w-full border-t border-t-foreground/10 p-6 flex justify-center bg-black text-white">
 								<div className="w-full max-w-6xl flex justify-between items-center px-5">
-									<div className="text-sm">© 2025 Invesicore AI. All rights reserved.</div>
+        <div className="text-sm">© 2025 Investicore AI. All rights reserved.</div>
 									<div className="text-sm text-gray-400">AI-Powered Security Surveillance System</div>
 								</div>
 							</footer>

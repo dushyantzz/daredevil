@@ -24,7 +24,7 @@ export default function Home() {
       <div className="z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-6 gap-8">
         {/* Left side with logo and name */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 md:w-1/2">
-          <h1 className="text-6xl font-bold mb-2 text-white">Invesicore AI</h1>
+            <h1 className="text-6xl font-bold mb-2 text-white">Investicore AI</h1>
           <p className="text-xl text-gray-300 max-w-lg">
             Advanced AI-powered security surveillance and forensic analysis platform with UFDR data processing capabilities
           </p>
@@ -39,7 +39,7 @@ export default function Home() {
 
         {/* Right side with explanation */}
         <div className="md:w-1/2 bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-          <h2 className="text-2xl font-semibold mb-4 text-white">Why Choose Invesicore AI?</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">Why Choose Investicore AI?</h2>
 
           <div className="space-y-4">
             <div className="flex items-start gap-3">

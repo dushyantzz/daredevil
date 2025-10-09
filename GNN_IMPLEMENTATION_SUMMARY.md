@@ -153,7 +153,7 @@ Next.js API Route → Python Subprocess → GNN Analysis → JSON Response → F
 ## 📁 File Structure
 
 ```
-invesicore-ai/
+investicore-ai/
 ├── scripts/
 │   ├── gnn_alias_resolver.py          # Main GNN analysis engine
 │   └── requirements_gnn.txt           # Python dependencies
