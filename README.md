@@ -1,10 +1,14 @@
-# Investicore AI - AI-Powered Security Surveillance & Forensic Analysis Platform
+# Daredevil - AI-Powered Security Surveillance & Forensic Analysis Platform
+
+**A comprehensive, intelligent video surveillance and forensic analysis platform with real-time monitoring, GNN-powered alias resolution, and advanced threat detection capabilities.**
+
+🔍 **Real-time Video Analysis** • 🤖 **AI-Powered Detection** • 🧠 **Graph Neural Networks** • 📊 **3D Visualization** • 🔒 **Advanced Security**
 
 ## Inspiration
 In an era where security cameras are everywhere but meaningful surveillance is scarce, we saw an opportunity to transform passive recording systems into intelligent security guardians. Our inspiration came from real-world incidents where crucial moments were missed despite having camera coverage, and the overwhelming challenge security personnel face in monitoring multiple video feeds simultaneously. We wanted to create a solution that doesn't just record but understands, analyzes, and acts, whether it's for local businesses like grocery markets to bigger organizations like hospitals and shopping malls.
 
 ## What it does
-Investicore AI is an intelligent video surveillance and forensic analysis platform that combines real-time security monitoring with advanced forensic data analysis capabilities. Our platform provides comprehensive security solutions with cutting-edge AI-powered features.
+Daredevil is an intelligent video surveillance and forensic analysis platform that combines real-time security monitoring with advanced forensic data analysis capabilities. Our platform provides comprehensive security solutions with cutting-edge AI-powered features.
 
 ### Core Security Features
 1. **Real-time Video Analysis**: Advanced video surveillance using Google's Gemini Visual Language Model for crime detection, suspicious activities, and life-threatening events
