@@ -2,8 +2,15 @@
 
 import { useRef, useMemo, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
+import type { ThreeElements } from '@react-three/fiber'
 import { InstancedMesh, Object3D, Color, Vector3 } from 'three'
 import { Html, Text } from '@react-three/drei'
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements extends ThreeElements {}
+  }
+}
 
 interface DataPoint {
   id: string
