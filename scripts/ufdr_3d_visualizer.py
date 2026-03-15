@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 UFDR 3D Visualization Processor
-Creates interactive 3D visualizations from UFDR forensic data
+Creates interactive 3D visualizations from UFDR forensic data.
+Output: JSON to stdout for the frontend 3D viewer.
 """
 
 import json
