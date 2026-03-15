@@ -44,7 +44,7 @@ def parse_timestamp(timestamp_str: str) -> datetime:
         
         # Fallback to current time
         return datetime.now()
-    except:
+    except Exception:
         return datetime.now()
 
 def extract_location_coords(location: str) -> Tuple[float, float]:

@@ -279,7 +279,7 @@ class RelationshipDetector:
                 return 0.4
             else:
                 return 0.2
-        except:
+        except Exception:
             return 0.0
     
     def detect_hidden_relationships(self, graph: nx.Graph) -> List[Dict[str, Any]]:
@@ -364,7 +364,7 @@ class RelationshipDetector:
             # Use Louvain community detection
             communities = nx.community.louvain_communities(graph)
             return [list(community) for community in communities]
-        except:
+        except Exception:
             # Fallback to simple clustering based on node attributes
             return self.simple_attribute_clustering(graph)
     
