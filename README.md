@@ -4,6 +4,7 @@
 
 🔍 **Real-time Video Analysis** • 🤖 **AI-Powered Detection** • 🧠 **Graph Neural Networks** • 📊 **3D Visualization** • 🔒 **Advanced Security**
 
+**Quick start:** `npm install && npm run dev`
 ## Getting Started
 
 - **Prerequisites:** Node.js 18+, npm, and (optional) Python 3.9+ for visualization scripts.
