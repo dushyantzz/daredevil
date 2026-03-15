@@ -10,7 +10,7 @@ Thank you for your interest in contributing to **Daredevil** — the AI-Powered 
    npm install
    npm run setup-visualization   # optional: for UFDR 3D visualization
    ```
-3. **Set up environment:** Copy `.env.example` to `.env.local` and add your API keys (see README).
+3. **Set up environment:** Copy `.env.example` to `.env.local` and add your API keys (see README). Never commit `.env.local`.
 4. **Run the dev server:**
    ```bash
    npm run dev
