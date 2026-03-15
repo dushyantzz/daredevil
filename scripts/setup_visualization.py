@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 UFDR 3D Visualization Setup Script
-Installs and configures the Python dependencies for 3D visualization
+Installs and configures the Python dependencies for 3D visualization.
+Run via: npm run setup-visualization
 """
 
 import subprocess
