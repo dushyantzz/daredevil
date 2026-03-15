@@ -4,6 +4,7 @@
 
 🔍 **Real-time Video Analysis** • 🤖 **AI-Powered Detection** • 🧠 **Graph Neural Networks** • 📊 **3D Visualization** • 🔒 **Advanced Security**
 
+Requires Node.js 18+.
 **Local dev:** run `npm run dev` then open http://localhost:3000.
 **Quick start:** `npm install && npm run dev`
 ## Getting Started
