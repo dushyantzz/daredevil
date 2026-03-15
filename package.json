@@ -1,5 +1,5 @@
 {
-  "name": "investicore-ai",
+  "name": "daredevil",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -44,7 +44,6 @@
     "critters": "^0.0.23",
     "date-fns": "^4.1.0",
     "framer-motion": "^12.4.3",
-    "framer-motion-3d": "^12.4.13",
     "gsap": "^3.13.0",
     "lucide-react": "^0.468.0",
     "next": "^15.5.4",
