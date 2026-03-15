@@ -5,6 +5,15 @@
 🔍 **Real-time Video Analysis** • 🤖 **AI-Powered Detection** • 🧠 **Graph Neural Networks** • 📊 **3D Visualization** • 🔒 **Advanced Security**
 
 **Local dev:** run `npm run dev` then open http://localhost:3000.
+**Quick start:** `npm install && npm run dev`
+## Getting Started
+
+- **Prerequisites:** Node.js 18+, npm, and (optional) Python 3.9+ for visualization scripts.
+- **Install:** `npm install` then optionally `npm run setup-visualization` for UFDR 3D support.
+- **Run:** `npm run dev` — open [http://localhost:3000](http://localhost:3000).
+- **Build:** `npm run build` then `npm start` for production.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup and how to open a pull request.
 
 ## Inspiration
 In an era where security cameras are everywhere but meaningful surveillance is scarce, we saw an opportunity to transform passive recording systems into intelligent security guardians. Our inspiration came from real-world incidents where crucial moments were missed despite having camera coverage, and the overwhelming challenge security personnel face in monitoring multiple video feeds simultaneously. We wanted to create a solution that doesn't just record but understands, analyzes, and acts, whether it's for local businesses like grocery markets to bigger organizations like hospitals and shopping malls.

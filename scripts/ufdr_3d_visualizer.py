@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 UFDR 3D Visualization Processor
-Creates interactive 3D visualizations from UFDR forensic data
+Creates interactive 3D visualizations from UFDR forensic data.
+Output: JSON to stdout for the frontend 3D viewer.
 """
 
 import json
@@ -44,7 +45,7 @@ def parse_timestamp(timestamp_str: str) -> datetime:
         
         # Fallback to current time
         return datetime.now()
-    except:
+    except Exception:
         return datetime.now()
 
 def extract_location_coords(location: str) -> Tuple[float, float]:

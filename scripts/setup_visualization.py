@@ -148,7 +148,7 @@ def test_visualization_script():
         # Clean up temporary file
         try:
             os.unlink(temp_file)
-        except:
+        except OSError:
             pass
 
 def main():
