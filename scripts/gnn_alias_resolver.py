@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 GNN-based Alias Resolution and Relationship Detection System
-Automatically resolves aliases and suggests hidden, indirect relationships between suspects across multiple devices/UFDRs
+Automatically resolves aliases and suggests hidden, indirect relationships between suspects across multiple devices/UFDRs.
+Output: JSON to stdout for the API route.
 """
 
 import json
