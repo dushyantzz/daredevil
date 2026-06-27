@@ -5,6 +5,13 @@ import { useFrame } from '@react-three/fiber'
 import { InstancedMesh, Object3D, Color, Vector3, BufferGeometry, Group } from 'three'
 import { Html, Text } from '@react-three/drei'
 
+function getClockTime(state: any): number {
+  const clock = state?.clock
+  if (clock && typeof clock.getElapsedTime === 'function') return clock.getElapsedTime()
+  if (clock && typeof clock.elapsedTime === 'number') return clock.elapsedTime
+  return 0
+}
+
 interface GNNNode {
   id: string
   x: number
@@ -134,7 +141,7 @@ export default function GNNDataVisualizer({
   useFrame((state) => {
     if (!nodesMeshRef.current || !data?.nodes || !isAnimating) return
 
-    const time = state.clock.elapsedTime
+    const time = getClockTime(state)
     const tempObject = new Object3D()
 
     for (let i = 0; i < data.nodes.length; i++) {
@@ -357,12 +364,12 @@ function HiddenRelationshipLine({
     if (!ref.current) return
 
     // Pulsing animation
-    const pulse = Math.sin(state.clock.elapsedTime * 3) * 0.3 + 0.7
+    const pulse = Math.sin(getClockTime(state) * 3) * 0.3 + 0.7
     ref.current.material.opacity = pulse * (isHighlighted ? 0.9 : 0.6)
 
     // Animate particle along the line
     if (particleRef.current) {
-      const t = (Math.sin(state.clock.elapsedTime * 2) + 1) / 2
+      const t = (Math.sin(getClockTime(state) * 2) + 1) / 2
       particleRef.current.position.lerpVectors(
         new Vector3(...relationship.sourcePos),
         new Vector3(...relationship.targetPos),
@@ -432,7 +439,7 @@ function AliasClusterVisualization({ cluster, isAnimating }: { cluster: AliasClu
   useFrame((state) => {
     if (!ref.current || !isAnimating) return
 
-    const time = state.clock.elapsedTime
+    const time = getClockTime(state)
     const scale = 1 + Math.sin(time * 0.5) * 0.1
     ref.current.scale.setScalar(scale)
   })
@@ -467,7 +474,7 @@ function CommunityClusterVisualization({ cluster, isAnimating }: { cluster: Comm
   useFrame((state) => {
     if (!ref.current || !isAnimating) return
 
-    const time = state.clock.elapsedTime
+    const time = getClockTime(state)
     const scale = 1 + Math.sin(time * 0.3 + cluster.center[0]) * 0.05
     ref.current.scale.setScalar(scale)
   })

@@ -3,6 +3,23 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import apiKeyManager from '@/utils/api-keys';
 
+const GEMINI_MODEL = "gemini-3.1-flash-lite-preview";
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const parseRetryDelayMs = (message: string): number => {
+    const secsMatch = message.match(/Please retry in\s+(\d+(?:\.\d+)?)s/i);
+    if (secsMatch?.[1]) {
+        return Math.ceil(Number(secsMatch[1]) * 1000);
+    }
+    return 0;
+};
+
+const isQuotaError = (error: any): boolean => {
+    const message = String(error?.message || "");
+    return error?.status === 429 || message.includes("quota") || message.includes("Too Many Requests");
+};
+
 // Get a Google API key from the manager
 let genAI: GoogleGenerativeAI;
 try {
@@ -32,7 +49,7 @@ export async function detectEvents(base64Image: string): Promise<{ events: Video
         }
 
         const model = genAI.getGenerativeModel({
-            model: "gemini-2.0-flash-exp",
+            model: GEMINI_MODEL,
             generationConfig: {
                 temperature: 0.2, // Lower temperature for faster, more deterministic responses
                 topK: 16, // Limit token selection for faster responses
@@ -103,10 +120,19 @@ Return a JSON object in this exact format:
 }`;
 
         try {
-            const result = await model.generateContent([
-                prompt,
-                imagePart,
-            ]);
+            let result;
+            try {
+                result = await model.generateContent([prompt, imagePart]);
+            } catch (firstError: any) {
+                if (!isQuotaError(firstError)) throw firstError;
+                const retryDelayMs = parseRetryDelayMs(String(firstError?.message || ""));
+                if (retryDelayMs > 0 && retryDelayMs <= 20000) {
+                    await sleep(retryDelayMs);
+                    result = await model.generateContent([prompt, imagePart]);
+                } else {
+                    throw new Error("GEMINI_QUOTA_EXCEEDED: Your Gemini quota for gemini-3.1-flash-lite-preview is exhausted. Please enable billing or wait for quota reset.");
+                }
+            }
 
             const response = await result.response;
             const text = response.text();
@@ -158,15 +184,28 @@ Return a JSON object in this exact format:
                     console.log('Retrying with a different API key');
 
                     // Retry the request (simplified for brevity)
-                    const retryResult = await genAI.getGenerativeModel({
-                        model: "gemini-2.0-flash-exp",
+                    const retryModel = genAI.getGenerativeModel({
+                        model: GEMINI_MODEL,
                         generationConfig: {
                             temperature: 0.2,
                             topK: 16,
                             topP: 0.8,
                             maxOutputTokens: 256
                         }
-                    }).generateContent([prompt, imagePart]);
+                    });
+                    let retryResult;
+                    try {
+                        retryResult = await retryModel.generateContent([prompt, imagePart]);
+                    } catch (quotaError: any) {
+                        if (!isQuotaError(quotaError)) throw quotaError;
+                        const retryDelayMs = parseRetryDelayMs(String(quotaError?.message || ""));
+                        if (retryDelayMs > 0 && retryDelayMs <= 20000) {
+                            await sleep(retryDelayMs);
+                            retryResult = await retryModel.generateContent([prompt, imagePart]);
+                        } else {
+                            throw new Error("GEMINI_QUOTA_EXCEEDED: Your Gemini quota for gemini-3.1-flash-lite-preview is exhausted. Please enable billing or wait for quota reset.");
+                        }
+                    }
 
                     const retryResponse = await retryResult.response;
                     const retryText = retryResponse.text();

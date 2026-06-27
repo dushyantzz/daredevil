@@ -26,9 +26,17 @@ export default function ParticleBackground() {
   // Animate particles
   useFrame((state) => {
     if (!ref.current) return
-    
-    ref.current.rotation.y = state.clock.elapsedTime * 0.05
-    ref.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.1) * 0.1
+
+    const clock: any = (state as any)?.clock
+    const t =
+      typeof clock?.getElapsedTime === 'function'
+        ? clock.getElapsedTime()
+        : typeof clock?.elapsedTime === 'number'
+          ? clock.elapsedTime
+          : 0
+
+    ref.current.rotation.y = t * 0.05
+    ref.current.rotation.x = Math.sin(t * 0.1) * 0.1
   })
 
   return (

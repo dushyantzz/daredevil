@@ -25,12 +25,9 @@ async function testModels() {
         
         // Test different model names
         const modelsToTest = [
-            'gemini-pro',
-            'gemini-1.5-pro',
-            'gemini-1.5-flash',
+            'gemini-3.1-flash-lite-preview',
+            'models/gemini-3.1-flash-lite-preview',
             'text-embedding-004',
-            'gemini-1.0-pro',
-            'models/gemini-pro',
             'models/text-embedding-004'
         ];
         

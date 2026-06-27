@@ -2,15 +2,8 @@
 
 import { useRef, useMemo, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
-import type { ThreeElements } from '@react-three/fiber'
 import { InstancedMesh, Object3D, Color, Vector3 } from 'three'
-import { Html, Text } from '@react-three/drei'
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements extends ThreeElements {}
-  }
-}
+import { Html, Line, Text } from '@react-three/drei'
 
 interface DataPoint {
   id: string
@@ -58,7 +51,7 @@ export default function DataVisualizer({
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
 
-  const { positions, colors, scales } = useMemo(() => {
+  const { positions, colors, scales, edgePairs, categoryClusters } = useMemo(() => {
 
     const positions: Vector3[] = []
     const colors: Color[] = []
@@ -78,7 +71,64 @@ export default function DataVisualizer({
 
     })
 
-    return { positions, colors, scales }
+    // --- Build lightweight "relationship" edges like the GNN view ---
+    // Connect points that share the same contact (chat/call) or same filename group (image/video) when available.
+    const byKey = new Map<string, number[]>()
+    data.forEach((p, idx) => {
+      const md = p.metadata || {}
+      const contact = md.contact || md.name || null
+      const filename = md.filename || md.file || null
+      const key =
+        contact ? `contact:${String(contact)}` :
+        filename ? `file:${String(filename)}` :
+        `cat:${p.category}`
+      const arr = byKey.get(key) || []
+      arr.push(idx)
+      byKey.set(key, arr)
+    })
+
+    const edgePairs: Array<[[number, number, number], [number, number, number]]> = []
+    const MAX_EDGES_PER_GROUP = 12
+    for (const [, indices] of byKey.entries()) {
+      if (indices.length < 2) continue
+      const slice = indices.slice(0, MAX_EDGES_PER_GROUP)
+      for (let i = 0; i < slice.length - 1; i++) {
+        const a = positions[slice[i]]
+        const b = positions[slice[i + 1]]
+        edgePairs.push(
+          [[a.x, a.y, a.z], [b.x, b.y, b.z]]
+        )
+      }
+    }
+
+    // --- Category cluster bubbles (like community/alias spheres) ---
+    const clusterMap = new Map<string, number[]>()
+    data.forEach((p, idx) => {
+      const arr = clusterMap.get(p.category) || []
+      arr.push(idx)
+      clusterMap.set(p.category, arr)
+    })
+
+    const categoryClusters = Array.from(clusterMap.entries()).map(([category, idxs]) => {
+      const center = new Vector3(0, 0, 0)
+      idxs.forEach(i => center.add(positions[i]))
+      center.multiplyScalar(1 / Math.max(1, idxs.length))
+
+      let maxDist = 0.5
+      idxs.forEach(i => {
+        maxDist = Math.max(maxDist, center.distanceTo(positions[i]))
+      })
+
+      return {
+        category,
+        center: [center.x, center.y, center.z] as [number, number, number],
+        radius: Math.min(8, Math.max(1.2, maxDist + 0.8)),
+        color: CATEGORY_COLORS[category] || CATEGORY_COLORS.default,
+        count: idxs.length
+      }
+    })
+
+    return { positions, colors, scales, edgePairs, categoryClusters }
 
   }, [data])
 
@@ -86,7 +136,13 @@ export default function DataVisualizer({
 
     if (!meshRef.current || !isAnimating) return
 
-    const time = state.clock.elapsedTime
+    const clock: any = (state as any)?.clock
+    const time =
+      typeof clock?.getElapsedTime === 'function'
+        ? clock.getElapsedTime()
+        : typeof clock?.elapsedTime === 'number'
+          ? clock.elapsedTime
+          : 0
     const temp = new Object3D()
 
     for (let i = 0; i < data.length; i++) {
@@ -189,6 +245,38 @@ export default function DataVisualizer({
 
   return (
     <>
+      {/* GNN-style connection edges (thick + visible) */}
+      {edgePairs.slice(0, 120).map((pair, idx) => (
+        <Line
+          key={`edge-${idx}`}
+          points={pair}
+          color="#FF1493"
+          lineWidth={1.5}
+          transparent
+          opacity={0.55}
+          depthWrite={false}
+        />
+      ))}
+
+      {/* Category cluster bubbles */}
+      {categoryClusters.map((cluster) => (
+        <mesh key={`cluster-${cluster.category}`} position={cluster.center}>
+          <sphereGeometry args={[cluster.radius, 20, 20]} />
+          <meshBasicMaterial
+            color={cluster.color}
+            transparent
+            opacity={0.12}
+            wireframe
+          />
+          <Html position={[0, cluster.radius + 0.6, 0]}>
+            <div className="bg-black/40 backdrop-blur-sm text-white px-2 py-1 rounded text-xs whitespace-nowrap pointer-events-none border border-white/10">
+              {cluster.category.toUpperCase()} ({cluster.count})
+            </div>
+          </Html>
+        </mesh>
+      ))}
+
+      {/* @ts-ignore */}
       <instancedMesh
         ref={meshRef}
         args={[undefined as any, undefined as any, data.length]}
@@ -197,13 +285,15 @@ export default function DataVisualizer({
         onClick={handleClick}
       >
 
+        {/* @ts-ignore */}
         <sphereGeometry args={[0.3, 32, 32]} />
 
+        {/* @ts-ignore */}
         <meshStandardMaterial
           metalness={0.7}
           roughness={0.2}
           emissive="#ffffff"
-          emissiveIntensity={0.3}
+          emissiveIntensity={0.55}
         />
 
       </instancedMesh>
@@ -259,19 +349,23 @@ export default function DataVisualizer({
 
       {selectedIndex !== null && (
 
-        <mesh position={positions[selectedIndex].toArray()}>
+        <>
+          {/* @ts-ignore */}
+          <mesh position={positions[selectedIndex].toArray()}>
 
-          <sphereGeometry args={[0.5, 32, 32]} />
+            {/* @ts-ignore */}
+            <sphereGeometry args={[0.5, 32, 32]} />
 
-          <meshBasicMaterial
-            color={CATEGORY_COLORS[data[selectedIndex].category]}
-            transparent
-            opacity={0.2}
-            wireframe
-          />
+            {/* @ts-ignore */}
+            <meshBasicMaterial
+              color={CATEGORY_COLORS[data[selectedIndex].category]}
+              transparent
+              opacity={0.2}
+              wireframe
+            />
 
-        </mesh>
-
+          </mesh>
+        </>
       )}
     </>
   )

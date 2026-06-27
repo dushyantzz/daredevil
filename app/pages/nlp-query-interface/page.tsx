@@ -273,7 +273,7 @@ export default function NLPQueryInterfacePage() {
       }, {})
       
       const topLocations = Object.entries(locationCounts)
-        .sort(([,a], [,b]) => b - a)
+        .sort(([,a], [,b]) => (b as number) - (a as number))
         .slice(0, 3)
       
       return {

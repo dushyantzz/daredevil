@@ -1,9 +1,9 @@
 'use client'
 
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, PerspectiveCamera, Environment, Grid } from '@react-three/drei'
+import { OrbitControls, PerspectiveCamera, Grid } from '@react-three/drei'
 import { Suspense } from 'react'
-import { EffectComposer, Bloom } from '@react-three/postprocessing'
+import * as THREE from 'three'
 import LoadingFallback from './LoadingFallback'
 
 interface Scene3DProps {
@@ -23,11 +23,24 @@ export default function Scene3D({
         shadows
         gl={{ 
           antialias: true, 
-          alpha: true,
+          alpha: false,
           powerPreference: 'high-performance'
+        }}
+        onCreated={({ gl, scene }) => {
+          // Make background deterministic (prevents washed-out/white clears).
+          const bg = new THREE.Color('#0a0a0a')
+          gl.setClearColor(bg, 1)
+          scene.background = bg
+          // Deterministic output across Three versions.
+          gl.toneMapping = THREE.NoToneMapping
+          gl.toneMappingExposure = 1
+          // @ts-expect-error - outputColorSpace exists on newer Three
+          gl.outputColorSpace = THREE.SRGBColorSpace
         }}
         className="bg-[#0a0a0a]"
       >
+        {/* Ensure a consistent dark clear color */}
+        <color attach="background" args={['#0a0a0a']} />
         {/* Camera Setup */}
         <PerspectiveCamera
           makeDefault
@@ -38,10 +51,10 @@ export default function Scene3D({
         />
 
         {/* Lighting */}
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={0.25} />
         <directionalLight
           position={[10, 10, 5]}
-          intensity={1}
+          intensity={0.75}
           castShadow
           shadow-mapSize-width={2048}
           shadow-mapSize-height={2048}
@@ -53,7 +66,7 @@ export default function Scene3D({
         <fog attach="fog" args={['#0a0a0a', 10, 50]} />
 
         {/* Environment */}
-        <Environment preset="night" />
+        {/* Disabled for now: HDR environment lighting can wash out the scene depending on renderer defaults */}
 
         {/* Grid Floor */}
         <Grid
@@ -94,16 +107,7 @@ export default function Scene3D({
         </Suspense>
 
         {/* Post Processing Effects */}
-        {enableBloom && (
-          <EffectComposer>
-            <Bloom
-              intensity={0.5}
-              luminanceThreshold={0.9}
-              luminanceSmoothing={0.9}
-              height={300}
-            />
-          </EffectComposer>
-        )}
+        {/* Disabled: @react-three/postprocessing is not compatible with current R3F build in this repo */}
       </Canvas>
     </div>
   )

@@ -70,8 +70,8 @@ export async function POST(request: Request) {
       `Video: ${moment.videoName}\nTimestamp: ${moment.timestamp}\nDescription: ${moment.description}\nDangerous: ${moment.isDangerous ? 'Yes' : 'No'}\n`
     ).join('\n')
 
-    // Initialize the Gemini model (use gemini-2.0-flash-exp for best performance)
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+    // Initialize the Gemini model
+    const model = genAI.getGenerativeModel({ model: "gemini-3.1-flash-lite-preview" });
 
     // Generate content with Gemini
     const prompt = `You are an expert at analyzing video safety data. Provide concise, insightful summaries of video analysis data, focusing on safety patterns and potential concerns.

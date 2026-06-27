@@ -1,24 +1,18 @@
 "use client"
 
 import Link from "next/link"
-import Beams from "@/components/Beams"
 import AnimatedText from "@/components/animated-text"
 import { Brain, Network, Search } from "lucide-react"
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white relative overflow-hidden">
-      <div className="absolute inset-0" style={{ width: '100%', height: '100%' }}>
-        <Beams
-          beamWidth={2}
-          beamHeight={15}
-          beamNumber={12}
-          lightColor="#ffffff"
-          speed={2}
-          noiseIntensity={1.75}
-          scale={0.2}
-          rotation={-35}
-        />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.25),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(168,85,247,0.2),transparent_35%)]" />
+      <div className="home-beams-overlay" aria-hidden="true">
+        <span className="home-beam home-beam-1" />
+        <span className="home-beam home-beam-2" />
+        <span className="home-beam home-beam-3" />
+        <span className="home-beam home-beam-4" />
       </div>
 
       <div className="z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-6 gap-8">
