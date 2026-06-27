@@ -7,12 +7,6 @@ import { createClient } from "@/utils/supabase/server";
 import { AuthButtons } from "./auth-buttons";
 
 export default async function AuthButton() {
-  const supabase = await createClient();
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
   if (!hasEnvVars) {
     return (
       <>
@@ -49,5 +43,11 @@ export default async function AuthButton() {
       </>
     );
   }
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
   return <AuthButtons user={user} signOutAction={signOutAction} />;
 }

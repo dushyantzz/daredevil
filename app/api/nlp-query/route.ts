@@ -432,7 +432,7 @@ async function generateResponse(
   try {
     const apiKey = apiKeyManager.getGeminiApiKey()
     const genAI = new GoogleGenerativeAI(apiKey)
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' })
+    const model = genAI.getGenerativeModel({ model: 'gemini-3.1-flash-lite-preview' })
 
     // Build context from relevant data
     let contextString = ''

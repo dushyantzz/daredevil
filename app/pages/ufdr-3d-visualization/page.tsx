@@ -3,11 +3,24 @@
 import { useState, useCallback, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Upload, Play, Pause, Eye, Maximize2, Grid3x3, Box } from 'lucide-react'
-import Scene3D from '@/components/3d-visualization/Scene3D'
-import DataVisualizer from '@/components/3d-visualization/DataVisualizer'
-import InteractiveControls from '@/components/3d-visualization/InteractiveControls'
+import dynamic from 'next/dynamic'
 import FloatingUI from '@/components/3d-visualization/FloatingUI'
-import ParticleBackground from '@/components/3d-visualization/ParticleBackground'
+
+const Scene3D = dynamic(() => import('@/components/3d-visualization/Scene3D'), {
+  ssr: false,
+})
+
+const DataVisualizer = dynamic(() => import('@/components/3d-visualization/DataVisualizer'), {
+  ssr: false,
+})
+
+const InteractiveControls = dynamic(() => import('@/components/3d-visualization/InteractiveControls'), {
+  ssr: false,
+})
+
+const ParticleBackground = dynamic(() => import('@/components/3d-visualization/ParticleBackground'), {
+  ssr: false,
+})
 
 interface DataPoint {
   id: string

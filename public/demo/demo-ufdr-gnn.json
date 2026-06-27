@@ -1,0 +1,82 @@
+{
+  "chats": [
+    {
+      "contact": "R. Sharma",
+      "message": "Use the backup SIM after 9 PM.",
+      "platform": "WhatsApp",
+      "timestamp": "2026-03-18T17:00:00Z",
+      "location": "Delhi",
+      "type": "received",
+      "phone": "+919800000111",
+      "email": "r.sharma@proton.me"
+    },
+    {
+      "contact": "Raj Sharma",
+      "message": "Old number is inactive, switch to new handle.",
+      "platform": "Telegram",
+      "timestamp": "2026-03-18T17:20:00Z",
+      "location": "Delhi",
+      "type": "sent",
+      "phone": "+919800000111",
+      "email": "raj.s@proton.me"
+    },
+    {
+      "contact": "R Sharma",
+      "message": "Meet near Gate 3, no calls.",
+      "platform": "Signal",
+      "timestamp": "2026-03-19T07:10:00Z",
+      "location": "Noida",
+      "type": "received",
+      "phone": "+919800000111",
+      "email": "r.s.alias@proton.me"
+    },
+    {
+      "contact": "Vikram",
+      "message": "Package moved through Sector 18.",
+      "platform": "WhatsApp",
+      "timestamp": "2026-03-19T07:40:00Z",
+      "location": "Noida",
+      "type": "sent",
+      "phone": "+919811111222",
+      "email": "vikram.track@mailbox.org"
+    }
+  ],
+  "calls": [
+    {
+      "contact": "Raj Sharma",
+      "type": "outgoing",
+      "duration": 96,
+      "timestamp": "2026-03-19T08:00:00Z",
+      "location": "Noida",
+      "status": "answered",
+      "phone": "+919800000111"
+    },
+    {
+      "contact": "R. Sharma",
+      "type": "incoming",
+      "duration": 44,
+      "timestamp": "2026-03-19T08:12:00Z",
+      "location": "Delhi",
+      "status": "answered",
+      "phone": "+919800000111"
+    }
+  ],
+  "images": [],
+  "videos": [],
+  "appData": [
+    {
+      "appName": "WhatsApp",
+      "category": "Communication",
+      "lastUsed": "2026-03-19T08:15:00Z",
+      "dataSize": 420000,
+      "location": "Noida",
+      "usageTime": 42,
+      "version": "2.24.6"
+    }
+  ],
+  "metadata": {
+    "caseNumber": "DEMO-GNN-001",
+    "extractionDate": "2026-03-20T06:00:00Z",
+    "notes": "Alias-heavy demo: same entity appears as R. Sharma / Raj Sharma / R Sharma."
+  }
+}

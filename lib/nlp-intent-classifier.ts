@@ -46,7 +46,7 @@ export const classifyIntent = async (
   try {
     const apiKey = apiKeyManager.getGeminiApiKey()
     const genAI = new GoogleGenerativeAI(apiKey)
-    const model = genAI.getGenerativeModel({ model: 'gemini-pro' })
+    const model = genAI.getGenerativeModel({ model: 'gemini-3.1-flash-lite-preview' })
 
     const systemPrompt = `You are an NLP intent classifier for a UFDR (Universal Forensic Data Repository) analysis system.
 

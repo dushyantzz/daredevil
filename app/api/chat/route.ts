@@ -44,7 +44,7 @@ ${contextMessage}`;
 
     console.log('Sending request to Gemini...')
     // Initialize the Gemini model
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+    const model = genAI.getGenerativeModel({ model: "gemini-3.1-flash-lite-preview" });
 
     // Generate content with Gemini with optimized settings
     const result = await model.generateContent({

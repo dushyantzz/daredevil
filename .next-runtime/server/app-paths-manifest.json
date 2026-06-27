@@ -1,0 +1,4 @@
+{
+  "/api/send-whatsapp/route": "app/api/send-whatsapp/route.js",
+  "/protected/page": "app/protected/page.js"
+}

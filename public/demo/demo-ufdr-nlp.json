@@ -1,0 +1,66 @@
+{
+  "chats": [
+    {
+      "contact": "Meera",
+      "message": "Transfer of 4 crates delayed due to rain; reroute to warehouse B.",
+      "platform": "WhatsApp",
+      "timestamp": "2026-03-14T09:05:00Z",
+      "location": "Jaipur",
+      "type": "received"
+    },
+    {
+      "contact": "Amit",
+      "message": "Meeting with supplier moved to 16:30 at Connaught Place.",
+      "platform": "Telegram",
+      "timestamp": "2026-03-14T10:15:00Z",
+      "location": "New Delhi",
+      "type": "sent"
+    },
+    {
+      "contact": "Meera",
+      "message": "Vehicle MH12AB7781 crossed toll at 21:12.",
+      "platform": "WhatsApp",
+      "timestamp": "2026-03-14T21:20:00Z",
+      "location": "Gurugram",
+      "type": "received"
+    }
+  ],
+  "calls": [
+    {
+      "contact": "Supplier Desk",
+      "type": "incoming",
+      "duration": 185,
+      "timestamp": "2026-03-14T16:42:00Z",
+      "location": "New Delhi",
+      "status": "answered"
+    }
+  ],
+  "images": [
+    {
+      "filename": "invoice_7781.jpg",
+      "size": 512340,
+      "timestamp": "2026-03-14T21:30:00Z",
+      "location": "Gurugram",
+      "width": 1600,
+      "height": 900,
+      "type": "JPEG"
+    }
+  ],
+  "videos": [],
+  "appData": [
+    {
+      "appName": "Drive",
+      "category": "Storage",
+      "lastUsed": "2026-03-14T22:00:00Z",
+      "dataSize": 950000,
+      "location": "New Delhi",
+      "usageTime": 26,
+      "version": "3.2.1"
+    }
+  ],
+  "metadata": {
+    "caseNumber": "DEMO-NLP-001",
+    "extractionDate": "2026-03-15T07:30:00Z",
+    "notes": "NLP-focused sample for timeline, location, contact, and keyword queries."
+  }
+}

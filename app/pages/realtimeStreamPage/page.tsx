@@ -416,7 +416,8 @@ export default function Page() {
           if (event.isDangerous) {
             const alertPayload = {
               title: "Dangerous Activity Detected",
-              description: `At ${newTimestamp.timestamp}, the following dangerous activity was detected: ${event.description}`
+              description: `At ${newTimestamp.timestamp}, the following dangerous activity was detected: ${event.description}`,
+              fullExplanation: result.rawResponse
             }
 
             // Send WhatsApp notification (primary method)
@@ -487,7 +488,12 @@ export default function Page() {
       }
     } catch (error) {
       console.error("Error analyzing frame:", error)
-      setError("Error analyzing frame. Please try again.")
+      const message = error instanceof Error ? error.message : String(error)
+      if (message.includes("GEMINI_QUOTA_EXCEEDED") || message.includes("Too Many Requests")) {
+        setError("Gemini quota exceeded for gemini-3.1-flash-lite-preview. Enable billing or wait for quota reset, then retry.")
+      } else {
+        setError("Error analyzing frame. Please try again.")
+      }
       if (isRecordingRef.current) {
         stopRecording()
       }
