@@ -1,0 +1,1547 @@
+{
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\app-build-manifest.json": {
+    "mtime": 1774628273.314213,
+    "ast_hash": "b8fcfde03c3dcd5dbe644af8cdca9739",
+    "semantic_hash": "b8fcfde03c3dcd5dbe644af8cdca9739"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\build-manifest.json": {
+    "mtime": 1774628273.314213,
+    "ast_hash": "35f1562458fde1518b2c9808eefc3fc1",
+    "semantic_hash": "35f1562458fde1518b2c9808eefc3fc1"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\cache\\config.json": {
+    "mtime": 1774546228.7374158,
+    "ast_hash": "f26cd30defe0aba95a5db838204d5370",
+    "semantic_hash": "f26cd30defe0aba95a5db838204d5370"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\cache\\next-devtools-config.json": {
+    "mtime": 1774546227.2130196,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\package.json": {
+    "mtime": 1774628192.9753318,
+    "ast_hash": "a6b7eb31b5dcf3835a90ea0d201f21e3",
+    "semantic_hash": "a6b7eb31b5dcf3835a90ea0d201f21e3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\prerender-manifest.json": {
+    "mtime": 1774628201.9742384,
+    "ast_hash": "b8cad1e7b2fae1b4c9e39be8b3822a70",
+    "semantic_hash": "b8cad1e7b2fae1b4c9e39be8b3822a70"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\react-loadable-manifest.json": {
+    "mtime": 1774628273.3125286,
+    "ast_hash": "6e194c64978f8c911d203172c74230c8",
+    "semantic_hash": "6e194c64978f8c911d203172c74230c8"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\routes-manifest.json": {
+    "mtime": 1774628201.953032,
+    "ast_hash": "2ca5f77cb6df3dd9a80a4f4ff4100048",
+    "semantic_hash": "2ca5f77cb6df3dd9a80a4f4ff4100048"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\app-paths-manifest.json": {
+    "mtime": 1774628272.449572,
+    "ast_hash": "1ee1eb60e0f5ca38eeb49a185b3e4a31",
+    "semantic_hash": "1ee1eb60e0f5ca38eeb49a185b3e4a31"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\app\\api\\send-whatsapp\\route.js": {
+    "mtime": 1774628272.3913481,
+    "ast_hash": "e5c5e2a86803893f1f6dce52f7cb3d95",
+    "semantic_hash": "e5c5e2a86803893f1f6dce52f7cb3d95"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\app\\api\\send-whatsapp\\route_client-reference-manifest.js": {
+    "mtime": 1774628273.3211956,
+    "ast_hash": "c48bba440481da7d6295c280b08538b6",
+    "semantic_hash": "c48bba440481da7d6295c280b08538b6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\app\\protected\\page.js": {
+    "mtime": 1774628208.9791646,
+    "ast_hash": "e6ac62fda3d7fd7b6658c5d16fb6452b",
+    "semantic_hash": "e6ac62fda3d7fd7b6658c5d16fb6452b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\app\\protected\\page_client-reference-manifest.js": {
+    "mtime": 1774628273.3187191,
+    "ast_hash": "6c5dc77ed498755ef3be6930eadc540a",
+    "semantic_hash": "6c5dc77ed498755ef3be6930eadc540a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\edge-runtime-webpack.js": {
+    "mtime": 1774628204.1363845,
+    "ast_hash": "374b0de5a610ee3ee5133e553c40e19f",
+    "semantic_hash": "374b0de5a610ee3ee5133e553c40e19f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\interception-route-rewrite-manifest.js": {
+    "mtime": 1774628204.1353736,
+    "ast_hash": "2deb9feee2c80698c754f18a02766889",
+    "semantic_hash": "2deb9feee2c80698c754f18a02766889"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\middleware-build-manifest.js": {
+    "mtime": 1774628273.3173935,
+    "ast_hash": "4dc6647f58dedfc99e331e8429e885a0",
+    "semantic_hash": "4dc6647f58dedfc99e331e8429e885a0"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\middleware-manifest.json": {
+    "mtime": 1774628204.1363845,
+    "ast_hash": "ddc90c1ce99d60771a94c034f1f2caad",
+    "semantic_hash": "ddc90c1ce99d60771a94c034f1f2caad"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\middleware-react-loadable-manifest.js": {
+    "mtime": 1774628273.3173935,
+    "ast_hash": "58aadd875252e3cd67afb61ae92c28e6",
+    "semantic_hash": "58aadd875252e3cd67afb61ae92c28e6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\middleware.js": {
+    "mtime": 1774628204.1373847,
+    "ast_hash": "8c4ef4010d9bf460bcd4b9e70fda7dd3",
+    "semantic_hash": "8c4ef4010d9bf460bcd4b9e70fda7dd3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\next-font-manifest.js": {
+    "mtime": 1774628273.3173935,
+    "ast_hash": "f7097bf7c93c1cbb4c118491ca6d2b04",
+    "semantic_hash": "f7097bf7c93c1cbb4c118491ca6d2b04"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\next-font-manifest.json": {
+    "mtime": 1774628273.3173935,
+    "ast_hash": "d51420cd4aa5d37d6719849cf36d0d6f",
+    "semantic_hash": "d51420cd4aa5d37d6719849cf36d0d6f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\pages-manifest.json": {
+    "mtime": 1774628272.449572,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\server-reference-manifest.js": {
+    "mtime": 1774628272.4588993,
+    "ast_hash": "6f413dbe90a4d017e9908cfee34fbe22",
+    "semantic_hash": "6f413dbe90a4d017e9908cfee34fbe22"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\server-reference-manifest.json": {
+    "mtime": 1774628272.4625566,
+    "ast_hash": "2fb4a62bf1b52d774b6253cf818aa857",
+    "semantic_hash": "2fb4a62bf1b52d774b6253cf818aa857"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\static\\webpack\\633457081244afec._.hot-update.json": {
+    "mtime": 1774628204.1422968,
+    "ast_hash": "777077caf8fd96cfb711faacdcbf6a47",
+    "semantic_hash": "777077caf8fd96cfb711faacdcbf6a47"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\@radix-ui.js": {
+    "mtime": 1774628208.9698386,
+    "ast_hash": "382be0572ea3c318f34f91881f62515f",
+    "semantic_hash": "382be0572ea3c318f34f91881f62515f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\@supabase.js": {
+    "mtime": 1774628208.9698386,
+    "ast_hash": "30e00b754247fd62c6347511c62ecc6f",
+    "semantic_hash": "30e00b754247fd62c6347511c62ecc6f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\@swc.js": {
+    "mtime": 1774628208.9698386,
+    "ast_hash": "ee99b28eb5d6ed221f5295430d2498c9",
+    "semantic_hash": "ee99b28eb5d6ed221f5295430d2498c9"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\aria-hidden.js": {
+    "mtime": 1774628208.9908655,
+    "ast_hash": "d9c63c4048d19269c608cd407aa61391",
+    "semantic_hash": "d9c63c4048d19269c608cd407aa61391"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\asynckit.js": {
+    "mtime": 1774628272.3852215,
+    "ast_hash": "3b3e0b20a7784f73d01782560b3fe587",
+    "semantic_hash": "3b3e0b20a7784f73d01782560b3fe587"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\axios.js": {
+    "mtime": 1774628272.4227066,
+    "ast_hash": "f8e0765e0253029eb44a595bfb097920",
+    "semantic_hash": "f8e0765e0253029eb44a595bfb097920"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\buffer-equal-constant-time.js": {
+    "mtime": 1774628272.4588993,
+    "ast_hash": "5e113970aee242753d368ac20bca5c4e",
+    "semantic_hash": "5e113970aee242753d368ac20bca5c4e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\call-bind-apply-helpers.js": {
+    "mtime": 1774628272.3997095,
+    "ast_hash": "fe04f9f96e289502a6041ad139b3c667",
+    "semantic_hash": "fe04f9f96e289502a6041ad139b3c667"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\call-bound.js": {
+    "mtime": 1774628272.449572,
+    "ast_hash": "c3caea5f8216301d604066ce1e18b89f",
+    "semantic_hash": "c3caea5f8216301d604066ce1e18b89f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\class-variance-authority.js": {
+    "mtime": 1774628208.9886642,
+    "ast_hash": "4aa9a7983399996e12b6acd10cbedfc0",
+    "semantic_hash": "4aa9a7983399996e12b6acd10cbedfc0"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\clsx.js": {
+    "mtime": 1774628208.9886642,
+    "ast_hash": "34cb5843a7cd847955482f586129746e",
+    "semantic_hash": "34cb5843a7cd847955482f586129746e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\combined-stream.js": {
+    "mtime": 1774628272.449572,
+    "ast_hash": "f8af54e326cc31a529842bd249b6349b",
+    "semantic_hash": "f8af54e326cc31a529842bd249b6349b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\cookie.js": {
+    "mtime": 1774628208.9886642,
+    "ast_hash": "3480523d10389c68b05b2b718cd4649a",
+    "semantic_hash": "3480523d10389c68b05b2b718cd4649a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\dayjs.js": {
+    "mtime": 1774628272.4227066,
+    "ast_hash": "c7e1618ff5c334af702f7786b461b123",
+    "semantic_hash": "c7e1618ff5c334af702f7786b461b123"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\debug.js": {
+    "mtime": 1774628272.4022186,
+    "ast_hash": "76ba328027481baae227a23b275b0487",
+    "semantic_hash": "76ba328027481baae227a23b275b0487"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\delayed-stream.js": {
+    "mtime": 1774628272.448553,
+    "ast_hash": "e96b2108242ddf2b54dd6ec191977eb2",
+    "semantic_hash": "e96b2108242ddf2b54dd6ec191977eb2"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\dunder-proto.js": {
+    "mtime": 1774628272.448553,
+    "ast_hash": "099de0d62e24bd1807a0bfd34259bb43",
+    "semantic_hash": "099de0d62e24bd1807a0bfd34259bb43"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\ecdsa-sig-formatter.js": {
+    "mtime": 1774628272.4142265,
+    "ast_hash": "e96f82acf8aeedb3ec1202225951b915",
+    "semantic_hash": "e96f82acf8aeedb3ec1202225951b915"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\es-define-property.js": {
+    "mtime": 1774628272.448553,
+    "ast_hash": "1b1b34993ce722b9eb3ec437a3d20444",
+    "semantic_hash": "1b1b34993ce722b9eb3ec437a3d20444"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\es-errors.js": {
+    "mtime": 1774628272.386245,
+    "ast_hash": "78e51c711d7f9e76c8e027d81ff7f447",
+    "semantic_hash": "78e51c711d7f9e76c8e027d81ff7f447"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\es-object-atoms.js": {
+    "mtime": 1774628272.447169,
+    "ast_hash": "e2e167bd1436121ac89756159dc48b8f",
+    "semantic_hash": "e2e167bd1436121ac89756159dc48b8f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\es-set-tostringtag.js": {
+    "mtime": 1774628272.447169,
+    "ast_hash": "cb3078c25cc978a88fadf6a68f0fe5e8",
+    "semantic_hash": "cb3078c25cc978a88fadf6a68f0fe5e8"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\follow-redirects.js": {
+    "mtime": 1774628272.4132264,
+    "ast_hash": "b57e24fdda26a975b78e4f61b1954ede",
+    "semantic_hash": "b57e24fdda26a975b78e4f61b1954ede"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\form-data.js": {
+    "mtime": 1774628272.4132264,
+    "ast_hash": "bd391829ec8a537637ba05c04cdc3757",
+    "semantic_hash": "bd391829ec8a537637ba05c04cdc3757"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\framer-motion.js": {
+    "mtime": 1774628208.968403,
+    "ast_hash": "af78571079864f1cdf27bf8b41444302",
+    "semantic_hash": "af78571079864f1cdf27bf8b41444302"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\function-bind.js": {
+    "mtime": 1774628272.4132264,
+    "ast_hash": "eb7b56fbb47e47e1d415f9a0f48f5fff",
+    "semantic_hash": "eb7b56fbb47e47e1d415f9a0f48f5fff"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\get-intrinsic.js": {
+    "mtime": 1774628272.4461322,
+    "ast_hash": "09fc3d4b04597a9d8a3aea65567c734f",
+    "semantic_hash": "09fc3d4b04597a9d8a3aea65567c734f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\get-nonce.js": {
+    "mtime": 1774628208.9886642,
+    "ast_hash": "45c1df432ad88b7bd0f9c57b6a711577",
+    "semantic_hash": "45c1df432ad88b7bd0f9c57b6a711577"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\get-proto.js": {
+    "mtime": 1774628272.4047544,
+    "ast_hash": "fa5276c5277f120c459ffad25d123fe3",
+    "semantic_hash": "fa5276c5277f120c459ffad25d123fe3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\gopd.js": {
+    "mtime": 1774628272.4132264,
+    "ast_hash": "df5f8dc7870dcf4f3d4f68ab72761b46",
+    "semantic_hash": "df5f8dc7870dcf4f3d4f68ab72761b46"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\has-flag.js": {
+    "mtime": 1774628272.4440248,
+    "ast_hash": "da73158e2daad2f4c59aa1defc6a5623",
+    "semantic_hash": "da73158e2daad2f4c59aa1defc6a5623"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\has-symbols.js": {
+    "mtime": 1774628272.4132264,
+    "ast_hash": "24663e10b1ec4aa47c704f8d10de91fb",
+    "semantic_hash": "24663e10b1ec4aa47c704f8d10de91fb"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\has-tostringtag.js": {
+    "mtime": 1774628272.4430141,
+    "ast_hash": "5da52ed26ab4404fa13c06f971dd6ec6",
+    "semantic_hash": "5da52ed26ab4404fa13c06f971dd6ec6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\hasown.js": {
+    "mtime": 1774628272.4418144,
+    "ast_hash": "97190914888cbdc533a4f76140268eb9",
+    "semantic_hash": "97190914888cbdc533a4f76140268eb9"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\iceberg-js.js": {
+    "mtime": 1774628208.9886642,
+    "ast_hash": "cdf10927318cd5515864e48865f865ff",
+    "semantic_hash": "cdf10927318cd5515864e48865f865ff"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\jsonwebtoken.js": {
+    "mtime": 1774628272.3842125,
+    "ast_hash": "37c7b83dd0e46845946e326b24c723c9",
+    "semantic_hash": "37c7b83dd0e46845946e326b24c723c9"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\jwa.js": {
+    "mtime": 1774628272.4418144,
+    "ast_hash": "daea831975333cacbf349ea76a4fb93d",
+    "semantic_hash": "daea831975333cacbf349ea76a4fb93d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\jws.js": {
+    "mtime": 1774628272.3878357,
+    "ast_hash": "a26dcf7b29d2fa27b0d9fa53401917a9",
+    "semantic_hash": "a26dcf7b29d2fa27b0d9fa53401917a9"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\lodash.includes.js": {
+    "mtime": 1774628272.4418144,
+    "ast_hash": "76940a0e472ad649742b02ef8984010d",
+    "semantic_hash": "76940a0e472ad649742b02ef8984010d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\lodash.isboolean.js": {
+    "mtime": 1774628272.4418144,
+    "ast_hash": "c738e30f51be68ab960f1c0581b50c6b",
+    "semantic_hash": "c738e30f51be68ab960f1c0581b50c6b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\lodash.isinteger.js": {
+    "mtime": 1774628272.4418144,
+    "ast_hash": "98b0e53d435313acc37ab3ef3efe2d45",
+    "semantic_hash": "98b0e53d435313acc37ab3ef3efe2d45"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\lodash.isnumber.js": {
+    "mtime": 1774628272.4324691,
+    "ast_hash": "cc47ace7ac5d44157dbdc0ee05dfc37d",
+    "semantic_hash": "cc47ace7ac5d44157dbdc0ee05dfc37d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\lodash.isplainobject.js": {
+    "mtime": 1774628272.4324691,
+    "ast_hash": "7bd7785dd24edfb012c0b48ab702515e",
+    "semantic_hash": "7bd7785dd24edfb012c0b48ab702515e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\lodash.isstring.js": {
+    "mtime": 1774628272.4324691,
+    "ast_hash": "ed676eb46bc6a7456f90ed99297a4740",
+    "semantic_hash": "ed676eb46bc6a7456f90ed99297a4740"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\lodash.once.js": {
+    "mtime": 1774628272.4324691,
+    "ast_hash": "e1ecd741f5c818ee3b7475f865379add",
+    "semantic_hash": "e1ecd741f5c818ee3b7475f865379add"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\lucide-react.js": {
+    "mtime": 1774628208.968403,
+    "ast_hash": "b002288ce36645bd4655e6246143a103",
+    "semantic_hash": "b002288ce36645bd4655e6246143a103"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\math-intrinsics.js": {
+    "mtime": 1774628272.3842125,
+    "ast_hash": "4d8c0d91f0e69498d284c07bff1310a7",
+    "semantic_hash": "4d8c0d91f0e69498d284c07bff1310a7"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\mime-db.js": {
+    "mtime": 1774628272.4132264,
+    "ast_hash": "6b0f8d270775fe947bf61188bcbc4f5f",
+    "semantic_hash": "6b0f8d270775fe947bf61188bcbc4f5f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\mime-types.js": {
+    "mtime": 1774628272.4314694,
+    "ast_hash": "b01dda7e2f753f22146e9159f56c589d",
+    "semantic_hash": "b01dda7e2f753f22146e9159f56c589d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\motion-dom.js": {
+    "mtime": 1774628208.968403,
+    "ast_hash": "f6ddcd54019e67e6f4324dd83cc5c504",
+    "semantic_hash": "f6ddcd54019e67e6f4324dd83cc5c504"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\motion-utils.js": {
+    "mtime": 1774628208.968403,
+    "ast_hash": "2ef9c9a38ef0812407419416b7d84c8b",
+    "semantic_hash": "2ef9c9a38ef0812407419416b7d84c8b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\ms.js": {
+    "mtime": 1774628272.4324691,
+    "ast_hash": "457afccf15f27a8826a5c998b21fe393",
+    "semantic_hash": "457afccf15f27a8826a5c998b21fe393"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\next-themes.js": {
+    "mtime": 1774628208.9886642,
+    "ast_hash": "82c64d4103ec5ffededbb5148d8eee25",
+    "semantic_hash": "82c64d4103ec5ffededbb5148d8eee25"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\next.js": {
+    "mtime": 1774628272.3812244,
+    "ast_hash": "79cae0c6c63a72f2aff9ea6c043c0928",
+    "semantic_hash": "79cae0c6c63a72f2aff9ea6c043c0928"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\nprogress.js": {
+    "mtime": 1774628208.97108,
+    "ast_hash": "72ca78d7720faee1ce9fa5ca9a814445",
+    "semantic_hash": "72ca78d7720faee1ce9fa5ca9a814445"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\object-inspect.js": {
+    "mtime": 1774628272.41085,
+    "ast_hash": "5a8af95e45a925da7d4ef0f4b7f8346f",
+    "semantic_hash": "5a8af95e45a925da7d4ef0f4b7f8346f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\proxy-from-env.js": {
+    "mtime": 1774628272.4314694,
+    "ast_hash": "e19195e910a4deecfa06e34d96cdd7a1",
+    "semantic_hash": "e19195e910a4deecfa06e34d96cdd7a1"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\qs.js": {
+    "mtime": 1774628272.3878357,
+    "ast_hash": "475739e6cfc63cbae1a612f53c71ad31",
+    "semantic_hash": "475739e6cfc63cbae1a612f53c71ad31"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\react-remove-scroll-bar.js": {
+    "mtime": 1774628208.9698386,
+    "ast_hash": "b689fae156e72b3cd80b38b181799224",
+    "semantic_hash": "b689fae156e72b3cd80b38b181799224"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\react-remove-scroll.js": {
+    "mtime": 1774628208.9698386,
+    "ast_hash": "659eff024c74e397b95a3877705dced7",
+    "semantic_hash": "659eff024c74e397b95a3877705dced7"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\react-style-singleton.js": {
+    "mtime": 1774628208.9698386,
+    "ast_hash": "058f4f739d3c5b4397d57936a9073ef3",
+    "semantic_hash": "058f4f739d3c5b4397d57936a9073ef3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\safe-buffer.js": {
+    "mtime": 1774628272.4279659,
+    "ast_hash": "f08ab717936d141e36ff556450bd1516",
+    "semantic_hash": "f08ab717936d141e36ff556450bd1516"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\scmp.js": {
+    "mtime": 1774628272.4047544,
+    "ast_hash": "53531a35d86dc29f8ba6bab7342d2515",
+    "semantic_hash": "53531a35d86dc29f8ba6bab7342d2515"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\semver.js": {
+    "mtime": 1774628272.3836863,
+    "ast_hash": "039b85dc7ce283bacbe9ce2734731782",
+    "semantic_hash": "039b85dc7ce283bacbe9ce2734731782"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\side-channel-list.js": {
+    "mtime": 1774628272.4258523,
+    "ast_hash": "cda2103a80b434385174aa2b6f509873",
+    "semantic_hash": "cda2103a80b434385174aa2b6f509873"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\side-channel-map.js": {
+    "mtime": 1774628272.4243774,
+    "ast_hash": "9abbce6471c2ae1f5180ada5dda280ba",
+    "semantic_hash": "9abbce6471c2ae1f5180ada5dda280ba"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\side-channel-weakmap.js": {
+    "mtime": 1774628272.4243774,
+    "ast_hash": "1c05d69ef8b58a9b1d73c3b878dea3fa",
+    "semantic_hash": "1c05d69ef8b58a9b1d73c3b878dea3fa"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\side-channel.js": {
+    "mtime": 1774628272.4243774,
+    "ast_hash": "7d6be05f01fb824e285f86f9b35bbfeb",
+    "semantic_hash": "7d6be05f01fb824e285f86f9b35bbfeb"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\supports-color.js": {
+    "mtime": 1774628272.4243774,
+    "ast_hash": "3bf8faf1df5b11899ca59e67f39c2891",
+    "semantic_hash": "3bf8faf1df5b11899ca59e67f39c2891"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\tailwind-merge.js": {
+    "mtime": 1774628208.9886642,
+    "ast_hash": "aaa1c6813da308d2298bb1f94084f7f3",
+    "semantic_hash": "aaa1c6813da308d2298bb1f94084f7f3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\tslib.js": {
+    "mtime": 1774628208.9877038,
+    "ast_hash": "6d4045103e9f94f3e6c786040d40e2a7",
+    "semantic_hash": "6d4045103e9f94f3e6c786040d40e2a7"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\twilio.js": {
+    "mtime": 1774628272.40424,
+    "ast_hash": "e0ae7ad84cada14d1a6d6bf107f8464d",
+    "semantic_hash": "e0ae7ad84cada14d1a6d6bf107f8464d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\use-callback-ref.js": {
+    "mtime": 1774628208.9698386,
+    "ast_hash": "6ec01a7a02e8a0415d59ea535ad8288b",
+    "semantic_hash": "6ec01a7a02e8a0415d59ea535ad8288b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\use-sidecar.js": {
+    "mtime": 1774628208.9886642,
+    "ast_hash": "f71e88dd96498410ebe7f33d2661e93f",
+    "semantic_hash": "f71e88dd96498410ebe7f33d2661e93f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\vendor-chunks\\xmlbuilder.js": {
+    "mtime": 1774628272.3842125,
+    "ast_hash": "04dafb1476cb63a14d6014306ffd1c57",
+    "semantic_hash": "04dafb1476cb63a14d6014306ffd1c57"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\server\\webpack-runtime.js": {
+    "mtime": 1774628272.3740432,
+    "ast_hash": "192b2c9d0f7af1cf32a755be4f911aca",
+    "semantic_hash": "192b2c9d0f7af1cf32a755be4f911aca"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\chunks\\_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js": {
+    "mtime": 1774628214.3021333,
+    "ast_hash": "b15ba1281a9e1f29eb2587590d53d6b6",
+    "semantic_hash": "b15ba1281a9e1f29eb2587590d53d6b6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\chunks\\app-pages-internals.js": {
+    "mtime": 1774628214.3010626,
+    "ast_hash": "09063bfe86c131c9e7d6e6d094a07eff",
+    "semantic_hash": "09063bfe86c131c9e7d6e6d094a07eff"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\chunks\\app\\api\\send-whatsapp\\route.js": {
+    "mtime": 1774628273.32831,
+    "ast_hash": "905d9155d06667c42f1a3b045c5528a1",
+    "semantic_hash": "905d9155d06667c42f1a3b045c5528a1"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\chunks\\app\\layout.js": {
+    "mtime": 1774628216.1592698,
+    "ast_hash": "cab90b27e449d9cb7beecdeeba46ec4e",
+    "semantic_hash": "cab90b27e449d9cb7beecdeeba46ec4e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\chunks\\app\\protected\\page.js": {
+    "mtime": 1774628214.3031409,
+    "ast_hash": "483e35439fdcecb69fbf1d2ee77ee8c8",
+    "semantic_hash": "483e35439fdcecb69fbf1d2ee77ee8c8"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\chunks\\main-app.js": {
+    "mtime": 1774628214.2877026,
+    "ast_hash": "687873a834a38da341e5e604701630f4",
+    "semantic_hash": "687873a834a38da341e5e604701630f4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\chunks\\polyfills.js": {
+    "mtime": 1774628198.5117915,
+    "ast_hash": "846118c33b2c0e922d7b3a7676f81f6f",
+    "semantic_hash": "846118c33b2c0e922d7b3a7676f81f6f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\chunks\\webpack.js": {
+    "mtime": 1774628273.3173935,
+    "ast_hash": "d5570b94bdbfb58dc70a76a79ccd3076",
+    "semantic_hash": "d5570b94bdbfb58dc70a76a79ccd3076"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\development\\_buildManifest.js": {
+    "mtime": 1774628273.3173935,
+    "ast_hash": "97f1258b3dd30d37ba33a4c4ed741eed",
+    "semantic_hash": "97f1258b3dd30d37ba33a4c4ed741eed"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\development\\_ssgManifest.js": {
+    "mtime": 1774628273.3173935,
+    "ast_hash": "abee47769bf307639ace4945f9cfd4ff",
+    "semantic_hash": "abee47769bf307639ace4945f9cfd4ff"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\webpack\\059c2bfc0d6c0134.webpack.hot-update.json": {
+    "mtime": 1774628216.1900911,
+    "ast_hash": "81a5bb6b8b785fd9c5a8314d6b094e36",
+    "semantic_hash": "81a5bb6b8b785fd9c5a8314d6b094e36"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\webpack\\633457081244afec._.hot-update.json": {
+    "mtime": 1774628214.3010626,
+    "ast_hash": "777077caf8fd96cfb711faacdcbf6a47",
+    "semantic_hash": "777077caf8fd96cfb711faacdcbf6a47"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\webpack\\app\\layout.059c2bfc0d6c0134.hot-update.js": {
+    "mtime": 1774628216.1888626,
+    "ast_hash": "4ead9ceae363aeb758e337e86b2aa401",
+    "semantic_hash": "4ead9ceae363aeb758e337e86b2aa401"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\webpack\\e44c6d02226f271d.webpack.hot-update.json": {
+    "mtime": 1774628273.3173935,
+    "ast_hash": "b6662f151c2ad42831b98053a318d32e",
+    "semantic_hash": "b6662f151c2ad42831b98053a318d32e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\webpack\\webpack.059c2bfc0d6c0134.hot-update.js": {
+    "mtime": 1774628216.1888626,
+    "ast_hash": "0c24e8a1b2997a7075151fa1b3de7ac1",
+    "semantic_hash": "0c24e8a1b2997a7075151fa1b3de7ac1"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\static\\webpack\\webpack.e44c6d02226f271d.hot-update.js": {
+    "mtime": 1774628273.3187191,
+    "ast_hash": "79007538ab1a977792cba6b141328ceb",
+    "semantic_hash": "79007538ab1a977792cba6b141328ceb"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\types\\app\\api\\send-whatsapp\\route.ts": {
+    "mtime": 1774628272.467408,
+    "ast_hash": "ef9edf89cbf97a55dc9afcc5707a52ed",
+    "semantic_hash": "ef9edf89cbf97a55dc9afcc5707a52ed"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\types\\app\\layout.ts": {
+    "mtime": 1774628272.4546988,
+    "ast_hash": "3391a29044042b08224232b550a2aa7a",
+    "semantic_hash": "3391a29044042b08224232b550a2aa7a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\types\\app\\protected\\page.ts": {
+    "mtime": 1774628272.4546988,
+    "ast_hash": "84929bd40e6afddf1c83b6fd9bc019aa",
+    "semantic_hash": "84929bd40e6afddf1c83b6fd9bc019aa"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\types\\cache-life.d.ts": {
+    "mtime": 1774628272.4625566,
+    "ast_hash": "338b7d65881c83c1ccd19867bc2462b0",
+    "semantic_hash": "338b7d65881c83c1ccd19867bc2462b0"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\types\\package.json": {
+    "mtime": 1774628272.4625566,
+    "ast_hash": "b305354b5d3207dc798e87449005a1de",
+    "semantic_hash": "b305354b5d3207dc798e87449005a1de"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\types\\routes.d.ts": {
+    "mtime": 1774628202.4822912,
+    "ast_hash": "5fe37c6d4e0cb72ca66176415c04fad8",
+    "semantic_hash": "5fe37c6d4e0cb72ca66176415c04fad8"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\.next-runtime\\types\\validator.ts": {
+    "mtime": 1774628202.4922898,
+    "ast_hash": "d369f882402948c13f7b68eb952bdc6d",
+    "semantic_hash": "d369f882402948c13f7b68eb952bdc6d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\(auth-pages)\\forgot-password\\page.tsx": {
+    "mtime": 1772613554.290083,
+    "ast_hash": "c7123a2593c448cd27f7baa93730e011",
+    "semantic_hash": "c7123a2593c448cd27f7baa93730e011"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\(auth-pages)\\layout.tsx": {
+    "mtime": 1772613554.290083,
+    "ast_hash": "1a70203f30aa113f95f8eecf4cc4a38b",
+    "semantic_hash": "1a70203f30aa113f95f8eecf4cc4a38b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\(auth-pages)\\sign-in\\page.tsx": {
+    "mtime": 1772613554.2911427,
+    "ast_hash": "500233bf4e738c0e25d566fc5345a14a",
+    "semantic_hash": "500233bf4e738c0e25d566fc5345a14a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\(auth-pages)\\sign-up\\page.tsx": {
+    "mtime": 1772613554.2921362,
+    "ast_hash": "6d7cbf1c94ae66674752c62e22aa62ff",
+    "semantic_hash": "6d7cbf1c94ae66674752c62e22aa62ff"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\(auth-pages)\\smtp-message.tsx": {
+    "mtime": 1772613554.293102,
+    "ast_hash": "4b2cf4de9a2a806646cd7cea246d7b3f",
+    "semantic_hash": "4b2cf4de9a2a806646cd7cea246d7b3f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\actions.ts": {
+    "mtime": 1772613554.293102,
+    "ast_hash": "883278b429916e7e16128282f095e3e4",
+    "semantic_hash": "883278b429916e7e16128282f095e3e4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\analyze\\route.ts": {
+    "mtime": 1772613554.29409,
+    "ast_hash": "33eec51ef647f9c40067ba8173b13de4",
+    "semantic_hash": "33eec51ef647f9c40067ba8173b13de4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\chat\\route.ts": {
+    "mtime": 1774630136.4989214,
+    "ast_hash": "bb3a8d9b57d2750e6f7ce86602819c59",
+    "semantic_hash": "bb3a8d9b57d2750e6f7ce86602819c59"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\conversation\\route.ts": {
+    "mtime": 1772613554.2976258,
+    "ast_hash": "490d5c3706e43117e6840141350ca381",
+    "semantic_hash": "490d5c3706e43117e6840141350ca381"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\get-twilio-config\\route.ts": {
+    "mtime": 1772613554.2986288,
+    "ast_hash": "c034f63c1256811b03e7b51f1d682231",
+    "semantic_hash": "c034f63c1256811b03e7b51f1d682231"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\gnn-analysis\\route.ts": {
+    "mtime": 1772613554.2996242,
+    "ast_hash": "9ed36ae985111d1275a0433f47adf70c",
+    "semantic_hash": "9ed36ae985111d1275a0433f47adf70c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\key-status\\route.ts": {
+    "mtime": 1772613554.301634,
+    "ast_hash": "7c5bc7d265cc8b06b9e56deca606f1fb",
+    "semantic_hash": "7c5bc7d265cc8b06b9e56deca606f1fb"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\nlp-query\\route.ts": {
+    "mtime": 1774630136.5213356,
+    "ast_hash": "dd9fe00d79632706a3a24b080cc8aa8c",
+    "semantic_hash": "dd9fe00d79632706a3a24b080cc8aa8c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\send-email\\route.ts": {
+    "mtime": 1772613554.3056397,
+    "ast_hash": "89f048cffbe902d0a3b1e83ade305373",
+    "semantic_hash": "89f048cffbe902d0a3b1e83ade305373"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\send-whatsapp\\route.ts": {
+    "mtime": 1774630136.508335,
+    "ast_hash": "76f6e72c4246afc37c6de89d97be8245",
+    "semantic_hash": "76f6e72c4246afc37c6de89d97be8245"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\summary\\route.ts": {
+    "mtime": 1774630136.4979084,
+    "ast_hash": "3a3842a390f536d543c7400e836841a3",
+    "semantic_hash": "3a3842a390f536d543c7400e836841a3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\ufdr-3d-visualization\\route.ts": {
+    "mtime": 1772613554.308627,
+    "ast_hash": "1c14350d981fda3f06a588bbc4c84fe4",
+    "semantic_hash": "1c14350d981fda3f06a588bbc4c84fe4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\ufdr-ingest\\route.ts": {
+    "mtime": 1772613554.310647,
+    "ast_hash": "507faf3f65f6bcf65dec06be0d6abbb6",
+    "semantic_hash": "507faf3f65f6bcf65dec06be0d6abbb6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\api\\upload\\route.ts": {
+    "mtime": 1772613554.311624,
+    "ast_hash": "daefca0aa26c37830485b54d155e4dd2",
+    "semantic_hash": "daefca0aa26c37830485b54d155e4dd2"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\auth\\callback\\route.ts": {
+    "mtime": 1772613554.3130178,
+    "ast_hash": "ed8bcfc33b0c53db464d9eaff3bfa34c",
+    "semantic_hash": "ed8bcfc33b0c53db464d9eaff3bfa34c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\components\\Timeline.tsx": {
+    "mtime": 1772613554.3151946,
+    "ast_hash": "d02ec265a42b8415797af757a3af9bfc",
+    "semantic_hash": "d02ec265a42b8415797af757a3af9bfc"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\example-navbar\\page.tsx": {
+    "mtime": 1772613554.3161957,
+    "ast_hash": "d02b59540d19e5004dae36c418808fbc",
+    "semantic_hash": "d02b59540d19e5004dae36c418808fbc"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\layout.tsx": {
+    "mtime": 1772613554.318192,
+    "ast_hash": "e8d3aa7e57ce6f11515c945a4943672a",
+    "semantic_hash": "e8d3aa7e57ce6f11515c945a4943672a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\page.tsx": {
+    "mtime": 1774630136.5123382,
+    "ast_hash": "ecf59bc7a0d03decee46f56453721eb2",
+    "semantic_hash": "ecf59bc7a0d03decee46f56453721eb2"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\mainOptions\\page.tsx": {
+    "mtime": 1772613554.3231933,
+    "ast_hash": "a2a74d7b00b040958d694c3baa81b5ef",
+    "semantic_hash": "a2a74d7b00b040958d694c3baa81b5ef"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\nlp-query-interface\\page.tsx": {
+    "mtime": 1772618475.6696796,
+    "ast_hash": "cfe6d629b51ce3f5d41206ab13de8ca2",
+    "semantic_hash": "cfe6d629b51ce3f5d41206ab13de8ca2"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\realtimeStreamPage\\actions.ts": {
+    "mtime": 1774630136.5213356,
+    "ast_hash": "e102aaa0eb9173b3c3547b01604eec64",
+    "semantic_hash": "e102aaa0eb9173b3c3547b01604eec64"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\realtimeStreamPage\\page.tsx": {
+    "mtime": 1774630136.508335,
+    "ast_hash": "c5e362895236d14671d55d3463d7925a",
+    "semantic_hash": "c5e362895236d14671d55d3463d7925a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\saved-videos\\page.tsx": {
+    "mtime": 1774630136.525334,
+    "ast_hash": "44a6b9e63d450eb14c8c9aa395f602c7",
+    "semantic_hash": "44a6b9e63d450eb14c8c9aa395f602c7"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\statistics\\page.tsx": {
+    "mtime": 1772613554.329193,
+    "ast_hash": "7f675eb681fd54c01e2f953dacfd0129",
+    "semantic_hash": "7f675eb681fd54c01e2f953dacfd0129"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\ufdr-3d-visualization-gnn\\page.tsx": {
+    "mtime": 1774546053.8118005,
+    "ast_hash": "875cef27e664ff829d441928c930c072",
+    "semantic_hash": "875cef27e664ff829d441928c930c072"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\ufdr-3d-visualization-new\\page.tsx": {
+    "mtime": 1774546053.7620804,
+    "ast_hash": "610fd3b5e9c7cf40cc30e84fc618638f",
+    "semantic_hash": "610fd3b5e9c7cf40cc30e84fc618638f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\ufdr-3d-visualization\\page.tsx": {
+    "mtime": 1774545996.344805,
+    "ast_hash": "7be815ab601dae8812b774b8437d8436",
+    "semantic_hash": "7be815ab601dae8812b774b8437d8436"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\ufdr-analysis\\page.tsx": {
+    "mtime": 1772613554.333192,
+    "ast_hash": "64d530e30f2608322f74025a9c21510c",
+    "semantic_hash": "64d530e30f2608322f74025a9c21510c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\uploadOneVideoPage\\page.tsx": {
+    "mtime": 1772613554.3365712,
+    "ast_hash": "edd9539bf1fbce1b5013c7932bb145b7",
+    "semantic_hash": "edd9539bf1fbce1b5013c7932bb145b7"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\upload\\actions.ts": {
+    "mtime": 1774630136.4989214,
+    "ast_hash": "92470dea412fb504c455022bd446cc7e",
+    "semantic_hash": "92470dea412fb504c455022bd446cc7e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\upload\\page.tsx": {
+    "mtime": 1774630136.5113351,
+    "ast_hash": "84a9783ef6b4cb0975c44bb3ce0e2dc6",
+    "semantic_hash": "84a9783ef6b4cb0975c44bb3ce0e2dc6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\pages\\video\\[id]\\page.tsx": {
+    "mtime": 1772613554.337575,
+    "ast_hash": "39d2e7eb9b44bab59945901d000297ba",
+    "semantic_hash": "39d2e7eb9b44bab59945901d000297ba"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\protected\\page.tsx": {
+    "mtime": 1772613554.337575,
+    "ast_hash": "399ec70e16e164bb8d82bee3fb59af28",
+    "semantic_hash": "399ec70e16e164bb8d82bee3fb59af28"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\protected\\reset-password\\page.tsx": {
+    "mtime": 1772613554.3395753,
+    "ast_hash": "ef4ce75608c48def6949d4fa7c21542d",
+    "semantic_hash": "ef4ce75608c48def6949d4fa7c21542d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\test\\email-test\\page.tsx": {
+    "mtime": 1772613554.3409886,
+    "ast_hash": "cd99b6ce0d205f9bc2451fd340c0b3a5",
+    "semantic_hash": "cd99b6ce0d205f9bc2451fd340c0b3a5"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\test\\security-alert\\page.tsx": {
+    "mtime": 1772613554.341996,
+    "ast_hash": "4b6669df49ec4ffd988dbb21e550750b",
+    "semantic_hash": "4b6669df49ec4ffd988dbb21e550750b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\test\\testEmail\\page.tsx": {
+    "mtime": 1772613554.3431191,
+    "ast_hash": "ede7dd7a8859a0526a4ff9b3032331fb",
+    "semantic_hash": "ede7dd7a8859a0526a4ff9b3032331fb"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\test\\testJsonBoxesPage\\page.tsx": {
+    "mtime": 1772613554.344127,
+    "ast_hash": "617ae05a94c49b1e5a990fe52e410462",
+    "semantic_hash": "617ae05a94c49b1e5a990fe52e410462"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\test\\testJsonBoxesVideo\\page.tsx": {
+    "mtime": 1772613554.3455656,
+    "ast_hash": "ca66e1b0ad77b610a9a45af99c9c6eea",
+    "semantic_hash": "ca66e1b0ad77b610a9a45af99c9c6eea"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\test\\whatsapp-setup\\page.tsx": {
+    "mtime": 1772613554.3466046,
+    "ast_hash": "cc1dbf1cd439e0cae1cc2d80024c992b",
+    "semantic_hash": "cc1dbf1cd439e0cae1cc2d80024c992b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\test\\whatsapp-test\\page.tsx": {
+    "mtime": 1772613554.3466046,
+    "ast_hash": "5380de2d8ad7a667dbae68996f8fbc0d",
+    "semantic_hash": "5380de2d8ad7a667dbae68996f8fbc0d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\types.ts": {
+    "mtime": 1772613554.350022,
+    "ast_hash": "679d7bb52204bb7a661d18a6d26afa1b",
+    "semantic_hash": "679d7bb52204bb7a661d18a6d26afa1b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\types\\speech-recognition.d.ts": {
+    "mtime": 1772613554.3510056,
+    "ast_hash": "31b230e5ecbc93ba1c3aa8566c9abab2",
+    "semantic_hash": "31b230e5ecbc93ba1c3aa8566c9abab2"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components.json": {
+    "mtime": 1772613554.3530092,
+    "ast_hash": "7215839aacc5a0504675d9a70245369b",
+    "semantic_hash": "7215839aacc5a0504675d9a70245369b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\3d-visualization\\Animations.tsx": {
+    "mtime": 1772613554.3530092,
+    "ast_hash": "3ebbdbfbd6eacac9412b8b8007894f77",
+    "semantic_hash": "3ebbdbfbd6eacac9412b8b8007894f77"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\3d-visualization\\DataVisualizer.tsx": {
+    "mtime": 1774630136.5243351,
+    "ast_hash": "8cb21024e5b1a14c22736dc025132a86",
+    "semantic_hash": "8cb21024e5b1a14c22736dc025132a86"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\3d-visualization\\FloatingUI.tsx": {
+    "mtime": 1772613554.3550563,
+    "ast_hash": "cfa658cce51fae5791774f2405d7aad4",
+    "semantic_hash": "cfa658cce51fae5791774f2405d7aad4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\3d-visualization\\InteractiveControls.tsx": {
+    "mtime": 1772613554.3550563,
+    "ast_hash": "d456c9f570935bc8e394dbc27e0b19e1",
+    "semantic_hash": "d456c9f570935bc8e394dbc27e0b19e1"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\3d-visualization\\LoadingFallback.tsx": {
+    "mtime": 1772613554.3560836,
+    "ast_hash": "94970207e39d4d4baadaf4de81a91637",
+    "semantic_hash": "94970207e39d4d4baadaf4de81a91637"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\3d-visualization\\ParticleBackground.tsx": {
+    "mtime": 1774630136.4989214,
+    "ast_hash": "ae1a0ed065bb6fc1b60a565770f3f7d4",
+    "semantic_hash": "ae1a0ed065bb6fc1b60a565770f3f7d4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\3d-visualization\\Scene3D.tsx": {
+    "mtime": 1774630136.5103345,
+    "ast_hash": "bc9a947259b9b2a31416f17d7c555c3c",
+    "semantic_hash": "bc9a947259b9b2a31416f17d7c555c3c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\Beams.jsx": {
+    "mtime": 1772613554.3582635,
+    "ast_hash": "c574275b0c73962fb55d2e297e528841",
+    "semantic_hash": "c574275b0c73962fb55d2e297e528841"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\PillNav.tsx": {
+    "mtime": 1772613554.3592772,
+    "ast_hash": "ec84c2d153940dd5b73842cd63e22ca8",
+    "semantic_hash": "ec84c2d153940dd5b73842cd63e22ca8"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\animated-text.tsx": {
+    "mtime": 1772613554.3592772,
+    "ast_hash": "3c4ea192b0148012f6237639fda04e41",
+    "semantic_hash": "3c4ea192b0148012f6237639fda04e41"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\auth-buttons.tsx": {
+    "mtime": 1772613554.3603134,
+    "ast_hash": "c37109281ef8697a61187874eac46f93",
+    "semantic_hash": "c37109281ef8697a61187874eac46f93"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\bounding-boxes-overlay.tsx": {
+    "mtime": 1772613554.3612962,
+    "ast_hash": "d509d1e29a27f873f61948976ae5cadd",
+    "semantic_hash": "d509d1e29a27f873f61948976ae5cadd"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\boundingBoxDrawer.tsx": {
+    "mtime": 1772613554.3612962,
+    "ast_hash": "85f815485d339a567e6fbde23cad655f",
+    "semantic_hash": "85f815485d339a567e6fbde23cad655f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\camera-feed.tsx": {
+    "mtime": 1772613554.3612962,
+    "ast_hash": "c1b491bf227924f4b72c350c0117f488",
+    "semantic_hash": "c1b491bf227924f4b72c350c0117f488"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\camera-modal.tsx": {
+    "mtime": 1772613554.3623195,
+    "ast_hash": "b8f9b9fd7484412fecaff727f624506d",
+    "semantic_hash": "b8f9b9fd7484412fecaff727f624506d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\chat-interface.tsx": {
+    "mtime": 1772613554.3623195,
+    "ast_hash": "a73ffab06e331799475552f393dcdb0c",
+    "semantic_hash": "a73ffab06e331799475552f393dcdb0c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\date-picker.tsx": {
+    "mtime": 1772613554.3633268,
+    "ast_hash": "74de4fcf51f38240067bf3a33fbc39f0",
+    "semantic_hash": "74de4fcf51f38240067bf3a33fbc39f0"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\deploy-button.tsx": {
+    "mtime": 1772613554.3633268,
+    "ast_hash": "622dd04c1ffb7d3c904cb109aacc2ed5",
+    "semantic_hash": "622dd04c1ffb7d3c904cb109aacc2ed5"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\env-var-warning.tsx": {
+    "mtime": 1772613554.3633268,
+    "ast_hash": "1c4fc6ebb16e53cb5bf4b574cb7aea41",
+    "semantic_hash": "1c4fc6ebb16e53cb5bf4b574cb7aea41"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\event-feed.tsx": {
+    "mtime": 1772613554.3633268,
+    "ast_hash": "0a9cff20b3008dc7225486950648c600",
+    "semantic_hash": "0a9cff20b3008dc7225486950648c600"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\form-message.tsx": {
+    "mtime": 1772613554.3647153,
+    "ast_hash": "c2d916c69624eb2222896647f9e98951",
+    "semantic_hash": "c2d916c69624eb2222896647f9e98951"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\gemini-footer.tsx": {
+    "mtime": 1772613554.3647153,
+    "ast_hash": "97dcbc62dadca4c94918d74ac9bac5f3",
+    "semantic_hash": "97dcbc62dadca4c94918d74ac9bac5f3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\gnn\\GNNAnalysisPanel.tsx": {
+    "mtime": 1772613554.3657465,
+    "ast_hash": "d0a4a96d6cdeba8d03da44d67584bf1e",
+    "semantic_hash": "d0a4a96d6cdeba8d03da44d67584bf1e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\gnn\\GNNDataVisualizer.tsx": {
+    "mtime": 1774630136.5213356,
+    "ast_hash": "988c1841a23bd2628dc955f07e6d2189",
+    "semantic_hash": "988c1841a23bd2628dc955f07e6d2189"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\header-auth.tsx": {
+    "mtime": 1774545781.5894141,
+    "ast_hash": "6ca76d15239fd5869d173fd4d63be459",
+    "semantic_hash": "6ca76d15239fd5869d173fd4d63be459"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\header-nav.tsx": {
+    "mtime": 1772613554.3667243,
+    "ast_hash": "178e4364aaa5c7a3721df6125b41ab7b",
+    "semantic_hash": "178e4364aaa5c7a3721df6125b41ab7b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\hero.tsx": {
+    "mtime": 1772613554.3677227,
+    "ast_hash": "648d65a1f2313a180dd691ca278cc41b",
+    "semantic_hash": "648d65a1f2313a180dd691ca278cc41b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\home-link.tsx": {
+    "mtime": 1772613554.3677227,
+    "ast_hash": "ed05c848d9b2b3b81644fe4634853edb",
+    "semantic_hash": "ed05c848d9b2b3b81644fe4634853edb"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\main-navbar.tsx": {
+    "mtime": 1772613554.3677227,
+    "ast_hash": "1604fb323e303f80839e7688664d8eb5",
+    "semantic_hash": "1604fb323e303f80839e7688664d8eb5"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\navigation-events.tsx": {
+    "mtime": 1772613554.3677227,
+    "ast_hash": "a34bae5f24b12c5b3636245fbf7ad423",
+    "semantic_hash": "a34bae5f24b12c5b3636245fbf7ad423"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\next-logo.tsx": {
+    "mtime": 1772613554.368726,
+    "ast_hash": "8b41d346ec5e71eef31b15c0eb48357f",
+    "semantic_hash": "8b41d346ec5e71eef31b15c0eb48357f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\nlp-query-processor.tsx": {
+    "mtime": 1772613554.368726,
+    "ast_hash": "6cda5f8379512d1332f97689743f2643",
+    "semantic_hash": "6cda5f8379512d1332f97689743f2643"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\nlp-quick-actions.tsx": {
+    "mtime": 1772613554.3697658,
+    "ast_hash": "b7a1d14801909e6a6901afb04fe45dd6",
+    "semantic_hash": "b7a1d14801909e6a6901afb04fe45dd6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\particle-background.tsx": {
+    "mtime": 1772613554.3697658,
+    "ast_hash": "ceb2a1cc3a0feb4a57397514a5dab75e",
+    "semantic_hash": "ceb2a1cc3a0feb4a57397514a5dab75e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\security-alert-modal.tsx": {
+    "mtime": 1772613554.370789,
+    "ast_hash": "b1e1cdb2164314dcdae2d027279e47da",
+    "semantic_hash": "b1e1cdb2164314dcdae2d027279e47da"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\stats-overview.tsx": {
+    "mtime": 1772613554.370789,
+    "ast_hash": "bbfec07dd3420323766124eb7497a683",
+    "semantic_hash": "bbfec07dd3420323766124eb7497a683"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\submit-button.tsx": {
+    "mtime": 1772613554.370789,
+    "ast_hash": "895babe417bc0efd92d018164ea821e3",
+    "semantic_hash": "895babe417bc0efd92d018164ea821e3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\supabase-logo.tsx": {
+    "mtime": 1772613554.370789,
+    "ast_hash": "7fd17a64a97c95b435bd239b033fc1bc",
+    "semantic_hash": "7fd17a64a97c95b435bd239b033fc1bc"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\theme-switcher.tsx": {
+    "mtime": 1772613554.372179,
+    "ast_hash": "86e114e336e8e48829e96d19128ef6f1",
+    "semantic_hash": "86e114e336e8e48829e96d19128ef6f1"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\timestamp-list.tsx": {
+    "mtime": 1772613554.372179,
+    "ast_hash": "3f50d1bc7eac706f056dd4ef665fe133",
+    "semantic_hash": "3f50d1bc7eac706f056dd4ef665fe133"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\tutorial\\code-block.tsx": {
+    "mtime": 1772613554.3732564,
+    "ast_hash": "e48cf3e7247c782862ded17fd432f827",
+    "semantic_hash": "e48cf3e7247c782862ded17fd432f827"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\tutorial\\connect-supabase-steps.tsx": {
+    "mtime": 1772613554.3732564,
+    "ast_hash": "964848bb8e98140b166089e84efc70c6",
+    "semantic_hash": "964848bb8e98140b166089e84efc70c6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\tutorial\\fetch-data-steps.tsx": {
+    "mtime": 1772613554.3746085,
+    "ast_hash": "92c7f7b08d29674fa7cd365709cd0198",
+    "semantic_hash": "92c7f7b08d29674fa7cd365709cd0198"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\tutorial\\sign-up-user-steps.tsx": {
+    "mtime": 1772613554.3746085,
+    "ast_hash": "143b11a7746ba6afbafb1d5dbbd22525",
+    "semantic_hash": "143b11a7746ba6afbafb1d5dbbd22525"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\tutorial\\tutorial-step.tsx": {
+    "mtime": 1772613554.3746085,
+    "ast_hash": "bfb49a75328c7a9fa8a2b0674bdd025e",
+    "semantic_hash": "bfb49a75328c7a9fa8a2b0674bdd025e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\typography\\inline-code.tsx": {
+    "mtime": 1772613554.3756976,
+    "ast_hash": "1408b5f1fbc5b305523377aa93e47cb6",
+    "semantic_hash": "1408b5f1fbc5b305523377aa93e47cb6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ufdr-3d-visualizer.tsx": {
+    "mtime": 1772613554.3756976,
+    "ast_hash": "1d9cd6d1e13de42bef37a1560e3657d4",
+    "semantic_hash": "1d9cd6d1e13de42bef37a1560e3657d4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ufdr-data-parser.tsx": {
+    "mtime": 1772613554.3767068,
+    "ast_hash": "d5d29d9113aa8e2cc2f1716ad9335725",
+    "semantic_hash": "d5d29d9113aa8e2cc2f1716ad9335725"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ufdr-data-visualizer.tsx": {
+    "mtime": 1772613554.3777025,
+    "ast_hash": "09c80e39859d8142bbc14eba4065f2d3",
+    "semantic_hash": "09c80e39859d8142bbc14eba4065f2d3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ufdr-visualization-filters.tsx": {
+    "mtime": 1772613554.3777025,
+    "ast_hash": "a3fddccbe95f9f843bae0ba8e22082d0",
+    "semantic_hash": "a3fddccbe95f9f843bae0ba8e22082d0"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\badge.tsx": {
+    "mtime": 1772613554.3787377,
+    "ast_hash": "a4eafb72bdcfa0dba29c784f8115a67c",
+    "semantic_hash": "a4eafb72bdcfa0dba29c784f8115a67c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\button.tsx": {
+    "mtime": 1772613554.3787377,
+    "ast_hash": "58527c76d0b1bc680f549500db7280a3",
+    "semantic_hash": "58527c76d0b1bc680f549500db7280a3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\card.tsx": {
+    "mtime": 1772613554.3787377,
+    "ast_hash": "fa53509023ded85112782258eb7a8e3d",
+    "semantic_hash": "fa53509023ded85112782258eb7a8e3d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\checkbox.tsx": {
+    "mtime": 1772613554.3787377,
+    "ast_hash": "87783b76dbf9cc6acb4a1ee571bbb113",
+    "semantic_hash": "87783b76dbf9cc6acb4a1ee571bbb113"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\dialog.tsx": {
+    "mtime": 1772613554.3797507,
+    "ast_hash": "cc6d37455e68f28caf07e9ea31cf80f1",
+    "semantic_hash": "cc6d37455e68f28caf07e9ea31cf80f1"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\dropdown-menu.tsx": {
+    "mtime": 1772613554.380749,
+    "ast_hash": "c95f004a69d443a7c6be71492f979425",
+    "semantic_hash": "c95f004a69d443a7c6be71492f979425"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\input.tsx": {
+    "mtime": 1772613554.380749,
+    "ast_hash": "63f93d3bf8bb8f54e09250ea16bd331f",
+    "semantic_hash": "63f93d3bf8bb8f54e09250ea16bd331f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\label.tsx": {
+    "mtime": 1772613554.3817668,
+    "ast_hash": "3abd3cece76be529c2d77e4c91b4e236",
+    "semantic_hash": "3abd3cece76be529c2d77e4c91b4e236"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\progress.tsx": {
+    "mtime": 1772613554.3817668,
+    "ast_hash": "3814b51cc2370e03365a8735f909256b",
+    "semantic_hash": "3814b51cc2370e03365a8735f909256b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\slider.tsx": {
+    "mtime": 1772613554.3817668,
+    "ast_hash": "d33699a63a39e0a856274fde33b992a5",
+    "semantic_hash": "d33699a63a39e0a856274fde33b992a5"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\tabs.tsx": {
+    "mtime": 1772613554.3827634,
+    "ast_hash": "48ceb763e9929211d2baca066c360701",
+    "semantic_hash": "48ceb763e9929211d2baca066c360701"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\textarea.tsx": {
+    "mtime": 1772613554.3827634,
+    "ast_hash": "31f5d6d52ea14c1411296ee63003e4d7",
+    "semantic_hash": "31f5d6d52ea14c1411296ee63003e4d7"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\uploadFileButton.tsx": {
+    "mtime": 1772613554.383753,
+    "ast_hash": "1310a246e92e882964fbfc0be30facd2",
+    "semantic_hash": "1310a246e92e882964fbfc0be30facd2"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\ui\\visually-hidden.tsx": {
+    "mtime": 1772613554.383753,
+    "ast_hash": "8e8a0383ae28368cb13d60cb87e16d1d",
+    "semantic_hash": "8e8a0383ae28368cb13d60cb87e16d1d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\components\\video-player.tsx": {
+    "mtime": 1772613554.383753,
+    "ast_hash": "67fa6fc7ea325a4bcb3534c23fd4ae97",
+    "semantic_hash": "67fa6fc7ea325a4bcb3534c23fd4ae97"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\lib\\conversation-manager.ts": {
+    "mtime": 1772613554.3847504,
+    "ast_hash": "5308fa3d5222feac4af56a0e3ebba0c1",
+    "semantic_hash": "5308fa3d5222feac4af56a0e3ebba0c1"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\lib\\data.ts": {
+    "mtime": 1772613554.3862236,
+    "ast_hash": "7643d8a58e566cf3f36574542ab837cf",
+    "semantic_hash": "7643d8a58e566cf3f36574542ab837cf"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\lib\\nlp-intent-classifier.ts": {
+    "mtime": 1774630136.525334,
+    "ast_hash": "fde055b5deab84c9647bd24902c49e6d",
+    "semantic_hash": "fde055b5deab84c9647bd24902c49e6d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\lib\\pinecone-client.ts": {
+    "mtime": 1772613554.387592,
+    "ast_hash": "b8dda1d1b85a3179726796de3a89cd1c",
+    "semantic_hash": "b8dda1d1b85a3179726796de3a89cd1c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\lib\\rag-engine.ts": {
+    "mtime": 1772613554.3886082,
+    "ast_hash": "810ae224a86534ef1aa351adcf34bca7",
+    "semantic_hash": "810ae224a86534ef1aa351adcf34bca7"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\lib\\ufdr-data-validator.ts": {
+    "mtime": 1772613554.3896072,
+    "ast_hash": "8ab08551a4a9bf73da46f78c7423413e",
+    "semantic_hash": "8ab08551a4a9bf73da46f78c7423413e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\lib\\utils.ts": {
+    "mtime": 1773557371.5381393,
+    "ast_hash": "ad791f4781cd6e078020927b5181609e",
+    "semantic_hash": "ad791f4781cd6e078020927b5181609e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\middleware.ts": {
+    "mtime": 1772613554.390613,
+    "ast_hash": "26488693463ec4b082edd94f4de98646",
+    "semantic_hash": "26488693463ec4b082edd94f4de98646"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\next.config.ts": {
+    "mtime": 1774546225.0535626,
+    "ast_hash": "635b24cb3b0a272a2158fb2057594ac3",
+    "semantic_hash": "635b24cb3b0a272a2158fb2057594ac3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\package.json": {
+    "mtime": 1774611868.2832308,
+    "ast_hash": "7c6fb73de642554e6374753b4b6f2667",
+    "semantic_hash": "7c6fb73de642554e6374753b4b6f2667"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\postcss.config.js": {
+    "mtime": 1772613554.3956103,
+    "ast_hash": "9a248c780e4c76f85b0f492f63a3d417",
+    "semantic_hash": "9a248c780e4c76f85b0f492f63a3d417"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Fighting0_boxes.json": {
+    "mtime": 1772613554.3986912,
+    "ast_hash": "d6eaa52667a5042e826c0719ff8faa5a",
+    "semantic_hash": "d6eaa52667a5042e826c0719ff8faa5a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Fighting1_boxes.json": {
+    "mtime": 1772613554.4080112,
+    "ast_hash": "308f4a47eba354e31307fb7b6bd90601",
+    "semantic_hash": "308f4a47eba354e31307fb7b6bd90601"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Fighting2_boxes.json": {
+    "mtime": 1772613554.4119413,
+    "ast_hash": "d668e57d018ee2303cd83d5ee93f11a3",
+    "semantic_hash": "d668e57d018ee2303cd83d5ee93f11a3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Fighting3_boxes.json": {
+    "mtime": 1772613554.412941,
+    "ast_hash": "53e255e2f0a14b2ecd989ad6497dd133",
+    "semantic_hash": "53e255e2f0a14b2ecd989ad6497dd133"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Robbery1_boxes.json": {
+    "mtime": 1772613554.4140527,
+    "ast_hash": "80a514b6b2bef819b6619bd32d69ec2a",
+    "semantic_hash": "80a514b6b2bef819b6619bd32d69ec2a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Robbery2_boxes.json": {
+    "mtime": 1772613554.4159477,
+    "ast_hash": "c2419cd2d4e051e4d4dccd8d0e72f57d",
+    "semantic_hash": "c2419cd2d4e051e4d4dccd8d0e72f57d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Robbery3_boxes.json": {
+    "mtime": 1772613554.4170887,
+    "ast_hash": "875be8c180ac86633d499d9b6c0099fd",
+    "semantic_hash": "875be8c180ac86633d499d9b6c0099fd"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Shoplifting0_boxes.json": {
+    "mtime": 1772613554.4191582,
+    "ast_hash": "25755bc1ca0a8c9fbe2602d4924f93f3",
+    "semantic_hash": "25755bc1ca0a8c9fbe2602d4924f93f3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Shoplifting1_boxes.json": {
+    "mtime": 1772613554.4202056,
+    "ast_hash": "33af4f9ec1bf1d073fcf57eba8948451",
+    "semantic_hash": "33af4f9ec1bf1d073fcf57eba8948451"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Shoplifting2_boxes.json": {
+    "mtime": 1772613554.4262085,
+    "ast_hash": "bc4c29ee80f7bf346c080043040f67a2",
+    "semantic_hash": "bc4c29ee80f7bf346c080043040f67a2"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Stealing1_boxes.json": {
+    "mtime": 1772613554.428159,
+    "ast_hash": "726e1479552c0fc9f2be67fae2757b94",
+    "semantic_hash": "726e1479552c0fc9f2be67fae2757b94"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\bounding_boxes\\Vandalism3_boxes.json": {
+    "mtime": 1772613554.431397,
+    "ast_hash": "4c681ac1d4374338f22f8ad0caa84a69",
+    "semantic_hash": "4c681ac1d4374338f22f8ad0caa84a69"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\demo\\demo-ufdr-3d.json": {
+    "mtime": 1774630136.5113351,
+    "ast_hash": "59c7e3eb6c0b3054cd2e0338e9274f75",
+    "semantic_hash": "59c7e3eb6c0b3054cd2e0338e9274f75"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\demo\\demo-ufdr-gnn.json": {
+    "mtime": 1774630136.5103345,
+    "ast_hash": "1c52e9a2b6cfe0463b65e3f3de1a0e0d",
+    "semantic_hash": "1c52e9a2b6cfe0463b65e3f3de1a0e0d"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\demo\\demo-ufdr-nlp.json": {
+    "mtime": 1774630136.5052576,
+    "ast_hash": "aea9063ffd1f2a14ce8166c358a34d19",
+    "semantic_hash": "aea9063ffd1f2a14ce8166c358a34d19"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\sample-ufdr-data.json": {
+    "mtime": 1772613554.431397,
+    "ast_hash": "66320fa843f2b82a3523e72fa8e28bd0",
+    "semantic_hash": "66320fa843f2b82a3523e72fa8e28bd0"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\sample-ufdr-gnn-data.json": {
+    "mtime": 1772613554.431397,
+    "ast_hash": "d0379e73ab442da56e620bffd390fdca",
+    "semantic_hash": "d0379e73ab442da56e620bffd390fdca"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\sample_test_data.json": {
+    "mtime": 1772613554.5631752,
+    "ast_hash": "55708169ee13e1b1d028ae81541ae660",
+    "semantic_hash": "55708169ee13e1b1d028ae81541ae660"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\generate_bounding_boxes.py": {
+    "mtime": 1772613554.5643065,
+    "ast_hash": "aebae066e35c4cf2a8e7dd88b37298ac",
+    "semantic_hash": "aebae066e35c4cf2a8e7dd88b37298ac"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\generate_video_data.py": {
+    "mtime": 1772613554.5643065,
+    "ast_hash": "589ad7c0fde1cef4737663c77630d30c",
+    "semantic_hash": "589ad7c0fde1cef4737663c77630d30c"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\gnn_alias_resolver.py": {
+    "mtime": 1773557139.5742629,
+    "ast_hash": "f7c6a2b3426cd08eb63b74dd747a6578",
+    "semantic_hash": "f7c6a2b3426cd08eb63b74dd747a6578"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\setup-pinecone-index.js": {
+    "mtime": 1772613554.5678105,
+    "ast_hash": "bc20ea9e45aef5b584580e0dcc739648",
+    "semantic_hash": "bc20ea9e45aef5b584580e0dcc739648"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\setup_pinecone_index.js": {
+    "mtime": 1772613554.5688848,
+    "ast_hash": "7c66d3fb8e10372107eceb3fed7d058f",
+    "semantic_hash": "7c66d3fb8e10372107eceb3fed7d058f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\setup_visualization.py": {
+    "mtime": 1773557384.6466415,
+    "ast_hash": "7292d5a4a27417e9a26ec53d88941258",
+    "semantic_hash": "7292d5a4a27417e9a26ec53d88941258"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\ufdr_3d_visualizer.py": {
+    "mtime": 1773557098.265559,
+    "ast_hash": "f2408b30bbeca16f47fc0e87ca0bf0c8",
+    "semantic_hash": "f2408b30bbeca16f47fc0e87ca0bf0c8"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\tailwind.config.ts": {
+    "mtime": 1772613554.5698905,
+    "ast_hash": "ed3f81827416ef5b538d5c2c264efc47",
+    "semantic_hash": "ed3f81827416ef5b538d5c2c264efc47"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\test-models.js": {
+    "mtime": 1774630136.5123382,
+    "ast_hash": "5cf658261b19be93a127a2b9aaa74122",
+    "semantic_hash": "5cf658261b19be93a127a2b9aaa74122"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\tsconfig.json": {
+    "mtime": 1774546227.789003,
+    "ast_hash": "1b3e30ebfbeb357c51d5ea1541246bee",
+    "semantic_hash": "1b3e30ebfbeb357c51d5ea1541246bee"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\types\\index.ts": {
+    "mtime": 1772613554.5710883,
+    "ast_hash": "269d8b76d771bd167d06a40bf489b84e",
+    "semantic_hash": "269d8b76d771bd167d06a40bf489b84e"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\utils\\api-keys.ts": {
+    "mtime": 1772613554.572577,
+    "ast_hash": "6effa6a27c47daac440dd9a6f490a8ec",
+    "semantic_hash": "6effa6a27c47daac440dd9a6f490a8ec"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\utils\\supabase\\check-env-vars.ts": {
+    "mtime": 1772613554.5736303,
+    "ast_hash": "f0a6da2ea2a0de63b0dd1cd333657766",
+    "semantic_hash": "f0a6da2ea2a0de63b0dd1cd333657766"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\utils\\supabase\\client.ts": {
+    "mtime": 1772613554.5736303,
+    "ast_hash": "6b733047d1bc0dd630617adfca9f2910",
+    "semantic_hash": "6b733047d1bc0dd630617adfca9f2910"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\utils\\supabase\\middleware.ts": {
+    "mtime": 1772613554.5736303,
+    "ast_hash": "565fe0e132971e520e7224f35cf7b6c6",
+    "semantic_hash": "565fe0e132971e520e7224f35cf7b6c6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\utils\\supabase\\server.ts": {
+    "mtime": 1772613554.5749824,
+    "ast_hash": "72d25a7c34c216710ed94ddc528dfbf4",
+    "semantic_hash": "72d25a7c34c216710ed94ddc528dfbf4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\utils\\utils.ts": {
+    "mtime": 1772613554.5749824,
+    "ast_hash": "498a6e78f5c38c4d48901baf3bfc4ab6",
+    "semantic_hash": "498a6e78f5c38c4d48901baf3bfc4ab6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\README.md": {
+    "mtime": 1773557385.5250182,
+    "ast_hash": "e260e14ad7c66882ad4a018743c1f2a3",
+    "semantic_hash": "e260e14ad7c66882ad4a018743c1f2a3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\docs\\GNN_ALIAS_RESOLUTION_GUIDE.md": {
+    "mtime": 1772613554.3847504,
+    "ast_hash": "5156956c41098f61c397b9b4c3396ac3",
+    "semantic_hash": "5156956c41098f61c397b9b4c3396ac3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\lib\\video_analysis_raw.txt": {
+    "mtime": 1772613554.390613,
+    "ast_hash": "95694b3948d74c409f58e116c1da423a",
+    "semantic_hash": "95694b3948d74c409f58e116c1da423a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\requirements.txt": {
+    "mtime": 1772613554.5653129,
+    "ast_hash": "78a5df5debab397fd64ebef268c5c527",
+    "semantic_hash": "78a5df5debab397fd64ebef268c5c527"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\requirements_detection.txt": {
+    "mtime": 1772613554.5665529,
+    "ast_hash": "6619899b1aa4cc7b338f3cc1e21b58fc",
+    "semantic_hash": "6619899b1aa4cc7b338f3cc1e21b58fc"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\requirements_gnn.txt": {
+    "mtime": 1772613554.5665529,
+    "ast_hash": "6a1e0c549312e78bc19153a8a34b852b",
+    "semantic_hash": "6a1e0c549312e78bc19153a8a34b852b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\scripts\\requirements_visualization.txt": {
+    "mtime": 1772613554.5665529,
+    "ast_hash": "ffee83efacbf97b81685797e208125f2",
+    "semantic_hash": "ffee83efacbf97b81685797e208125f2"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\opengraph-image.png": {
+    "mtime": 1772613554.321192,
+    "ast_hash": "447f88c574dd97791ff58b89dbe24937",
+    "semantic_hash": "447f88c574dd97791ff58b89dbe24937"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\app\\twitter-image.png": {
+    "mtime": 1772613554.3490317,
+    "ast_hash": "447f88c574dd97791ff58b89dbe24937",
+    "semantic_hash": "447f88c574dd97791ff58b89dbe24937"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\DaredevilLogo.svg": {
+    "mtime": 1772613554.3966758,
+    "ast_hash": "c15b062bf24817568c9ec4f738c87972",
+    "semantic_hash": "c15b062bf24817568c9ec4f738c87972"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\DaredevilLogoRed.svg": {
+    "mtime": 1772613554.3966758,
+    "ast_hash": "76c0ff86461b1dba37c9c921c858220b",
+    "semantic_hash": "76c0ff86461b1dba37c9c921c858220b"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Fighting0.mp4": {
+    "mtime": 1772613554.4385188,
+    "ast_hash": "220104bf57aaf2c245a4d647caa7899f",
+    "semantic_hash": "220104bf57aaf2c245a4d647caa7899f"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Fighting1.mp4": {
+    "mtime": 1772613554.4523964,
+    "ast_hash": "99e5b2a384b8a13efe8c8497d6b8f849",
+    "semantic_hash": "99e5b2a384b8a13efe8c8497d6b8f849"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Fighting2.mp4": {
+    "mtime": 1772613554.4623952,
+    "ast_hash": "9d7d10aacfdb8d4c9ea28a10d483a832",
+    "semantic_hash": "9d7d10aacfdb8d4c9ea28a10d483a832"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Fighting3.mp4": {
+    "mtime": 1772613554.4674158,
+    "ast_hash": "d1218c54f5cb4554f635194a6f8853eb",
+    "semantic_hash": "d1218c54f5cb4554f635194a6f8853eb"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Robbery1.mp4": {
+    "mtime": 1772613554.474496,
+    "ast_hash": "d05779806eede7dd8f4092b9a6c32ed3",
+    "semantic_hash": "d05779806eede7dd8f4092b9a6c32ed3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Robbery2.mp4": {
+    "mtime": 1772613554.484518,
+    "ast_hash": "15b1592a12f7135b658b8b01183bdcab",
+    "semantic_hash": "15b1592a12f7135b658b8b01183bdcab"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Robbery3.mp4": {
+    "mtime": 1772613554.489489,
+    "ast_hash": "7725fa220a40b0a85415e23bd2a94aa4",
+    "semantic_hash": "7725fa220a40b0a85415e23bd2a94aa4"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Shoplifting0.mp4": {
+    "mtime": 1772613554.4989157,
+    "ast_hash": "fe88ae8ac5d9f31da24fa30be71a8cb6",
+    "semantic_hash": "fe88ae8ac5d9f31da24fa30be71a8cb6"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Shoplifting1.mp4": {
+    "mtime": 1772613554.5049107,
+    "ast_hash": "0c5c0aef9b25650fcbb45334934f30c3",
+    "semantic_hash": "0c5c0aef9b25650fcbb45334934f30c3"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Shoplifting2.mp4": {
+    "mtime": 1772613554.5319183,
+    "ast_hash": "8aa06af6043b665c1bfb9eac804ab95a",
+    "semantic_hash": "8aa06af6043b665c1bfb9eac804ab95a"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Stealing1.mp4": {
+    "mtime": 1772613554.536918,
+    "ast_hash": "975b6ef1d0f732099a66704f83e41b04",
+    "semantic_hash": "975b6ef1d0f732099a66704f83e41b04"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\Vandalism3.mp4": {
+    "mtime": 1772613554.542754,
+    "ast_hash": "51ba841942c21522dcd36544e141b673",
+    "semantic_hash": "51ba841942c21522dcd36544e141b673"
+  },
+  "C:\\Users\\Shubham\\Desktop\\CORE PROJECT\\daredevil\\public\\videos\\videoplayback.mp4": {
+    "mtime": 1772613554.5622168,
+    "ast_hash": "0ee455abafabcbc920f79179ac045169",
+    "semantic_hash": "0ee455abafabcbc920f79179ac045169"
+  }
+}
